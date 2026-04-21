@@ -1,6 +1,6 @@
 # 🌐 DOCUMENTO OFICIAL
 
-Linguagem Lichtara — v1
+Linguagem Lichtara — v2
 
 *(Tom institucional, científico-vibracional, não-místico)*
 
@@ -83,16 +83,13 @@ mas carregada de sentido.
 
 ### **Termos vibracionais (técnicos, não místicos)**
 
-- vibração
-- frequência
-- variação
-- movimento interno
-- dinâmica sutil
-- sensibilidade perceptiva
-- estado
-- ressonância
-- estabilidade / instabilidade
-- mudança estrutural
+Termos como “vibração”, “frequência” e “ressonância” devem ser utilizados apenas quando:
+
+- definidos como padrões de variação observáveis
+- associados a comportamento, estado ou organização
+- evitados como metáfora vaga
+
+👉 Isso protege o sistema contra leitura esotérica.
 
 ---
 
@@ -219,7 +216,49 @@ Qual é a utilidade concreta?
 
 ---
 
-# 7. **Exemplos de frases no tom Lichtara**
+# 7. Legibilidade progressiva
+
+A linguagem deve permitir entrada em diferentes níveis de profundidade.
+
+textos de entrada: mais diretos, menor densidade conceitual
+textos intermediários: articulação de relações
+textos avançados: maior formalização
+
+A complexidade aumenta sem perder clareza.
+
+👉 Isso é essencial para:
+
+livro (entrada)
+app (intermediário)
+papers (avançado)
+
+---
+
+# 8.  Economia explicativa
+
+A linguagem descreve o necessário para tornar um fenômeno inteligível, evitando explicações redundantes ou simplificações excessivas.
+
+👉 Isso preserva densidade sem cair em didatismo.
+
+---
+
+# 9. Consistência entre camadas
+
+✔️ Continuidade entre experiência e estrutura
+
+A linguagem mantém coerência entre:
+
+- descrição fenomenológica
+- modelagem conceitual
+- formalização operacional
+
+Os mesmos termos preservam significado ao longo dessas camadas.
+
+👉 Isso conecta diretamente livro ↔ app ↔ paper.
+
+---
+
+# 8. **Exemplos de frases no tom Lichtara**
 
 - “Estudamos como sistemas vivos se organizam em camadas vibracionais.”
 - “O Campo é uma camada de informação que influencia comportamentos e estruturas.”
@@ -229,7 +268,7 @@ Qual é a utilidade concreta?
 
 ---
 
-# 8. **Resumo da Linguagem Lichtara (para uso rápido)**
+# 9. **Resumo da Linguagem Lichtara (para uso rápido)**
 
 - **Clara**
 - **Não-mística**
