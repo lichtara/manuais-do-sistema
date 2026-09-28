@@ -1,7 +1,5 @@
 # 5. Integração com Outros Elementos
 
-# 5. Integração com Outros Elementos
-
 5.1. Visão Geral
 
 A integração do Flux com outros elementos do ecossistema é essencial para garantir fluidez operacional, compatibilidade e otimização de processos. O sistema deve ser capaz de interagir com diferentes tecnologias e plataformas sem comprometer sua eficiência e segurança.
