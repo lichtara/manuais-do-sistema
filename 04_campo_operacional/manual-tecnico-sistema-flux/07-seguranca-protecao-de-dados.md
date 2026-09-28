@@ -1,7 +1,5 @@
 # 7. Segurança e Proteção de Dados
 
-# 7. Segurança e Proteção de Dados
-
 # 7.1. Visão Geral
 
 A segurança e proteção de dados dentro do Flux são fundamentais para garantir a integridade, confidencialidade e disponibilidade das informações. O sistema deve ser projetado para minimizar vulnerabilidades, evitar acessos não autorizados e proteger dados sensíveis contra ameaças externas e internas.
