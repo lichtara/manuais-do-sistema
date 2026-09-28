@@ -1,7 +1,5 @@
 # 6. Automação e Aprendizado Contínuo
 
-# 6. Automação e Aprendizado Contínuo
-
 # 6.1. Visão Geral
 
 A automação dentro do Flux é projetada para otimizar processos, reduzir a necessidade de intervenção manual e aprimorar a eficiência operacional. O aprendizado contínuo permite que o sistema evolua com base nos padrões de uso, refinando sua estrutura e respostas ao longo do tempo.
