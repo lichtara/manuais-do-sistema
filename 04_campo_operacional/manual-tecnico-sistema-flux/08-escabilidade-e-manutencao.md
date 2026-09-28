@@ -1,7 +1,5 @@
 # 8. Escalabilidade e Manutenção
 
-# 8. Escalabilidade e Manutenção
-
 # 8.1. Visão Geral
 
 A escalabilidade do Flux permite que o sistema cresça e se adapte conforme as demandas aumentam, garantindo desempenho, estabilidade e eficiência sem comprometer sua estrutura base. A manutenção contínua assegura que os processos internos permaneçam otimizados, reduzindo riscos de falhas e melhorando a experiência do usuário.
