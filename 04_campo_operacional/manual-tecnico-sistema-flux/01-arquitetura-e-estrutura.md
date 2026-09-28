@@ -1,5 +1,3 @@
-# 1. Arquitetura e Estrutura do Flux
-
 # Manual Técnico do Sistema Flux
 
 # 1. Arquitetura e Estrutura do Flux
