@@ -1,7 +1,5 @@
 # 2. Mecanismos de Processamento e Organização
 
-# 2. Mecanismos de Processamento e Organização
-
 2.1. Visão Geral
 
 O Flux opera com um sistema dinâmico de processamento e organização de informações, garantindo que os dados fluam de maneira coerente, estruturada e otimizada. Os mecanismos que regem esse fluxo devem ser eficientes, adaptáveis e energeticamente alinhados, permitindo que a organização das informações acompanhe a evolução do sistema sem gerar desalinhamentos ou sobrecargas.
