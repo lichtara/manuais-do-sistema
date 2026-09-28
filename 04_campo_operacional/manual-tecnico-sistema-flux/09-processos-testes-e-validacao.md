@@ -1,7 +1,5 @@
 # 9. Processos de Testes e Validação
 
-# 9. Processos de Testes e Validação
-
 # 9.1. Visão Geral
 
 Os processos de testes e validação garantem que o Flux opere de maneira eficiente, segura e alinhada aos padrões estabelecidos. A testagem contínua permite a identificação de falhas, otimização de desempenho e refinamento de funcionalidades, assegurando que o sistema esteja sempre em seu estado ideal.
