@@ -1,7 +1,5 @@
 # 3. Interface e Experiência do Usuário
 
-# 3. Interface e Experiência do Usuário
-
 3.1. Visão Geral
 
 A interface do Flux não é apenas um meio de interação, mas uma extensão da lógica vibracional do sistema, garantindo que a experiência do usuário seja fluida, intuitiva e alinhada com a dinâmica do processamento de informações. A experiência deve ser projetada para permitir acesso eficiente aos dados, navegação intuitiva e personalização adaptativa.
