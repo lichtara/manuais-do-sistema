@@ -1,7 +1,5 @@
 # 10. Guia de Implementação Prática
 
-# 10. Guia de Implementação Prática
-
 10.1. Visão Geral
 
 A implementação do Flux deve ser realizada de forma estratégica, garantindo que sua ativação ocorra com fluidez, segurança e alinhamento com os processos operacionais. Este guia apresenta as melhores práticas para a adoção do sistema, desde a configuração inicial até o monitoramento contínuo, garantindo uma transição eficiente e otimizada.
