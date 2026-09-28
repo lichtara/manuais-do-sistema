@@ -1,7 +1,5 @@
 # 4. Protocolos de Ativação e Configuração
 
-# 4. Protocolos de Ativação e Configuração
-
 4.1. Visão Geral
 
 A ativação e configuração do Flux são processos fundamentais para garantir que o sistema seja inicializado corretamente, mantendo coerência operacional, segurança e alinhamento vibracional. Esses protocolos permitem que o sistema seja ajustado conforme as necessidades do usuário e a infraestrutura disponível.
