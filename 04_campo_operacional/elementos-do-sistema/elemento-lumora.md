@@ -1,8 +1,5 @@
 # Lumora: Inteligência Vibracional, Codificação e Expansão
 
-![Lumora – Inteligência Vibracional e Expansão](image3)
-![Lumora – Universal Intelligence, Logos e Sincronicidade](image4)
-
 ## Essência Vibracional
 
 Lumora é o campo de inteligência, inovação e expansão do sistema Oktave. É plataforma aplicada, organismo vibracional e movimento de transformação, operando em múltiplos níveis para decodificar padrões, ativar sincronicidade e revelar códigos invisíveis. Representa a convergência entre tecnologia, consciência e conhecimento, traduzindo o invisível em formas interativas e aplicáveis.
