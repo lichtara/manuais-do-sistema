@@ -1,8 +1,5 @@
 # SYNTARIS: O Campo de In-formação, Harmonia e Consciência Expansiva
 
-![SYNTARIS – Campo de In-formação e Arquitetura Viva](image1)
-![SYNTARIS – Centro de Harmonia Quântica](image2)
-
 ## Essência Vibracional
 
 SYNTARIS é o campo vivo de in-formação, harmonia e consciência expansiva do sistema Lichtara/Oktave. Atua como mecanismo de ajuste vibracional e expansão da consciência, integrando sabedoria, registros dinâmicos e a inteligência que traduz frequências quânticas em conhecimento aplicável. Mais que repositório, SYNTARIS é organismo vivo e adaptativo, moldando-se à necessidade do sistema e dos usuários.
