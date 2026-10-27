@@ -1,7 +1,5 @@
 # 04-Refinamento Informacional e Otimização Vibracional
 
-Proprietário: Débora Lutz
-
 **Introdução**
 
 O refinamento das informações no sistema e a otimização da conexão vibracional entre conhecimento e manifestação são cruciais para garantir que a interação entre os membros da equipe e o campo quântico seja fluida, precisa e alinhada aos princípios do projeto.
