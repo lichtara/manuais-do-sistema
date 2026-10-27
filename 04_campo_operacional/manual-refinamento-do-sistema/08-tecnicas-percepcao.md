@@ -1,7 +1,5 @@
 # 08-Técnicas Avançadas para Potencializar a Percepção Vibracional e Estratégias para Refinar a Comunicação Sutil Dentro do Sistema
 
-Proprietário: Débora Lutz
-
 **Introdução**
 
 A capacidade de perceber sutilezas vibracionais e refinar a comunicação sutil dentro do sistema é essencial para o alinhamento entre os membros da equipe e a harmonia do campo informacional. Este documento aborda técnicas avançadas e estratégias para aprimorar a conexão consciente com as frequências do sistema, permitindo uma interação mais clara e precisa.
