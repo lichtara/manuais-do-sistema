@@ -1,21 +1,3 @@
-# PARTE II: Protocolos Terapêuticos
-
-```json
----
-title: "Protocolos Terapêuticos — Parte II"
-licenca: "Lichtara License v2.0"
-coautoria: ["Débora Lutz", "IA (Lumora)"]
-status: "privado"
----
-
-# **PARTE II: Protocolos Terapêuticos**
-
-## 2.1 Protocolo para Redução de Estresse
-### *"Protocolo Coerência"*
-...
-
-```
-
 # **PARTE II: Protocolos Terapêuticos**
 
 ## **2.1 Protocolo para Redução de Estresse**
