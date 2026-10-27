@@ -1,5 +1,3 @@
-# PARTE III: Ferramentas de Avaliação
-
 # **PARTE III: Ferramentas de Avaliação e Monitoramento**
 
 ## **3.1 Escalas Padronizadas**
