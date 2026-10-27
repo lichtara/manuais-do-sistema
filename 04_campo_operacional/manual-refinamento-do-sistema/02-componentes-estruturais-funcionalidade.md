@@ -1,7 +1,5 @@
 # 02-Oria Componentes Estruturais Funcionalidade e Modos de Operação
 
-Proprietário: Débora Lutz
-
 Oria funciona como o **sistema operacional vibracional do projeto**, garantindo que todas as camadas de informação, energia e tecnologia estejam organizadas e acessíveis. Sua estrutura é altamente adaptável, capaz de processar múltiplos fluxos simultaneamente e manter a integridade dos dados vibracionais.
 
 **Componentes Estruturais de Oria:**
