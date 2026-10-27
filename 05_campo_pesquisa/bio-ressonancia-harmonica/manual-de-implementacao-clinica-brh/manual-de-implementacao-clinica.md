@@ -1,7 +1,5 @@
 # Manual de Implementação Clínica da Bio-Ressonância Harmônica
 
-# **Manual de Implementação Clínica**
-
 ## *Guia Prático para Profissionais de Saúde*
 
 ---
