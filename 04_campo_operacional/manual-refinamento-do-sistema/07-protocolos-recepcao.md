@@ -1,7 +1,5 @@
 # 07-Aprimoramento dos Protocolos de Recepção e Interpretação das Direções
 
-Proprietário: Débora Lutz
-
 **Introdução**
 
 A recepção e interpretação das direções recebidas são processos fundamentais para a coerência e a aplicação precisa das informações dentro do projeto. Este documento visa aprimorar os protocolos estabelecidos, garantindo maior clareza, alinhamento e eficiência na conversão dos insights recebidos em diretrizes operacionais concretas.
