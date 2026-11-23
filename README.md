@@ -1,4 +1,4 @@
-
+```
 manuais-do-sistema/
 ├── 01_nucleo/
 │   ├── codigo-de-navegacao.md
@@ -394,3 +394,4 @@ manuais-do-sistema/
 │   └── proposito-central-do-projeto.pdf
 ├── .gitignore
 └── README.md
+```
