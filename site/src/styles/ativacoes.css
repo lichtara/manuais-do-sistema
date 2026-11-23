@@ -108,7 +108,7 @@
 
 .activation-progress {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: clamp(.35rem, 1.4vw, 1rem);
   width: min(100%, 34rem);
   margin: 1.6rem auto 0;
@@ -541,11 +541,9 @@
   display: block;
   margin-block-start: .38rem;
   color: #dec18e;
-  font-size: .7rem;
-  font-weight: 740;
-  letter-spacing: .07em;
+  font-size: .72rem;
+  font-weight: 650;
   line-height: 1.3;
-  text-transform: uppercase;
 }
 
 .activation-card-description {
@@ -553,6 +551,17 @@
   font-size: .82rem;
   line-height: 1.46;
   text-wrap: pretty;
+}
+
+.activation-path-card {
+  min-height: 11.5rem;
+}
+
+.activation-path-number {
+  color: var(--gold);
+  font-family: var(--font-editorial);
+  font-size: 2.25rem;
+  line-height: 1;
 }
 
 .activation-presence [data-pause] {
@@ -585,13 +594,15 @@
   min-width: 0;
 }
 
-.activation-form :is(label, legend, .activation-field-label) {
+.activation-form :is(label, legend, .activation-field-label),
+.activation-copy-fallback label {
   color: var(--champagne);
   font-size: .9rem;
   font-weight: 710;
 }
 
-.activation-form :is(textarea, [data-intention]) {
+.activation-form :is(textarea, [data-intention]),
+.activation-copy-fallback textarea {
   display: block;
   width: 100%;
   min-height: 6.4rem;
@@ -658,10 +669,57 @@
   background: #302c31;
 }
 
-.activation-question :is([data-question-panel], [data-finish-panel]) {
+.activation-question [data-question-panel],
+.activation-exploration :is([data-exploration-panel], [data-finish-panel]) {
   display: grid;
   justify-items: center;
   width: 100%;
+  min-width: 0;
+}
+
+.activation-orienting-question {
+  max-width: min(100%, 33ch);
+  margin: 1rem auto 0;
+  color: var(--champagne);
+  font-family: var(--font-editorial);
+  font-size: clamp(1.55rem, 3vw, 2.1rem);
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.activation-session-note,
+.activation-exploration [data-copy-status] {
+  max-width: min(100%, 50ch);
+  color: var(--activation-muted);
+  font-size: .82rem;
+  line-height: 1.5;
+}
+
+.activation-session-note {
+  margin: 1rem auto 0;
+}
+
+.activation-copy-actions {
+  display: grid;
+  justify-items: center;
+  max-width: 100%;
+  margin: .9rem auto 0;
+}
+
+.activation-exploration [data-copy-status] {
+  margin: .35rem auto 0;
+}
+
+.activation-exploration [data-copy-status]:empty {
+  margin: 0;
+}
+
+.activation-copy-fallback {
+  display: grid;
+  gap: .45rem;
+  width: min(100%, 32rem);
+  margin: .8rem auto 0;
+  text-align: start;
 }
 
 .activation-summary {
@@ -766,6 +824,13 @@
     margin-block: 0;
   }
 
+  .activation-path-number {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    justify-self: center;
+    font-size: 1.8rem;
+  }
+
   .activation-card :is(.activation-symbol--balance, .activation-symbol--action) {
     width: 2.35rem;
   }
@@ -858,7 +923,8 @@
   }
 
   .activation-choice .activation-button--primary,
-  .activation-question .activation-button--primary {
+  .activation-question .activation-button--primary,
+  .activation-exploration .activation-button--primary {
     flex-basis: 100%;
   }
 

@@ -1,11 +1,19 @@
-import { activationKeys, activationSteps, activationThemes, type ActivationKey } from '../lib/ativacoes';
+import {
+  activationKeys,
+  activationSteps,
+  activationThemes,
+  explorationPaths,
+  type ActivationKey,
+  type ExplorationPath,
+} from '../lib/ativacoes';
 
 type Step = (typeof activationSteps)[number]['id'];
 type View = { step: Step; finished: boolean };
 type PauseState = 'idle' | 'running' | 'complete';
-type FinishMode = 'nothing' | 'unsure' | 'register';
+type QuestionAction = 'without' | 'unsure' | 'register';
 type Draft = { text: string; theme: string | null };
-type Result = { mode: FinishMode; text: string; theme: string };
+type Result = { mode: QuestionAction; text: string; theme: string };
+type Exploration = { selectedPath: ExplorationPath; confirmedPath: ExplorationPath | null };
 
 const root = document.querySelector<HTMLElement>('[data-activation]');
 if (root) setupActivation(root);
@@ -17,11 +25,16 @@ function setupActivation(root: HTMLElement) {
   const steps = findAll('[data-progress-step]');
   const keyInputs = findAll<HTMLInputElement>('[name="chave"]');
   const confirmKey = find<HTMLButtonElement>('[data-confirm-key]');
-  const questionPanel = find('[data-question-panel]');
+  const explorationPanel = find('[data-exploration-panel]');
+  const pathInputs = findAll<HTMLInputElement>('[name="caminho"]');
+  const confirmPathButton = find<HTMLButtonElement>('[data-confirm-path]');
   const finishPanel = find('[data-finish-panel]');
   const intention = find<HTMLTextAreaElement>('[data-intention]');
   const themes = findAll<HTMLButtonElement>('[data-theme]');
-  const register = find<HTMLButtonElement>('[data-finish="register"]');
+  const register = find<HTMLButtonElement>('[data-question-action="register"]');
+  const copyStatus = find('[data-copy-status]');
+  const copyFallback = find('[data-copy-fallback]');
+  const copyText = find<HTMLTextAreaElement>('[data-copy-text]');
   const pause = find('[data-pause]');
   const pauseStart = find<HTMLButtonElement>('[data-pause-start]');
   const pauseStop = find<HTMLButtonElement>('[data-pause-stop]');
@@ -30,11 +43,13 @@ function setupActivation(root: HTMLElement) {
   const pauseStatus = find('[data-pause-status]');
   const drafts = new Map<ActivationKey, Draft>();
   const results = new Map<ActivationKey, Result>();
+  const explorations = new Map<ActivationKey, Exploration>();
 
   let activeKey: ActivationKey | null = null;
   let view: View = { step: 'entrada', finished: false };
   let pauseState: PauseState = 'idle';
   let pauseTimer: number | undefined;
+  let copyVersion = 0;
 
   function isKey(value: string | undefined): value is ActivationKey {
     return value !== undefined && Object.hasOwn(activationKeys, value);
@@ -47,6 +62,10 @@ function setupActivation(root: HTMLElement) {
   function selectedKey() {
     const value = keyInputs.find(input => input.checked)?.value;
     return isKey(value) ? value : null;
+  }
+
+  function readExploration() {
+    return activeKey ? explorations.get(activeKey) : undefined;
   }
 
   function readHash() {
@@ -63,7 +82,8 @@ function setupActivation(root: HTMLElement) {
 
   function resolveView(step: Step, finished = false): View {
     if (!activeKey && step !== 'entrada' && step !== 'chaves') return { step: 'chaves', finished: false };
-    return { step, finished: step === 'pergunta' && finished && Boolean(activeKey && results.has(activeKey)) };
+    if (step === 'caminhos' && (!activeKey || !results.has(activeKey))) return { step: 'pergunta', finished: false };
+    return { step, finished: step === 'caminhos' && finished && Boolean(readExploration()?.confirmedPath) };
   }
 
   function setText(selector: string, value: string) {
@@ -94,11 +114,17 @@ function setupActivation(root: HTMLElement) {
     if (register) register.disabled = !draft.text.trim() && !draft.theme;
   }
 
+  function renderPathSelection() {
+    const selectedPath = readExploration()?.selectedPath;
+    for (const input of pathInputs) input.checked = input.value === selectedPath;
+    if (confirmPathButton) confirmPathButton.disabled = !selectedPath;
+  }
+
   function renderResult(result: Result) {
     const messages = {
-      register: 'Seu registro está disponível nesta sessão.',
-      unsure: 'Sua pergunta pode ficar em aberto por agora.',
-      nothing: 'Você concluiu a prévia sem registrar uma intenção.',
+      register: 'Seu registro fica disponível apenas nesta sessão.',
+      unsure: 'Sua pergunta pode ficar em aberto. As escolhas ficam disponíveis apenas nesta sessão.',
+      without: 'Você seguiu sem registrar uma intenção. As escolhas ficam disponíveis apenas nesta sessão.',
     };
 
     setText('[data-finish-message]', messages[result.mode]);
@@ -108,6 +134,44 @@ function setupActivation(root: HTMLElement) {
     const themeWrap = find('[data-finish-theme-wrap]');
     if (textWrap) textWrap.hidden = !result.text;
     if (themeWrap) themeWrap.hidden = !result.theme;
+  }
+
+  function clearCopy() {
+    copyVersion++;
+    if (copyStatus) copyStatus.textContent = '';
+    if (copyFallback) copyFallback.hidden = true;
+    if (copyText) copyText.value = '';
+  }
+
+  async function copyRecord() {
+    const confirmedPath = readExploration()?.confirmedPath;
+    if (!view.finished || !activeKey || !confirmedPath) return;
+    const result = results.get(activeKey);
+    if (!result) return;
+    const key = activationKeys[activeKey];
+    const lines = [
+      `Chave: ${key.name}`,
+      `Caminho: ${explorationPaths[confirmedPath].name}`,
+      `Pergunta inicial: ${key.question}`,
+    ];
+    if (result.text) lines.push(`Intenção: ${result.text}`);
+    if (result.theme) lines.push(`Tema: ${result.theme}`);
+    const record = lines.join('\n');
+    clearCopy();
+    const version = copyVersion;
+
+    try {
+      if (typeof navigator.clipboard?.writeText !== 'function') throw new Error('Clipboard API unavailable');
+      await navigator.clipboard.writeText(record);
+      if (version === copyVersion && copyStatus) copyStatus.textContent = 'Registro copiado.';
+    } catch {
+      if (version !== copyVersion || !copyFallback || !copyText) return;
+      if (copyStatus) copyStatus.textContent = 'Copie o texto selecionado no campo abaixo.';
+      copyText.value = record;
+      copyFallback.hidden = false;
+      copyText.focus();
+      copyText.select();
+    }
   }
 
   function setPause(state: PauseState, message = '') {
@@ -135,15 +199,24 @@ function setupActivation(root: HTMLElement) {
   function show(next: View, moveFocus: boolean) {
     if (view.step === 'presenca' && next.step !== 'presenca' && pauseState === 'running') setPause('idle');
     view = next;
+    clearCopy();
 
     for (const panel of panels) panel.hidden = panel.dataset.step !== view.step;
-    if (questionPanel) questionPanel.hidden = view.finished;
+    if (explorationPanel) explorationPanel.hidden = view.finished;
     if (finishPanel) finishPanel.hidden = !view.finished;
     if (confirmKey) confirmKey.disabled = !selectedKey();
     if (activeKey) renderKey(activeKey);
     renderDraft();
+    renderPathSelection();
     const result = activeKey && results.get(activeKey);
-    if (view.finished && result) renderResult(result);
+    const confirmedPath = readExploration()?.confirmedPath;
+    if (view.finished && result && confirmedPath) {
+      const path = explorationPaths[confirmedPath];
+      setText('[data-path-name]', path.name);
+      setText('[data-path-question]', path.question);
+      setText('[data-path-transition]', path.transition);
+      renderResult(result);
+    }
 
     const index = activationSteps.findIndex(({ id }) => id === view.step);
     setText('[data-step-label]', `Etapa ${index + 1} de ${activationSteps.length} · ${activationSteps[index].label}`);
@@ -153,8 +226,8 @@ function setupActivation(root: HTMLElement) {
     }
 
     if (moveFocus) {
-      const panel = view.step === 'pergunta'
-        ? (view.finished ? finishPanel : questionPanel)
+      const panel = view.step === 'caminhos'
+        ? (view.finished ? finishPanel : explorationPanel)
         : panels.find(screen => screen.dataset.step === view.step);
       panel?.querySelector<HTMLElement>('h1')?.focus({ preventScroll: true });
       window.scrollTo({ top: 0, behavior: 'instant' });
@@ -176,29 +249,41 @@ function setupActivation(root: HTMLElement) {
     go('resposta');
   }
 
-  function finish(mode: FinishMode) {
-    if (view.step !== 'pergunta' || view.finished || !activeKey) return;
+  function continueToExploration(mode: QuestionAction) {
+    if (view.step !== 'pergunta' || !activeKey) return;
     const draft = readDraft();
     const text = mode === 'register' ? draft.text.trim() : '';
     const theme = mode === 'register'
       ? activationThemes.find(({ id }) => id === draft.theme)?.label ?? ''
       : '';
     if (mode === 'register' && !text && !theme) return;
-    if (mode !== 'register') drafts.delete(activeKey);
     results.set(activeKey, { mode, text, theme });
-    go('pergunta', true);
+    const exploration = readExploration();
+    if (exploration) explorations.set(activeKey, { ...exploration, confirmedPath: null });
+    go('caminhos');
+  }
+
+  function confirmPath() {
+    if (view.step !== 'caminhos' || view.finished || !activeKey) return;
+    const exploration = readExploration();
+    if (!exploration) return;
+    const path = exploration.selectedPath;
+    explorations.set(activeKey, { selectedPath: path, confirmedPath: path });
+    go('caminhos', true);
+    root.dispatchEvent(new CustomEvent('exploration.path_selected', { detail: { path } }));
   }
 
   function restart() {
     activeKey = null;
     drafts.clear();
     results.clear();
+    explorations.clear();
     for (const input of keyInputs) input.checked = false;
     for (const variant of findAll('[data-key-variant]')) variant.hidden = true;
     setText('[data-key-name]', '');
     setText('[data-key-question]', '');
     setText('[data-key-response]', '');
-    renderResult({ mode: 'nothing', text: '', theme: '' });
+    renderResult({ mode: 'without', text: '', theme: '' });
     setPause('idle');
     const next: View = { step: 'entrada', finished: false };
     writeHistory(next, 'replace');
@@ -235,10 +320,22 @@ function setupActivation(root: HTMLElement) {
     const theme = button.dataset.theme;
     if (theme) updateDraft({ ...draft, theme: draft.theme === theme ? null : theme });
   });
-  for (const button of findAll<HTMLButtonElement>('[data-finish]')) button.addEventListener('click', () => {
-    const mode = button.dataset.finish;
-    if (mode === 'nothing' || mode === 'unsure' || mode === 'register') finish(mode);
-  });
+  for (const button of findAll<HTMLButtonElement>('[data-question-action]')) {
+    button.addEventListener('click', () => {
+      const mode = button.dataset.questionAction;
+      if (mode === 'without' || mode === 'unsure' || mode === 'register') continueToExploration(mode);
+    });
+  }
+  for (const input of pathInputs) {
+    input.addEventListener('change', () => {
+      if (!activeKey || !input.checked || !Object.hasOwn(explorationPaths, input.value)) return;
+      explorations.set(activeKey, { selectedPath: input.value as ExplorationPath, confirmedPath: null });
+      renderPathSelection();
+    });
+  }
+  confirmPathButton?.addEventListener('click', confirmPath);
+  find('[data-change-path]')?.addEventListener('click', () => go('caminhos'));
+  find('[data-copy-record]')?.addEventListener('click', copyRecord);
   find('[data-restart]')?.addEventListener('click', restart);
   find('[data-edit-intention]')?.addEventListener('click', () => go('pergunta'));
   document.querySelector<HTMLAnchorElement>('.skip-link')?.addEventListener('click', (event) => {

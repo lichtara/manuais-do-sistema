@@ -2,9 +2,13 @@
 import ActivationShell from '../../layouts/ActivationShell.astro';
 import GeometricKey from '../../components/ativacoes/GeometricKey.astro';
 import SensoryStage from '../../components/ativacoes/SensoryStage.astro';
-import { activationKeys, activationSteps, activationThemes, type ActivationKey } from '../../lib/ativacoes';
+import {
+  activationKeys, activationSteps, activationThemes, explorationPaths,
+  type ActivationKey, type ExplorationPath,
+} from '../../lib/ativacoes';
 
 const keys = Object.entries(activationKeys) as [ActivationKey, (typeof activationKeys)[ActivationKey]][];
+const paths = Object.entries(explorationPaths) as [ExplorationPath, (typeof explorationPaths)[ExplorationPath]][];
 const clarity = activationKeys.clarity;
 ---
 <ActivationShell>
@@ -18,7 +22,7 @@ const clarity = activationKeys.clarity;
           </li>
         ))}
       </ol>
-      <p aria-hidden="true" class="activation-step-label" data-step-label>Etapa 1 de 5 · Entrada</p>
+      <p aria-hidden="true" class="activation-step-label" data-step-label>Etapa 1 de {activationSteps.length} · Entrada</p>
     </div>
 
     <section class="activation-step activation-entry" data-step="entrada" aria-labelledby="activation-entry-title">
@@ -32,7 +36,7 @@ const clarity = activationKeys.clarity;
       </div>
       <details class="activation-about">
         <summary>Sobre esta experiência</summary>
-        <p>Uma prévia do Portal LICHTARA com três caminhos de exploração, uma pausa opcional e uma pergunta para refletir. As escolhas ficam nesta aba durante a experiência.</p>
+        <p>Escolha uma chave, faça uma pausa se desejar e encontre uma maneira de explorar sua pergunta. As escolhas ficam nesta aba durante a experiência.</p>
       </details>
       <noscript><p>Ative o JavaScript para abrir as etapas da experiência.</p></noscript>
     </section>
@@ -56,7 +60,7 @@ const clarity = activationKeys.clarity;
               <strong id={`key-title-${id}`} class="activation-card-title">{key.name}</strong>
               <span id={`key-description-${id}`} class="activation-card-description">
                 {key.description}
-                {key.provisional && <span class="activation-card-note">Em estudo</span>}
+                {key.provisionalSymbol && <span class="activation-card-note">Símbolo provisório</span>}
               </span>
             </span>
           </label>
@@ -89,6 +93,7 @@ const clarity = activationKeys.clarity;
     <section class="activation-step activation-presence" data-step="presenca" aria-labelledby="activation-pause-title" hidden>
       <div class="activation-pause-panel" data-pause data-state="idle">
         <SensoryStage adaptive />
+        <p class="activation-kicker" data-key-name>{clarity.name}</p>
         <h1 id="activation-pause-title" class="activation-title" tabindex="-1">Antes de seguir, observe.</h1>
         <p class="activation-copy">Se desejar, faça uma breve pausa e perceba o que chama sua atenção agora.</p>
         <p class="activation-pause-status" data-pause-status role="status" aria-live="polite"></p>
@@ -114,34 +119,69 @@ const clarity = activationKeys.clarity;
         <h1 class="activation-title" tabindex="-1" data-key-question>{clarity.question}</h1>
         <div class="activation-form">
           <div class="activation-fields">
-            <label class="activation-field-label" for="activation-intention">Sua intenção <span>(opcional)</span></label>
+            <label class="activation-field-label" for="activation-intention">Sua pergunta ou intenção <span>(opcional)</span></label>
             <textarea id="activation-intention" class="activation-intention" rows="3" maxlength="600" autocomplete="off" data-intention aria-describedby="activation-privacy"></textarea>
-            <p id="activation-privacy">O texto fica nesta aba durante a experiência.</p>
+            <p id="activation-privacy">O rascunho fica nesta aba. Você decide se quer incluí-lo no registro.</p>
           </div>
           <fieldset class="activation-topics">
             <legend>Temas sugeridos</legend>
             {activationThemes.map(theme => (
               <button type="button" class="activation-topic" data-theme={theme.id} aria-pressed="false">{theme.label}</button>
             ))}
-            <button type="button" class="activation-topic" data-finish="unsure">Ainda não sei</button>
+            <button type="button" class="activation-topic" data-question-action="unsure">Ainda não sei</button>
           </fieldset>
           <div class="activation-actions">
-            <button type="button" class="activation-button activation-button--quiet" data-finish="nothing">Concluir sem registrar</button>
-            <button type="button" class="activation-button activation-button--primary" data-finish="register" disabled>
-              Registrar e concluir <span aria-hidden="true">→</span>
+            <button type="button" class="activation-button activation-button--quiet" data-question-action="without">Continuar sem registrar</button>
+            <button type="button" class="activation-button activation-button--primary" data-question-action="register" disabled>
+              Registrar e continuar <span aria-hidden="true">→</span>
             </button>
           </div>
         </div>
         <button type="button" class="activation-link" data-go="presenca"><span aria-hidden="true">←</span> Voltar</button>
       </div>
+    </section>
+
+    <section class="activation-step activation-exploration" data-step="caminhos" hidden>
+      <div data-exploration-panel>
+        <p class="activation-kicker">Caminhos de exploração</p>
+        <h1 class="activation-title" tabindex="-1">Como deseja explorar sua pergunta?</h1>
+        <p class="activation-copy">Há diferentes maneiras de olhar para uma situação. Escolha por onde deseja seguir.</p>
+        <fieldset class="activation-card-grid activation-path-grid">
+          <legend class="visually-hidden">Escolha um caminho de exploração</legend>
+          {paths.map(([id, path], index) => (
+            <label class="activation-card activation-path-card">
+              <input
+                type="radio"
+                name="caminho"
+                value={id}
+                aria-labelledby={`path-title-${id}`}
+                aria-describedby={`path-description-${id}`}
+              />
+              <span class="activation-card-body">
+                <span class="activation-path-number" aria-hidden="true">0{index + 1}</span>
+                <strong id={`path-title-${id}`} class="activation-card-title">{path.name}</strong>
+                <span id={`path-description-${id}`} class="activation-card-description">{path.description}</span>
+              </span>
+            </label>
+          ))}
+        </fieldset>
+        <div class="activation-actions">
+          <button type="button" class="activation-button activation-button--quiet" data-go="pergunta">
+            <span aria-hidden="true">←</span> Voltar à pergunta
+          </button>
+          <button type="button" class="activation-button activation-button--primary" data-confirm-path disabled>
+            Confirmar caminho <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </div>
       <div data-finish-panel hidden>
-        <SensoryStage adaptive />
         <p class="activation-kicker" data-key-name>{clarity.name}</p>
-        <h1 class="activation-title" tabindex="-1">Prévia concluída.</h1>
-        <p class="activation-copy" data-finish-message></p>
+        <h1 class="activation-title" tabindex="-1">Você escolheu <em data-path-name></em>.</h1>
+        <p class="activation-orienting-question" data-path-question></p>
+        <p class="activation-copy" data-path-transition></p>
         <dl class="activation-summary">
           <div data-finish-intention-wrap hidden>
-            <dt>Sua intenção</dt>
+            <dt>Sua pergunta ou intenção</dt>
             <dd data-finish-intention></dd>
           </div>
           <div data-finish-theme-wrap hidden>
@@ -149,12 +189,24 @@ const clarity = activationKeys.clarity;
             <dd data-finish-theme></dd>
           </div>
         </dl>
+        <p class="activation-session-note" data-finish-message></p>
+        <div class="activation-copy-actions">
+          <button type="button" class="activation-button activation-button--quiet" data-copy-record>Copiar meu registro</button>
+          <p data-copy-status role="status"></p>
+        </div>
+        <div class="activation-copy-fallback" data-copy-fallback hidden>
+          <label for="activation-copy-text">Registro para copiar manualmente</label>
+          <textarea id="activation-copy-text" data-copy-text readonly rows="6"></textarea>
+        </div>
         <div class="activation-actions">
           <button type="button" class="activation-button activation-button--quiet" data-edit-intention>
-            <span aria-hidden="true">←</span> Voltar à pergunta
+            <span aria-hidden="true">←</span> Editar pergunta
           </button>
-          <button type="button" class="activation-button activation-button--primary" data-restart>Recomeçar</button>
+          <button type="button" class="activation-button activation-button--primary" data-change-path>
+            Escolher outro caminho
+          </button>
         </div>
+        <button type="button" class="activation-link" data-restart>Recomeçar</button>
       </div>
     </section>
 
