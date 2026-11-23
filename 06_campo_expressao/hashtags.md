@@ -1,1 +1,0 @@
-#lichtara #lichtarainstitute #pesquisa #research #ciencia #science #consciencia #consciousness #tecnologia #technology #sistemas #systems #fenomenologia #phenomenology #estrutura #structure #comportamento #behavior #arquiteturavibracional #vibrationalarchitecture
