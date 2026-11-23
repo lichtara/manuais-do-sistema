@@ -1,7 +1,5 @@
 # Paper - TIC Tecnologia de Integração Consciente
 
-Proprietário: Débora Lutz
-
 # **Tecnologia de Integração Consciente (TIC)**
 
 # 1. Visão Geral
