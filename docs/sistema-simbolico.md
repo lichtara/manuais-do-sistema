@@ -1,4 +1,4 @@
-# Glyphografia
+# Sistema Simbólico
 
 ### 1. A Função dos Micro-Símbolos e Detalhes Pontilhados
 
