@@ -1,6 +1,6 @@
 # Ferramentas e Ativações
 
-Prévia local do Portal LICHTARA, da entrada à primeira pergunta. O protótipo usa a aplicação Astro em `site/`, com uma rota e um cabeçalho próprios. O cabeçalho permite visitar o Acervo.
+Prévia do Portal LICHTARA, da entrada à primeira pergunta. O protótipo usa a aplicação Astro em `site/`, com uma rota e um cabeçalho próprios. O cabeçalho permite visitar o Acervo. [Abrir a prévia publicada](https://acervo.lichtara.com/ativacoes/)
 
 ## Executar
 
@@ -42,7 +42,11 @@ No Chrome, o teste em 1440 × 1000 cobriu teclado, foco visível, link de salto,
 - Validar o nome da terceira chave, as formas e mensagens das chaves 02 e 03 e os usos definitivos da rosácea.
 - Selecionar filme, áudios, legendas e transcrições quando o material estiver pronto.
 - Testar a compreensão do percurso com pessoas novas no Portal.
-- Decidir o endereço de publicação. AT-05, Flux e a persistência fora da página ficam para etapas futuras.
+- AT-05, Flux e a persistência fora da página ficam para etapas futuras.
+
+## Publicação
+
+A prévia foi publicada manualmente em 23 de novembro de 2026 no projeto `acervo-lichtara` do Cloudflare Pages. O deploy acrescentou a rota `/ativacoes/` e seus recursos, preservando os 778 arquivos do manifesto anterior do Acervo, incluindo o índice Pagefind. Os testes de desktop e celular foram repetidos no endereço público por HTTPS. A prévia continua com a diretiva `noindex`.
 
 ## Arquivos do protótipo
 
