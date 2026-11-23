@@ -1,218 +1,179 @@
-# Portal LICHTARA — Aplicação e Expansão
+# STORYBOARD_APLICACAO_EXPANSAO.md
+
+# Sistema LICHTARA — Aplicação e Expansão
+## Storyboard de Interface · Flux
 
 **Projeto:** Sistema LICHTARA / Ecossistema Oktave  
-**Produto:** Portal LICHTARA  
+**Produto público:** LICHTARA  
 **Camada:** 03 — Aplicação e Expansão  
-**Motor funcional de referência:** Flux  
-**Versão:** 0.1.0  
-**Status:** Especificação inicial para design e desenvolvimento  
-**Dependências:** Acervo LICHTARA, Lumora, NAVROS e Ferramentas e Ativações
+**Interface:** LICHTARA · Flux  
+**Versão:** 0.2.0  
+**Status:** Especificação para prototipagem  
+**Princípio de experiência:** Presença · Compreensão · Ação
 
 ---
 
-# 1. Propósito
+## 1. Visão geral
 
-A interface de **Aplicação e Expansão** é o ambiente de continuidade prática do Portal LICHTARA.
+A camada **Aplicação e Expansão** representa a dimensão prática do Sistema LICHTARA.
 
-Sua função é permitir que uma intenção, percepção, descoberta ou aprendizado seja traduzido em uma ação possível, acompanhado ao longo do tempo e revisitado a partir de resultados observáveis.
+Sua interface, **Flux**, permite que o usuário transforme uma intenção, percepção, descoberta ou aprendizado em um movimento concreto, acompanhe seu desenvolvimento e revisite os resultados.
 
-Essa interface utiliza Flux como referência conceitual para organização e execução.
+A experiência não começa com um painel complexo de gerenciamento de projetos.
 
-Ela não substitui ferramentas completas de gerenciamento de projetos em sua primeira versão.
+Começa com uma pergunta simples:
 
-Seu objetivo inicial é oferecer uma passagem simples e funcional entre compreensão e movimento.
+> **O que você escolhe colocar em movimento?**
 
-### 1.1. Princípio central
+A partir dessa escolha, o sistema revela progressivamente as informações necessárias à organização da ação.
 
-> O que compreendi? O que escolho fazer? O que aconteceu depois?
+### 1.1. Propósito
 
-A interface deverá ajudar o usuário a formular essas perguntas e registrar suas próprias respostas.
+Permitir que uma pessoa:
 
-### 1.2. Resultado esperado
+- Identifique algo que deseja realizar.
+- Traduza uma intenção em um próximo passo.
+- Considere os recursos e limites envolvidos.
+- Organize sua execução.
+- Acompanhe o que acontece.
+- Registre resultados e aprendizados.
+- Amplie, ajuste ou encerre o percurso.
 
-O usuário deverá conseguir:
+### 1.2. Princípio central
 
-- Registrar uma intenção ou objetivo.
-- Identificar uma ação realizável.
-- Considerar recursos e condições necessárias.
-- Definir um momento de acompanhamento.
-- Atualizar o estado da ação.
-- Registrar resultados.
-- Revisar a estratégia.
-- Retornar ao Acervo ou às experiências de Lumora quando precisar de mais compreensão.
+**Uma intenção se transforma em possibilidade.  
+Uma escolha se transforma em ação.  
+Uma ação produz experiências que podem ser observadas e compreendidas.**
 
----
-
-# 2. Posição na arquitetura
-
-## 2.1. Relação com o Acervo
-
-O Acervo oferece fundamentos e referências documentais.
-
-Uma pessoa poderá consultar um manual, explorar um conceito e iniciar uma aplicação relacionada.
-
-A navegação deverá preservar a referência ao material consultado, quando disponível.
-
-## 2.2. Relação com Ferramentas e Ativações
-
-As Ativações permitem formular uma intenção, realizar uma experiência guiada e registrar percepções.
-
-O Flux recebe somente os dados que o usuário escolher encaminhar.
-
-A aplicação não presume que uma experiência subjetiva produziu uma transformação objetiva.
-
-## 2.3. Relação com NAVROS
-
-NAVROS representa a lógica de escolhas e transições entre caminhos.
-
-Nesta camada, poderá organizar alternativas como:
-
-- Criar uma ação.
-- Dividir uma ação em passos menores.
-- Revisar uma decisão.
-- Investigar um obstáculo.
-- Retornar ao conhecimento.
-- Encerrar ou pausar uma atividade.
-
-## 2.4. Relação com Lumora
-
-Lumora contribui com perguntas, conteúdo e aprofundamento.
-
-Flux organiza a aplicação e o acompanhamento.
-
-**Lumora favorece a compreensão. Flux sustenta a continuidade.**
+A manifestação é compreendida, na interface operacional, como o processo de dar forma concreta a intenções e projetos por meio de escolhas e ações observáveis.
 
 ---
 
-# 3. Princípios de UX
+## 2. Nomenclatura e posição no ecossistema
 
-### 3.1. Uma ação de cada vez
+### LICHTARA
 
-A primeira experiência não deve exigir a criação de um projeto completo.
+Nome público do produto digital, responsável por integrar as interfaces do sistema.
 
-O usuário poderá começar com um único próximo passo.
+### Camada 03 — Aplicação e Expansão
 
-### 3.2. Simplicidade sem simplificação excessiva
+Nome da terceira camada funcional.
 
-A interface oferece um caminho curto, mas permite adicionar informações quando forem necessárias.
+Abrange planejamento, realização, acompanhamento e aprendizagem a partir dos resultados.
 
-### 3.3. Autonomia
+### Flux
 
-O software pode sugerir perguntas e estruturas. A decisão de agir pertence ao usuário.
+Nome do componente operacional e da interface responsável por apoiar a execução prática.
 
-### 3.4. Acompanhamento sem cobrança
+### Ação e Manifestação
 
-Pausas, mudanças de prioridade e abandono de uma ação são possibilidades legítimas.
+Nome da terceira Chave de Ativação, pertencente à camada **Ferramentas e Ativações**.
 
-### 3.5. Aprendizado a partir dos resultados
+A chave oferece uma direção de entrada experiencial, mas não substitui Flux nem representa toda a terceira camada.
 
-A revisita permite comparar intenção, execução e resultado sem atribuir automaticamente sucesso ou fracasso à experiência inicial.
+### Lumora
 
-### 3.6. Continuidade entre camadas
+Participa da compreensão, da exploração de conhecimentos e da reflexão que pode anteceder ou acompanhar a ação.
 
-O usuário pode retornar ao Acervo ou às Ativações sem perder o contexto autorizado.
+### NAVROS
 
----
+Organiza escolhas, transições e possibilidades de continuidade entre as interfaces.
 
-# 4. Organização funcional
+### Regra arquitetural
 
-A interface contempla três modos iniciais de aplicação.
+**O usuário pode acessar Flux independentemente da chave escolhida.**
 
-## 4.1. Vida pessoal
-
-Exemplos:
-
-- Organizar uma rotina.
-- Explorar uma decisão cotidiana.
-- Iniciar um hábito.
-- Resolver uma pendência simples.
-- Acompanhar uma mudança de organização pessoal.
-
-## 4.2. Projetos e criação
-
-Exemplos:
-
-- Transformar uma ideia em tarefa.
-- Definir um primeiro protótipo.
-- Organizar entregas.
-- Identificar dependências.
-- Reduzir etapas desnecessárias.
-
-## 4.3. Trabalho e organizações
-
-Exemplos:
-
-- Examinar gargalos operacionais.
-- Definir prioridades.
-- Registrar decisões.
-- Planejar melhorias.
-- Acompanhar resultados.
-
-O modo selecionado ajusta a linguagem e alguns campos, mas não altera os princípios fundamentais da interface.
-
-No MVP, os três modos poderão utilizar o mesmo motor de ações.
+As três chaves não correspondem diretamente às três camadas do sistema.
 
 ---
 
-# 5. Fluxo principal
+## 3. Relação com as outras camadas
 
-`AE-00 Entrada no Flux`
+| Origem | O que oferece ao Flux |
+|---|---|
+| **Acervo LICHTARA** | Conceitos, materiais, referências e perguntas |
+| **Experiências LICHTARA / Lumora** | Intenções e percepções voluntariamente registradas |
+| **Acesso direto** | Uma intenção nova, sem percurso anterior |
 
-→ `AE-01 Contexto`
+O Flux deve aceitar qualquer uma dessas origens.
 
-→ `AE-02 Intenção`
-
-→ `AE-03 Próximo Movimento`
-
-→ `AE-04 Plano Essencial`
-
-→ `AE-05 Acompanhamento`
-
-→ `AE-06 Revisita`
-
-→ `AE-07 Síntese e Expansão`
-
-A ordem é uma referência para construção, não um bloqueio rígido.
-
-O usuário poderá retornar, editar, pausar ou encerrar o processo.
+A passagem de informações entre interfaces será explícita e controlada pelo usuário.
 
 ---
 
-# 6. Storyboard de telas
+## 4. Princípios de UX
 
-## AE-00 — Entrada no Flux
+### 4.1. Arquitetura matrioska
 
-**Objetivo:** apresentar a passagem para a aplicação prática.
+Uma pergunta central por tela e revelação progressiva de informações.
 
-**Mensagem principal:**
+### 4.2. Primeiro o movimento, depois a complexidade
 
-> O que deseja colocar em movimento?
+O usuário pode começar com uma única ação.
 
-**Texto de apoio:**
+A criação de projetos, subtarefas e fluxos complexos será opcional e posterior.
 
-“Uma intenção pode começar com um pequeno passo.”
+### 4.3. Ação consciente
 
-### Composição
+A interface ajuda a organizar possibilidades, mas não substitui a decisão do usuário.
 
-- Identidade visual LICHTARA.
-- Geometria suave relacionada a movimento e continuidade.
+### 4.4. Continuidade
+
+Cada ação poderá ser acompanhada, revisitada, modificada ou encerrada.
+
+### 4.5. Liberdade de percurso
+
+O usuário pode voltar, reformular, pausar ou abandonar uma ação sem penalização.
+
+### 4.6. Aprendizagem pela experiência
+
+Os resultados são oportunidades de observação e compreensão, não classificações automáticas de sucesso espiritual ou energético.
+
+---
+
+# 5. Storyboard de telas
+
+## AE-00 — A Entrada no Flux
+
+**Camada de experiência:** Abertura  
+**Objetivo:** estabelecer a passagem entre intenção e aplicação.
+
+### Composição visual
+
+- Fundo preto cósmico.
+- Caminho luminoso dourado em perspectiva.
+- Geometria sutil associada a continuidade e direção.
+- Identidade LICHTARA.
+- Identificação discreta do ambiente Flux.
 - Uma pergunta central.
-- Uma ação principal.
-- Acesso discreto às experiências e ao Acervo.
 
-### Possíveis estados de entrada
+### Mensagem principal
 
-**Entrada direta:** o usuário inicia uma aplicação sem experiência anterior.
+> **O que você escolhe colocar em movimento?**
 
-**Entrada a partir das Ativações:** a interface oferece importar a intenção ou reflexão selecionada.
+### Texto complementar
 
-**Entrada a partir do Acervo:** a interface apresenta uma referência documental de origem, quando disponível.
+“Todo movimento pode começar com um pequeno passo.”
 
 ### Ações
 
-- Criar meu próximo movimento.
-- Retomar uma ação existente.
-- Voltar ao Portal.
+**Criar meu próximo movimento**
+
+**Retomar uma ação**
+
+**Voltar ao Portal LICHTARA**
+
+### Comportamento contextual
+
+Quando o usuário chega de uma experiência Lumora, a tela pode oferecer:
+
+“Você gostaria de continuar a partir da sua reflexão anterior?”
+
+A importação só ocorre após confirmação.
+
+### Gatilho
+
+`flux.started`
 
 ### Transição
 
@@ -220,202 +181,201 @@ O usuário poderá retornar, editar, pausar ou encerrar o processo.
 
 ---
 
-## AE-01 — Escolha do Contexto
+## AE-01 — O Contexto da Ação
 
-**Objetivo:** compreender onde a ação será aplicada.
+**Camada de experiência:** Direcionamento  
+**Objetivo:** identificar o ambiente em que a intenção será aplicada.
 
-**Pergunta:**
+### Pergunta principal
 
-> Em que área deseja atuar?
+> **Onde deseja colocar essa intenção em prática?**
 
 ### Opções
 
-**Vida pessoal**
+**Minha vida**
 
-Organização, escolhas e rotina.
+Organização pessoal, rotina, decisões e pequenas mudanças.
 
-**Projeto ou criação**
+**Meu projeto**
 
-Ideias, protótipos e entregas.
+Ideias, desenvolvimento, criação e entregas.
 
-**Trabalho ou organização**
+**Meu trabalho**
 
-Processos, decisões e melhorias.
+Processos, prioridades, atividades e melhorias.
 
 **Ainda não sei**
 
-Permite prosseguir sem classificação.
+Continuar sem escolher um contexto.
 
 ### Comportamento
 
-A escolha ajusta exemplos, terminologia e perguntas posteriores.
+A seleção adapta exemplos e perguntas futuras.
 
-Não restringe funcionalidades essenciais.
+A classificação pode ser modificada posteriormente.
 
 ### Gatilho
 
-Confirmação do contexto.
+`context.selected`
 
 ### Transição
 
 `AE-02 — Intenção`
 
+### Regra
+
+O contexto não representa uma avaliação da prontidão do usuário.
+
 ---
 
 ## AE-02 — Clareza da Intenção
 
-**Objetivo:** transformar uma percepção geral em uma intenção compreensível.
+**Camada de experiência:** Formulação  
+**Objetivo:** tornar explícito o que a pessoa deseja realizar.
 
-**Pergunta principal:**
+### Pergunta principal
 
-> O que deseja realizar ou compreender melhor?
+> **O que deseja realizar neste momento?**
 
-### Composição
+### Campo principal
 
-Uma pergunta central e um campo de registro.
+**Minha intenção**
 
-Se a jornada vier das Ativações, exibir um resumo opcional e editável:
+Espaço livre de escrita.
 
-- Chave escolhida.
-- Pergunta original.
-- Reflexão selecionada.
+### Campos secundários opcionais
 
-### Campos
+**Por que isso importa para mim?**
 
-**Intenção**
+**O que já existe ou está acontecendo?**
 
-O que desejo?
+### Exemplo ilustrativo
 
-**Motivo**
+Intenção:
 
-Por que isso importa neste momento?
+“Quero transformar os materiais do meu projeto em uma ferramenta que outras pessoas consigam utilizar.”
 
-**Situação atual**
+### Comportamento
 
-O que já acontece ou existe?
+Se a jornada tiver origem em Lumora, a interface poderá apresentar a pergunta ou reflexão anterior como sugestão de contexto.
 
-Os dois últimos campos serão opcionais.
+O usuário pode aceitar, modificar ou ignorar essa informação.
 
 ### Ações
 
-- Continuar.
-- Editar.
-- Voltar.
-- Consultar uma referência no Acervo.
+**Continuar**
+
+**Reformular**
+
+**Voltar**
 
 ### Gatilho
 
-Confirmação da intenção.
+`intention.confirmed`
 
 ### Transição
 
-`AE-03 — Próximo Movimento`
+`AE-03 — Primeiro Movimento`
 
 ---
 
-## AE-03 — O Próximo Movimento
+## AE-03 — O Primeiro Movimento
 
-**Objetivo:** definir uma ação pequena e observável.
+**Camada de experiência:** Ação  
+**Objetivo:** transformar a intenção em algo realizável.
 
-**Pergunta principal:**
+### Pergunta principal
 
-> Qual é o próximo passo possível?
+> **Qual é o próximo passo possível?**
 
-### Apoio contextual
+### Texto de apoio
 
-“Comece por algo que consiga descrever e verificar.”
+“Não precisa ser o projeto inteiro. Apenas um movimento que você consiga realizar e observar.”
 
-### Campos
+### Campo principal
 
-**Ação**
+**Minha próxima ação**
 
-O que farei?
+### Exemplo ilustrativo
 
-**Primeiro gesto**
+Intenção:
 
-Como começarei?
+“Quero criar uma experiência interativa para meu projeto.”
 
-**Condição necessária**
+Próxima ação:
 
-De que preciso antes de executar?
-
-### Orientação de design
-
-Se a pessoa apresentar uma ação muito ampla, oferecer a possibilidade de dividi-la em passos menores.
-
-Exemplo:
-
-**Intenção:** organizar meu projeto.
-
-**Ação ampla:** concluir todo o planejamento.
-
-**Primeiro movimento possível:** listar as três entregas prioritárias.
+“Construir uma primeira tela navegável e testá-la no computador e no celular.”
 
 ### Ações
 
-- Registrar este passo.
-- Dividir em partes menores.
-- Rever minha intenção.
+**Registrar este passo**
+
+**Dividir em um passo menor**
+
+**Rever a intenção**
+
+### Comportamento
+
+Se a ação for ampla, o usuário poderá optar por simplificá-la com perguntas orientadoras.
+
+A interface não deve impor uma versão automaticamente considerada ideal.
 
 ### Gatilho
 
-Definição da ação.
+`action.defined`
 
 ### Transição
 
 `AE-04 — Plano Essencial`
 
-### Regra
-
-Não apresentar a ação sugerida pelo sistema como orientação obrigatória ou infalível.
-
 ---
 
 ## AE-04 — Plano Essencial
 
-**Objetivo:** estruturar a execução sem produzir sobrecarga.
+**Camada de experiência:** Preparação  
+**Objetivo:** organizar as condições mínimas de execução.
 
-**Mensagem:**
+### Pergunta principal
 
-> O que precisa estar pronto para começar?
+> **O que você precisa para começar?**
 
-### Componentes
+### Estrutura progressiva
 
-**Ação definida**
+**1. Recursos**
 
-Resumo editável.
+O que já tenho disponível?
 
-**Recursos**
+**2. Condições**
 
-O que está disponível ou será necessário?
+O que depende de outra pessoa, ferramenta ou decisão?
 
-**Dependências**
-
-Há algo que precisa acontecer antes?
-
-**Momento de execução**
+**3. Momento**
 
 Quando desejo começar?
 
-**Momento de revisita**
+**4. Revisita**
 
-Quando quero observar o resultado?
+Quando gostaria de observar o resultado?
 
-### Comportamento
+Todos os campos, exceto a ação anteriormente definida, poderão ser opcionais.
 
-A interface revela os campos progressivamente.
+### Composição
 
-Na primeira versão, não é necessário mostrar uma estrutura completa de gestão de projetos.
+A tela apresenta um campo por vez.
+
+A geometria de fundo permanece discreta para favorecer concentração.
 
 ### Ações
 
-- Confirmar meu plano.
-- Simplificar ainda mais.
-- Guardar como rascunho.
+**Confirmar meu plano**
+
+**Guardar como rascunho**
+
+**Simplificar**
 
 ### Gatilho
 
-Confirmação do plano.
+`plan.confirmed`
 
 ### Transição
 
@@ -423,183 +383,268 @@ Confirmação do plano.
 
 ---
 
-## AE-05 — Acompanhamento
+## AE-05 — O Movimento em Curso
 
-**Objetivo:** permitir que o usuário acompanhe uma ação registrada.
+**Camada de experiência:** Execução  
+**Objetivo:** permitir acompanhamento simples da ação.
 
-**Mensagem principal:**
+### Mensagem principal
 
-> Como está seu próximo movimento?
+> **Como está seu movimento?**
+
+### Composição
+
+Um cartão principal apresenta:
+
+- Ação escolhida.
+- Contexto.
+- Data de criação.
+- Data planejada, quando informada.
+- Estado atual.
+- Próxima revisita, quando definida.
 
 ### Estados possíveis
 
-**Planejado**
-
-A ação foi definida, mas não iniciada.
-
-**Em andamento**
-
-A execução começou.
-
-**Concluído**
-
-O usuário declara que realizou a ação.
-
-**Pausado**
-
-A ação foi temporariamente interrompida.
-
-**Descartado**
-
-O usuário decidiu não prosseguir.
-
-### Elementos
-
-- Descrição da ação.
-- Contexto.
-- Data de criação.
-- Estado atual.
-- Momento de revisita.
-- Histórico de atualizações.
+| Estado | Significado |
+|---|---|
+| Planejado | A ação foi definida |
+| Em andamento | O usuário iniciou a execução |
+| Concluído | O usuário registrou a realização |
+| Pausado | A ação foi temporariamente interrompida |
+| Descartado | O usuário decidiu não prosseguir |
 
 ### Ações
 
-- Iniciar.
-- Marcar como concluído.
-- Pausar.
-- Reformular.
-- Descartar.
-- Registrar observação.
+**Iniciar**
+
+**Marcar como concluído**
+
+**Pausar**
+
+**Reformular**
+
+**Registrar uma observação**
+
+### Comportamento
+
+O Flux não presume que uma ação foi realizada apenas porque chegou a data planejada.
 
 ### Gatilho
 
-Alteração explícita do estado da ação.
+`action.status_changed`
 
 ### Transição
 
-Permanecer em acompanhamento ou seguir para `AE-06`.
-
-### Regra
-
-A interface não presume que uma ação foi realizada por ter chegado a data prevista.
+Acompanhar a mesma ação ou abrir `AE-06 — Revisita`.
 
 ---
 
-## AE-06 — Revisita
+## AE-06 — Revisita e Aprendizado
 
-**Objetivo:** apoiar a reflexão sobre o que ocorreu após a ação.
+**Camada de experiência:** Observação dos resultados  
+**Objetivo:** permitir reflexão sobre o que ocorreu.
 
-**Mensagem principal:**
+### Pergunta principal
 
-> O que aconteceu depois?
+> **O que aconteceu depois?**
 
-### Perguntas
+### Perguntas complementares
 
-**O que foi realizado?**
+**O que consegui realizar?**
 
-Registro do acontecimento ou resultado.
-
-**O que observei?**
-
-Percepções sobre a execução.
+**O que observei durante a experiência?**
 
 **O que funcionou?**
 
-Aspectos úteis ou positivos.
-
-**O que precisa mudar?**
-
-Obstáculos, limites e ajustes.
+**O que mudou em relação ao plano inicial?**
 
 **O que aprendi?**
 
-Síntese pessoal.
+### Recursos
 
-### Recursos opcionais
-
-- Comparação entre intenção inicial e resultado.
-- Registro de indicadores concretos, quando existirem.
-- Histórico de alterações.
-- Anotações.
-- Nova data de acompanhamento.
+- Registro textual.
+- Data da revisita.
+- Comparação com a intenção inicial.
+- Histórico das observações anteriores.
+- Possibilidade de acrescentar novas revisitas.
 
 ### Ações
 
-- Registrar revisita.
-- Ajustar a ação.
-- Criar outro passo.
-- Voltar ao Acervo.
-- Retomar uma experiência Lumora.
+**Registrar minha revisita**
+
+**Ajustar o plano**
+
+**Criar outro movimento**
 
 ### Gatilho
 
-Registro voluntário de resultado ou aprendizado.
+`review.saved`
 
 ### Transição
 
-`AE-07 — Síntese e Expansão`
+`AE-07 — Expansão`
 
 ### Regra
 
-Resultados inesperados, neutros ou negativos devem poder ser registrados sem julgamento automático.
+Resultados inesperados, inconclusivos ou negativos são registros legítimos.
+
+Não devem produzir mensagens automáticas de desalinhamento ou fracasso pessoal.
 
 ---
 
-## AE-07 — Síntese e Expansão
+## AE-07 — Expansão e Continuidade
 
-**Objetivo:** integrar os registros e abrir novas possibilidades.
+**Camada de experiência:** Integração  
+**Objetivo:** abrir caminhos a partir do que foi aprendido.
 
-**Mensagem principal:**
+### Pergunta principal
 
-> O que deseja fazer com o que aprendeu?
+> **O que deseja fazer com o que aprendeu?**
 
-### Síntese apresentada
+### Composição
+
+Síntese da jornada:
 
 - Intenção inicial.
-- Contexto.
-- Ação escolhida.
-- Estado atual.
-- Resultados registrados.
+- Próximo movimento definido.
+- Estado da ação.
+- Resultados.
 - Aprendizados.
-- Referências relacionadas.
+- Referências de origem, quando existirem.
 
-### Novos caminhos
+### Possibilidades
 
 **Continuar no Flux**
 
-Criar um próximo passo.
+Criar outro movimento ou aprofundar o plano.
 
-**Aprofundar no Lumora**
+**Explorar em Lumora**
 
-Explorar outra pergunta ou experiência.
+Retornar à experiência e à compreensão.
 
 **Consultar o Acervo**
 
-Examinar conceitos ou fontes relacionadas.
+Investigar conceitos e referências documentais.
 
 **Encerrar este ciclo**
 
-Guardar a síntese.
-
-**Exportar registro**
-
-Gerar uma cópia dos dados selecionados.
+Guardar a síntese sem criar outra ação.
 
 ### Gatilho
 
-Escolha do próximo caminho.
+`continuation.selected`
 
-### Destino
+### Transição
 
-Nova ação, Acervo, Ativações ou encerramento da sessão.
+Novo percurso no sistema ou encerramento da jornada.
 
 ---
 
-# 7. Modelo inicial de dados
+# 6. Fluxo de navegação
 
-O sistema deverá representar ações e revisitas com identificadores estáveis.
+```text
+AE-00  Entrada no Flux
+          |
+          v
+AE-01  Contexto
+          |
+          v
+AE-02  Intenção
+          |
+          v
+AE-03  Primeiro Movimento
+          |
+          v
+AE-04  Plano Essencial
+          |
+          v
+AE-05  Acompanhamento
+          |
+          v
+AE-06  Revisita
+          |
+          v
+AE-07  Expansão e Continuidade
+          |
+          +--> Novo movimento no Flux
+          |
+          +--> Experiência Lumora
+          |
+          +--> Acervo LICHTARA
+          |
+          +--> Encerrar
+```
 
-Modelo conceitual:
+### Caminhos alternativos
+
+- Entrada direta, sem ativação anterior.
+- Entrada a partir do Acervo.
+- Entrada a partir de uma experiência Lumora.
+- Omissão de campos opcionais.
+- Retorno a etapas anteriores.
+- Alteração de uma ação.
+- Pausa ou descarte de uma atividade.
+- Conclusão sem criação de uma nova ação.
+
+A navegação é progressiva, mas não rigidamente linear.
+
+---
+
+# 7. Relação com as três Chaves de Ativação
+
+As Chaves de Ativação pertencem à camada de Ferramentas e Ativações.
+
+Elas podem influenciar a forma de introduzir uma experiência, mas não alteram a finalidade básica do Flux.
+
+| Chave de origem | Possível conexão com Flux |
+|---|---|
+| Expansão e Clareza | Transformar uma compreensão em experimento |
+| Alinhamento e Equilíbrio | Organizar prioridades ou ajustar uma rotina |
+| Ação e Manifestação | Definir e iniciar um movimento concreto |
+
+Esses são exemplos, não restrições.
+
+Qualquer usuário pode utilizar qualquer funcionalidade do Flux.
+
+---
+
+# 8. Integração das interfaces
+
+## 8.1. Acervo → Flux
+
+Um documento pode apresentar a opção:
+
+**Aplicar este conhecimento**
+
+O Flux poderá receber o identificador, título e URL da fonte, desde que a associação seja válida.
+
+## 8.2. Lumora → Flux
+
+Uma experiência pode apresentar:
+
+**Levar esta intenção para Flux**
+
+O usuário seleciona quais informações deseja transportar.
+
+## 8.3. Flux → Lumora
+
+Durante a execução, o usuário pode retornar a uma pergunta ou experiência relacionada.
+
+## 8.4. Flux → Acervo
+
+O usuário pode consultar documentos e retornar à ação.
+
+### Requisitos de integração
+
+- Preservar referências de origem.
+- Evitar duplicação desnecessária de registros.
+- Solicitar confirmação antes de transferir conteúdo pessoal.
+- Não colocar reflexões privadas em URLs.
+- Garantir continuidade mesmo quando uma interface estiver indisponível.
+
+---
+
+# 9. Modelo conceitual de dados
 
 ```ts
 type ActionStatus =
@@ -609,19 +654,30 @@ type ActionStatus =
   | "paused"
   | "discarded";
 
+type ActionContext =
+  | "personal"
+  | "project"
+  | "work"
+  | "unspecified";
+
 type ActionPlan = {
   id: string;
   originJourneyId?: string;
-  context?: "personal" | "project" | "work";
+  originKey?: "clarity" | "balance" | "action";
+  context: ActionContext;
+
   intention: string;
   reason?: string;
   nextStep: string;
   firstMove?: string;
   requirements?: string;
+
   plannedDate?: string;
   reviewDate?: string;
+
   status: ActionStatus;
   sourceReferences?: string[];
+
   createdAt: string;
   updatedAt: string;
 };
@@ -630,6 +686,7 @@ type ActionReview = {
   id: string;
   actionId: string;
   recordedAt: string;
+
   observedResult?: string;
   whatWorked?: string;
   whatChanged?: string;
@@ -638,303 +695,248 @@ type ActionReview = {
 };
 ```
 
-### Regras de implementação
+### Regras
 
-- Uma ação pode existir sem jornada de ativação anterior.
-- Uma jornada pode originar nenhuma, uma ou várias ações ao longo do tempo.
-- Uma ação pode ter várias revisitas.
-- Revisitas não devem sobrescrever registros históricos.
-- O usuário pode editar ou descartar uma ação.
-- Ações descartadas não devem ser interpretadas automaticamente como fracasso.
-- Informações pessoais não devem ser compartilhadas entre aplicações sem consentimento.
-
----
-
-# 8. Integração entre as três camadas
-
-## 8.1. Acervo → Flux
-
-Um capítulo ou conceito poderá oferecer uma ação contextual:
-
-**Aplicar este conhecimento**
-
-O Flux receberá, quando possível:
-
-- Identificador da fonte.
-- Título do conteúdo.
-- Link de referência.
-- Tema selecionado.
-
-O sistema não deverá presumir uma ação específica sem escolha do usuário.
-
-## 8.2. Ativações → Flux
-
-A jornada poderá oferecer:
-
-**Transformar esta percepção em ação**
-
-O usuário poderá revisar e escolher o conteúdo transferido:
-
-- Intenção.
-- Reflexão.
-- Chave escolhida.
-- Referências documentais.
-
-A informação será apresentada como contexto, não como comando.
-
-## 8.3. Flux → Acervo
-
-Durante uma ação, o usuário poderá consultar fontes e retornar ao plano sem perder o estado da sessão.
-
-## 8.4. Flux → Ativações
-
-A pessoa poderá iniciar outra experiência quando desejar explorar uma pergunta, reorganizar prioridades ou reconsiderar uma decisão.
-
-## 8.5. Regra de integração
-
-No MVP, priorizar identificadores estáveis, referências e dados exportáveis.
-
-Não transportar textos pessoais por parâmetros de URL.
-
-Caso as interfaces sejam publicadas em domínios diferentes, definir uma estratégia explícita de transferência de dados antes de implementar sincronização automática.
+- Uma ação pode existir sem ativação anterior.
+- Uma experiência pode originar nenhuma ou várias ações.
+- Uma ação pode ter múltiplas revisitas.
+- As revisitas não sobrescrevem o histórico.
+- O usuário pode modificar ou descartar ações.
+- As alterações importantes devem ser rastreáveis.
+- A exclusão e a exportação dos registros devem ser previstas.
 
 ---
 
-# 9. Componentes reutilizáveis
+# 10. Design visual
+
+A terceira camada deverá conservar a identidade do Portal LICHTARA.
+
+### Paleta inicial
+
+| Token | Valor |
+|---|---|
+| Preto cósmico | `#050A15` |
+| Azul profundo | `#0B1E38` |
+| Dourado | `#D8B97A` |
+| Champagne | `#F3E5C9` |
+| Texto secundário | `#A6B4CC` |
+
+Esses valores devem ser reconciliados com os tokens efetivamente implementados no Acervo.
+
+### Linguagem visual
+
+**Ativações:** geometrias, movimento contemplativo, presença e descoberta.
+
+**Flux:** geometria discreta, hierarquia clara, campos objetivos e feedback operacional.
+
+### Princípio
+
+Flux não precisa parecer uma planilha ou um gerenciador empresarial convencional.
+
+Também não deve sacrificar usabilidade em favor da estética sensorial.
+
+**A experiência pode ser bonita sem tornar a execução complicada.**
+
+---
+
+# 11. Componentes para Figma e desenvolvimento
 
 | Componente | Função |
 |---|---|
-| `FluxShell` | Estrutura visual da aplicação |
+| `FluxShell` | Estrutura principal |
 | `ContextSelector` | Escolha do contexto |
-| `IntentionEditor` | Formulação da intenção |
-| `NextStepEditor` | Definição da ação |
-| `EssentialPlan` | Recursos, dependências e datas |
-| `ActionStatusControl` | Atualização do estado |
-| `ReviewEditor` | Registro de resultados |
-| `ActionTimeline` | Histórico de revisitas |
-| `CycleSummary` | Síntese da jornada |
-| `CrossLayerNavigation` | Navegação entre Acervo, Ativações e Flux |
+| `IntentionEditor` | Registro da intenção |
+| `NextStepEditor` | Formulação da ação |
+| `PlanEssentials` | Recursos e condições |
+| `ActionCard` | Visualização da ação |
+| `ActionStatusControl` | Atualização de estado |
+| `ReviewEditor` | Registro da revisita |
+| `JourneyTimeline` | Histórico |
+| `CycleSummary` | Síntese |
+| `CrossLayerNavigation` | Integração com Acervo e Lumora |
 
-### Estados de componente
+### Estados de interface
 
-Padrão, foco, edição, validação, salvando, salvo, erro e indisponível, conforme aplicável.
-
----
-
-# 10. Identidade visual
-
-A interface Flux deverá integrar-se à identidade do Portal LICHTARA.
-
-### Diretrizes
-
-- Azul profundo e preto cósmico como base.
-- Dourado em ações e pontos de destaque.
-- Tipografia consistente com o Acervo.
-- Geometrias utilizadas com discrição.
-- Espaços generosos.
-- Hierarquia visual clara.
-- Formulários simples.
-- Feedback textual compreensível.
-
-### Diferença de linguagem visual
-
-**Ativações:** experiência sensorial, contemplativa e exploratória.
-
-**Flux:** experiência objetiva, organizada e orientada à execução.
-
-A unidade visual permanece, mas a quantidade de estímulos e controles deverá se adequar à função de cada interface.
+Padrão, foco, edição, carregamento, erro, salvo, pausado e concluído.
 
 ---
 
-# 11. Segurança, privacidade e acessibilidade
+# 12. Multimídia
+
+Flux poderá utilizar recursos audiovisuais quando forem pertinentes à experiência.
+
+### Possibilidades
+
+- Pequenas introduções narradas.
+- Vídeos de orientação.
+- Animações de transição.
+- Recursos visuais para organizar ações.
+- Áudios breves de reflexão durante revisitas.
+
+Entretanto, o uso de áudio e vídeo não será obrigatório para criar, acompanhar ou concluir uma ação.
+
+**A execução prática permanece como prioridade funcional.**
+
+---
+
+# 13. Privacidade, responsabilidade e acessibilidade
 
 ### Privacidade
 
 - Não exigir cadastro no MVP.
-- Evitar coleta de dados além do necessário.
+- Informar onde os registros são armazenados.
 - Permitir exclusão e exportação.
-- Informar claramente onde os registros são armazenados.
-- Não enviar registros pessoais para serviços de IA sem autorização.
-- Não usar dados subjetivos para inferir estados psicológicos ou espirituais.
+- Não transferir registros privados automaticamente entre aplicações.
+- Não utilizar textos pessoais em URLs compartilháveis.
+- Evitar envio a serviços externos sem autorização explícita.
 
 ### Responsabilidade
 
-A plataforma apoia organização e reflexão.
+O Flux é uma ferramenta de apoio à organização e à reflexão.
 
-Não substitui aconselhamento profissional ou análise apropriada para decisões de alto impacto.
+Não deve apresentar decisões sugeridas como verdades absolutas ou determinações provenientes do Campo.
 
-Ações importantes poderão exigir investigação adicional, consulta a especialistas e consideração de riscos.
+Decisões de alto impacto exigem avaliação contextual e, quando adequado, orientação especializada.
 
 ### Acessibilidade
 
 - Navegação por teclado.
-- Controles com foco visível.
-- Campos com rótulos.
-- Mensagens de erro compreensíveis.
+- Rótulos claros nos campos.
+- Foco visível.
 - Contraste adequado.
-- Uso em celular.
-- Ausência de dependência de animações.
-- Disponibilidade de recursos sem áudio.
+- Mensagens de erro compreensíveis.
+- Uso responsivo.
+- Alternativas a animações.
+- Funcionamento sem áudio.
 
 ---
 
-# 12. MVP
+# 14. MVP da terceira camada
 
-## P0 — Essencial
+## P0 — Primeira versão funcional
 
-1. Entrar na interface Flux.
-2. Selecionar um contexto ou prosseguir sem classificação.
+O usuário deverá conseguir:
+
+1. Entrar no Flux.
+2. Escolher um contexto ou ignorar essa classificação.
 3. Registrar uma intenção.
-4. Criar um próximo movimento.
-5. Definir uma revisita opcional.
-6. Salvar uma ação.
-7. Atualizar seu estado.
-8. Registrar um resultado.
-9. Criar uma nova ação a partir do aprendizado.
-10. Retornar ao Acervo ou às Ativações.
+4. Definir uma próxima ação.
+5. Criar um plano essencial.
+6. Salvar a ação.
+7. Alterar seu estado.
+8. Registrar uma revisita.
+9. Consultar seu histórico.
+10. Escolher outro caminho no sistema.
 
-## P1 — Aprimoramento
+## P1 — Ampliação funcional
 
 - Várias ações por projeto.
 - Organização de prioridades.
-- Histórico local de ciclos.
-- Exportação em Markdown ou JSON.
-- Visualização de dependências.
-- Filtros de ações.
-- Conteúdos Lumora relacionados.
+- Filtros.
+- Exportação estruturada.
+- Histórico de jornadas.
+- Conexões documentais.
+- Recursos para simplificação de processos.
 
-## P2 — Evolução futura
+## P2 — Expansão futura
 
 - Contas e sincronização.
-- Gestão colaborativa.
-- Permissões por projeto.
+- Projetos colaborativos.
+- Permissões.
 - Integrações com ferramentas externas.
-- Recomendações contextuais por IA.
 - Automação supervisionada.
-- Indicadores de projetos e organizações.
-- Expansão comunitária.
+- Recomendações contextuais.
+- Indicadores operacionais.
 
 ---
 
-# 13. Critérios de aceite
+# 15. Critérios de aceite
 
-O MVP estará funcional quando:
+O protótipo será considerado funcional quando:
 
-1. O usuário conseguir iniciar uma aplicação sem participar das Ativações.
-2. Uma intenção puder ser transformada em ação.
-3. A ação puder ser editada e salva.
-4. O estado da ação puder ser atualizado.
-5. Uma revisita puder ser registrada.
-6. O histórico de revisitas permanecer consultável.
-7. O usuário puder retornar às outras camadas.
-8. A aplicação funcionar em desktop e celular.
-9. Os controles funcionarem por teclado.
-10. A interface não declarar resultados não observados.
-11. A ação não for marcada automaticamente como concluída.
-12. Dados pessoais não forem transmitidos sem autorização.
-
----
-
-# 14. Indicadores de validação do piloto
-
-A validação inicial deverá observar utilidade e comportamento, não supostos efeitos energéticos.
-
-### Indicadores possíveis
-
-**Compreensão da interface**
-
-O usuário entende o que deve fazer?
-
-**Conversão de intenção em ação**
-
-Consegue formular um passo concreto?
-
-**Continuidade**
-
-Consegue retornar ao registro?
-
-**Revisita**
-
-Consegue registrar o que aconteceu?
-
-**Utilidade percebida**
-
-Considera que a experiência ajudou a organizar uma decisão ou atividade?
-
-Esses indicadores não devem ser apresentados como comprovação de efeitos espirituais, fisiológicos ou terapêuticos.
+- A navegação principal puder ser concluída.
+- O usuário compreender o propósito de cada tela.
+- A ação for formulada sem necessidade de criar um projeto complexo.
+- Dados obrigatórios e opcionais estiverem claramente diferenciados.
+- O registro puder ser salvo e recuperado.
+- O estado da ação puder ser modificado.
+- A revisita puder ser registrada sem sobrescrever histórico anterior.
+- Os caminhos de retorno funcionarem.
+- As interfaces desktop e mobile forem utilizáveis.
+- Os controles principais forem acessíveis por teclado.
+- O software não presumir resultados, sentimentos ou mudanças não registrados.
 
 ---
 
-# 15. Decisões em aberto
+# 16. Critérios de validação com usuários
 
-- Nome público definitivo da interface operacional.
-- Local de hospedagem.
-- Estratégia de persistência.
-- Integração com outras ferramentas.
-- Modelo de projetos com múltiplas ações.
-- Política de notificações.
-- Modelo de usuários e permissões.
-- Conteúdos audiovisuais complementares.
-- Relatórios e indicadores futuros.
+A primeira avaliação deverá investigar:
 
-Essas definições podem ser feitas após o primeiro ciclo de testes.
+**Clareza:** a pessoa entende o que está sendo proposto?
 
----
+**Simplicidade:** consegue criar uma ação sem esforço desnecessário?
 
-# 16. Conexão com a arquitetura matrioska
+**Autonomia:** sente que pode modificar ou abandonar o percurso?
 
-A terceira camada também seguirá o princípio de revelação progressiva.
+**Continuidade:** consegue reencontrar seus registros?
 
-Exemplo:
+**Aplicabilidade:** a interface ajuda a organizar um movimento que pode ser realizado na vida real?
 
-**O que deseja realizar?**
+**Aprendizado:** a revisita ajuda a compreender o que aconteceu?
 
-↓
-
-**Qual é o próximo passo possível?**
-
-↓
-
-**O que precisa para começar?**
-
-↓
-
-**Como está seu movimento?**
-
-↓
-
-**O que aconteceu depois?**
-
-↓
-
-**O que deseja fazer com o que aprendeu?**
-
-O usuário não precisa criar um plano complexo antes de realizar sua primeira ação.
-
-A profundidade da ferramenta cresce conforme a necessidade.
+As respostas serão dados de avaliação de experiência, não evidências automáticas de efeitos energéticos ou terapêuticos.
 
 ---
 
-# 17. Referências de projeto
+# 17. Decisões consolidadas
 
-- `STORYBOARD_INTERFACE.md` — arquitetura geral.
-- `STORYBOARD_ATIVACOES.md` — experiência sensorial e navegação.
-- Acervo LICHTARA — base documental e fontes originais.
-- Manuais Flux — referência conceitual para organização e aplicação.
-- Manuais Lumora — referência para experiências e aprofundamento.
+1. A terceira camada chama-se **Aplicação e Expansão**.
+2. Sua interface operacional é **Flux**.
+3. A terceira Chave de Ativação chama-se **Ação e Manifestação**.
+4. Todas as chaves podem conduzir ao Flux.
+5. Flux pode ser acessado diretamente.
+6. A experiência utiliza revelação progressiva.
+7. O primeiro movimento concreto antecede funcionalidades avançadas de gestão.
+8. A revisita faz parte do percurso.
+9. O usuário mantém autonomia sobre decisões, registros e continuidade.
+10. A identidade pública permanece **LICHTARA**.
 
-Os caminhos e as relações documentais deverão ser conferidos no repositório antes de criar links definitivos.
+---
+
+# 18. Próximos marcos de desenvolvimento
+
+### Marco 01 — Protótipo visual
+
+Criar no Figma as telas `AE-00` a `AE-04`.
+
+### Marco 02 — Ciclo funcional
+
+Implementar criação e acompanhamento de uma ação simples.
+
+### Marco 03 — Revisita
+
+Permitir registrar resultados e aprendizados.
+
+### Marco 04 — Integração
+
+Conectar Flux ao Acervo e às Experiências LICHTARA por meio de referências e transições explícitas.
 
 ---
 
 ## Princípio final
 
-A experiência não termina quando surge uma compreensão.
+A experiência não termina quando uma pessoa percebe uma possibilidade.
 
-Ela pode continuar por meio de uma escolha, de uma ação, de um resultado e de uma nova pergunta.
+Ela pode continuar quando essa possibilidade se transforma em uma escolha.
 
-**Presença para perceber.  
-Compreensão para escolher.  
-Ação para transformar.**
+A escolha pode dar origem a uma ação.
+
+A ação pode produzir resultados que merecem ser observados, compreendidos e revisados.
+
+**LICHTARA — Presença para perceber. Compreensão para escolher. Ação para transformar.**
 
 *Uma luz de cada vez. Uma descoberta de cada vez. Um caminho que se revela enquanto caminhamos.*
+
+---
+
+*Documento de especificação funcional do Sistema LICHTARA. A implementação técnica deverá ser validada de acordo com o comportamento real do software e as necessidades de seus usuários.*
