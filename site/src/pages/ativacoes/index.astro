@@ -1,0 +1,169 @@
+---
+import ActivationShell from '../../layouts/ActivationShell.astro';
+import GeometricKey from '../../components/ativacoes/GeometricKey.astro';
+import SensoryStage from '../../components/ativacoes/SensoryStage.astro';
+import { activationKeys, activationSteps, activationThemes, type ActivationKey } from '../../lib/ativacoes';
+
+const keys = Object.entries(activationKeys) as [ActivationKey, (typeof activationKeys)[ActivationKey]][];
+const clarity = activationKeys.clarity;
+---
+<ActivationShell>
+  <div class="activation-frame container">
+    <div class="activation-orientation">
+      <ol class="activation-progress" aria-label="Progresso da experiência">
+        {activationSteps.map(step => (
+          <li data-progress-step={step.id} aria-current={step.id === 'entrada' ? 'step' : undefined}>
+            <i aria-hidden="true"></i>
+            <span>{step.label}</span>
+          </li>
+        ))}
+      </ol>
+      <p aria-hidden="true" class="activation-step-label" data-step-label>Etapa 1 de 5 · Entrada</p>
+    </div>
+
+    <section class="activation-step activation-entry" data-step="entrada" aria-labelledby="activation-entry-title">
+      <SensoryStage />
+      <h1 id="activation-entry-title" class="activation-title" tabindex="-1">Por onde deseja <em>começar?</em></h1>
+      <p class="activation-copy">Escolha uma chave e encontre uma primeira pergunta para explorar no seu ritmo.</p>
+      <div class="activation-actions">
+        <button type="button" class="activation-button activation-button--primary" data-go="chaves">
+          Iniciar experiência <span aria-hidden="true">→</span>
+        </button>
+      </div>
+      <details class="activation-about">
+        <summary>Sobre esta experiência</summary>
+        <p>Uma prévia do Portal LICHTARA com três caminhos de exploração, uma pausa opcional e uma pergunta para refletir. As escolhas ficam nesta aba durante a experiência.</p>
+      </details>
+      <noscript><p>Ative o JavaScript para abrir as etapas da experiência.</p></noscript>
+    </section>
+
+    <section class="activation-step activation-choice" data-step="chaves" aria-labelledby="activation-keys-title" hidden>
+      <h1 id="activation-keys-title" class="activation-title" tabindex="-1">O que desperta sua atenção neste momento?</h1>
+      <p class="activation-copy">Escolha uma direção para começar.</p>
+      <fieldset class="activation-card-grid">
+        <legend class="visually-hidden">Escolha uma chave</legend>
+        {keys.map(([id, key]) => (
+          <label class="activation-card">
+            <input
+              type="radio"
+              name="chave"
+              value={id}
+              aria-labelledby={`key-title-${id}`}
+              aria-describedby={`key-description-${id}`}
+            />
+            <span class="activation-card-body">
+              <GeometricKey variant={id} />
+              <strong id={`key-title-${id}`} class="activation-card-title">{key.name}</strong>
+              <span id={`key-description-${id}`} class="activation-card-description">
+                {key.description}
+                {key.provisional && <span class="activation-card-note">Em estudo</span>}
+              </span>
+            </span>
+          </label>
+        ))}
+      </fieldset>
+      <div class="activation-actions">
+        <button type="button" class="activation-button activation-button--quiet" data-go="entrada">
+          <span aria-hidden="true">←</span> Voltar
+        </button>
+        <button type="button" class="activation-button activation-button--primary" data-confirm-key disabled>
+          Confirmar chave <span aria-hidden="true">→</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="activation-step activation-response" data-step="resposta" aria-labelledby="activation-response-title" hidden>
+      <SensoryStage adaptive />
+      <h1 id="activation-response-title" class="activation-title" tabindex="-1">Você escolheu <em data-key-name>{clarity.name}</em>.</h1>
+      <p class="activation-copy" data-key-response>{clarity.response}</p>
+      <div class="activation-actions">
+        <button type="button" class="activation-button activation-button--quiet" data-go="chaves">
+          <span aria-hidden="true">←</span> Escolher outra chave
+        </button>
+        <button type="button" class="activation-button activation-button--primary" data-go="presenca">
+          Continuar <span aria-hidden="true">→</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="activation-step activation-presence" data-step="presenca" aria-labelledby="activation-pause-title" hidden>
+      <div class="activation-pause-panel" data-pause data-state="idle">
+        <SensoryStage adaptive />
+        <h1 id="activation-pause-title" class="activation-title" tabindex="-1">Antes de seguir, observe.</h1>
+        <p class="activation-copy">Se desejar, faça uma breve pausa e perceba o que chama sua atenção agora.</p>
+        <p class="activation-pause-status" data-pause-status role="status" aria-live="polite"></p>
+        <div class="activation-actions">
+          <button type="button" class="activation-button activation-button--primary" data-pause-start>
+            Iniciar pausa <span aria-hidden="true">·</span> 10 s
+          </button>
+          <button type="button" class="activation-button activation-button--quiet" data-pause-stop hidden>Encerrar pausa</button>
+          <button type="button" class="activation-button activation-button--quiet" data-pause-skip>
+            Continuar sem pausa <span aria-hidden="true">→</span>
+          </button>
+          <button type="button" class="activation-button activation-button--primary" data-pause-continue hidden>
+            Seguir para a pergunta <span aria-hidden="true">→</span>
+          </button>
+        </div>
+        <button type="button" class="activation-link" data-go="resposta"><span aria-hidden="true">←</span> Voltar</button>
+      </div>
+    </section>
+
+    <section class="activation-step activation-question" data-step="pergunta" hidden>
+      <div data-question-panel>
+        <p class="activation-kicker" data-key-name>{clarity.name}</p>
+        <h1 class="activation-title" tabindex="-1" data-key-question>{clarity.question}</h1>
+        <div class="activation-form">
+          <div class="activation-fields">
+            <label class="activation-field-label" for="activation-intention">Sua intenção <span>(opcional)</span></label>
+            <textarea id="activation-intention" class="activation-intention" rows="3" maxlength="600" autocomplete="off" data-intention aria-describedby="activation-privacy"></textarea>
+            <p id="activation-privacy">O texto fica nesta aba durante a experiência.</p>
+          </div>
+          <fieldset class="activation-topics">
+            <legend>Temas sugeridos</legend>
+            {activationThemes.map(theme => (
+              <button type="button" class="activation-topic" data-theme={theme.id} aria-pressed="false">{theme.label}</button>
+            ))}
+            <button type="button" class="activation-topic" data-finish="unsure">Ainda não sei</button>
+          </fieldset>
+          <div class="activation-actions">
+            <button type="button" class="activation-button activation-button--quiet" data-finish="nothing">Concluir sem registrar</button>
+            <button type="button" class="activation-button activation-button--primary" data-finish="register" disabled>
+              Registrar e concluir <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+        <button type="button" class="activation-link" data-go="presenca"><span aria-hidden="true">←</span> Voltar</button>
+      </div>
+      <div data-finish-panel hidden>
+        <SensoryStage adaptive />
+        <p class="activation-kicker" data-key-name>{clarity.name}</p>
+        <h1 class="activation-title" tabindex="-1">Prévia concluída.</h1>
+        <p class="activation-copy" data-finish-message></p>
+        <dl class="activation-summary">
+          <div data-finish-intention-wrap hidden>
+            <dt>Sua intenção</dt>
+            <dd data-finish-intention></dd>
+          </div>
+          <div data-finish-theme-wrap hidden>
+            <dt>Tema escolhido</dt>
+            <dd data-finish-theme></dd>
+          </div>
+        </dl>
+        <div class="activation-actions">
+          <button type="button" class="activation-button activation-button--quiet" data-edit-intention>
+            <span aria-hidden="true">←</span> Voltar à pergunta
+          </button>
+          <button type="button" class="activation-button activation-button--primary" data-restart>Recomeçar</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="activation-footer">
+      <p>Uma luz de cada vez. Uma descoberta de cada vez. Um caminho que se revela enquanto caminhamos.</p>
+    </footer>
+  </div>
+</ActivationShell>
+
+<script>
+  import '../../scripts/ativacoes';
+</script>

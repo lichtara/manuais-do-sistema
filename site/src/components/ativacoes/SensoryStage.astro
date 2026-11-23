@@ -1,0 +1,23 @@
+---
+import GeometricKey from './GeometricKey.astro';
+import { activationKeys, type ActivationKey } from '../../lib/ativacoes';
+
+const { adaptive = false } = Astro.props as { adaptive?: boolean };
+const keys = Object.keys(activationKeys) as ActivationKey[];
+---
+<div class="activation-art" aria-hidden="true">
+  <div class="activation-orbit"></div>
+  <div class="activation-geometry">
+    {adaptive ? keys.map(key => (
+      <div data-key-variant={key} hidden={key !== 'clarity'}>
+        <GeometricKey variant={key} />
+      </div>
+    )) : <GeometricKey variant="clarity" />}
+  </div>
+</div>
+{(Astro.slots.has('video') || Astro.slots.has('audio')) && (
+  <div class="activation-media">
+    <slot name="video" />
+    <slot name="audio" />
+  </div>
+)}

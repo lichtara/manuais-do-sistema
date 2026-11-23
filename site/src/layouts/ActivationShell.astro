@@ -1,0 +1,37 @@
+---
+import '@fontsource-variable/manrope/wght.css';
+import '@fontsource/cinzel/latin-400.css';
+import '@fontsource/cormorant-garamond/latin-500.css';
+import '@fontsource/cormorant-garamond/latin-500-italic.css';
+import '@fontsource/cormorant-garamond/latin-600.css';
+import '../styles/global.css';
+import '../styles/ativacoes.css';
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#050a15" />
+    <meta name="description" content="Escolha uma chave e encontre uma primeira pergunta para explorar no seu ritmo." />
+    <link rel="icon" type="image/svg+xml" href="/identidade/matriz.svg" />
+    <title>Ferramentas e Ativações · Portal LICHTARA</title>
+  </head>
+  <body class="site-dark activation-page">
+    <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo</a>
+    <header class="activation-header">
+      <div class="container activation-header-inner">
+        <a class="site-brand activation-brand" href="/ativacoes/" aria-label="Início de Ferramentas e Ativações · Portal LICHTARA">
+          <img src="/identidade/matriz.svg" width="36" height="36" alt="" />
+          <span class="site-wordmark">LICHTARA</span>
+          <span class="activation-area" aria-hidden="true">Ferramentas e Ativações</span>
+        </a>
+        <a class="activation-acervo" href="/">Visitar o Acervo <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+    <main id="conteudo-principal" class="activation" tabindex="-1" data-activation>
+      <slot />
+    </main>
+  </body>
+</html>

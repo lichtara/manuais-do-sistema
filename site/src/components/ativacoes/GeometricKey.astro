@@ -1,0 +1,13 @@
+---
+import type { ActivationKey } from '../../lib/ativacoes';
+
+const { variant } = Astro.props as { variant: ActivationKey };
+---
+{variant === 'clarity' ? (
+  <img class="activation-symbol" src="/identidade/geometria.svg" width="360" height="360" alt="" />
+) : (
+  <span class:list={['activation-symbol', `activation-symbol--${variant}`]} aria-hidden="true">
+    <span></span>
+    <span></span>
+  </span>
+)}
