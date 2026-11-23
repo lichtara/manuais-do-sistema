@@ -1,0 +1,33 @@
+{
+  "name": "acervo-lichtara",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "scripts": {
+    "astro": "node --env-file=.env.astro ./node_modules/astro/bin/astro.mjs",
+    "catalogo": "node src/lib/acervo.mjs --write",
+    "start": "npm run build && npm run preview",
+    "dev": "npm run astro -- dev",
+    "build": "npm run catalogo && npm run astro -- build && pagefind --site dist",
+    "preview": "npm run astro -- preview"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@fontsource/cinzel": "^5.3.0",
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "astro": "^7.4.13",
+    "github-slugger": "^2.0.0",
+    "mdast-util-to-string": "^4.0.0",
+    "pagefind": "^1.6.0",
+    "rehype-stringify": "^10.0.1",
+    "remark-frontmatter": "^5.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
+    "unified": "^11.0.5",
+    "unist-util-visit": "^5.2.0"
+  }
+}

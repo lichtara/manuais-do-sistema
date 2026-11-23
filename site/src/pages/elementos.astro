@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { loadAcervo } from '../lib/acervo.mjs';
+
+const { elements } = await loadAcervo();
+---
+<Base title="Elementos do Sistema" current="elementos">
+  <div class="container page-wrap">
+    <Breadcrumbs items={[{ title: 'Elementos' }]} />
+    <div class="page-intro">
+      <h1>Elementos do Sistema</h1>
+      <p>Explore as fichas do Campo Operacional ou encontre menções a um elemento em todo o acervo.</p>
+    </div>
+    <ul class="catalog-list element-list">
+      {elements.map(chapter => {
+        const term = chapter.elementName;
+        return (
+          <li class="catalog-row element-row">
+            <a class="row-title" href={chapter.route}>{chapter.title}</a>
+            <a class="row-meta element-search" href={`/busca/?q=${encodeURIComponent(term)}`}>Pesquisar menções<span class="visually-hidden"> a {term}</span><span aria-hidden="true"> ↗</span></a>
+          </li>
+        );
+      })}
+    </ul>
+  </div>
+</Base>
+<style>
+  .element-row a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+  }
+
+  .element-search {
+    flex: none;
+  }
+
+</style>

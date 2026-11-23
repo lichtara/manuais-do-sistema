@@ -1,0 +1,197 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+---
+<Base title="Busca no acervo" current="busca">
+  <div class="container page-wrap search-page">
+    <Breadcrumbs items={[{ title: 'Busca' }]} />
+    <div class="page-intro">
+      <h1>Busca no acervo</h1>
+      <p>Pesquise por título, conceito ou trecho dos capítulos.</p>
+    </div>
+    <form class="search-form" action="/busca/" method="get" role="search" aria-label="Busca nos capítulos">
+      <label for="capitulos-q">Termo de busca</label>
+      <div class="search-controls">
+        <input id="capitulos-q" name="q" type="search" placeholder="Ex.: Código de Navegação" required />
+        <button class="button" type="submit">Buscar</button>
+      </div>
+    </form>
+    <noscript><p>Ative o JavaScript para pesquisar no acervo.</p></noscript>
+    <p id="estado-busca" class="search-status" role="status" aria-live="polite"></p>
+    <ol id="resultados-busca" class="catalog-list results" aria-label="Resultados da busca" hidden></ol>
+    <button id="mais-resultados" class="button button-secondary" type="button" hidden>Mostrar mais resultados</button>
+  </div>
+</Base>
+
+<script is:inline type="module">
+  const input = document.getElementById('capitulos-q');
+  const status = document.getElementById('estado-busca');
+  const list = document.getElementById('resultados-busca');
+  const more = document.getElementById('mais-resultados');
+  const batchSize = 12;
+  const term = new URLSearchParams(window.location.search).get('q')?.trim() ?? '';
+  input.value = term;
+
+  function renderExcerpt(excerpt, target) {
+    const template = document.createElement('template');
+    template.innerHTML = excerpt;
+    for (const node of template.content.childNodes) {
+      if (node.nodeName === 'MARK') {
+        const mark = document.createElement('mark');
+        mark.textContent = node.textContent;
+        target.append(mark);
+      } else {
+        target.append(node.textContent ?? '');
+      }
+    }
+  }
+
+  function renderResult(result) {
+    const item = document.createElement('li');
+    const link = document.createElement('a');
+    const meta = document.createElement('span');
+    const title = document.createElement('strong');
+
+    link.className = 'result-link';
+    link.href = result.url;
+    meta.className = 'row-meta';
+    meta.textContent = result.meta.campo ?? '';
+    title.textContent = result.meta.title ?? 'Abrir capítulo';
+    if (meta.textContent) link.append(meta);
+    link.append(title);
+    if (result.excerpt) {
+      const excerpt = document.createElement('p');
+      renderExcerpt(result.excerpt, excerpt);
+      link.append(excerpt);
+    }
+    item.append(link);
+    return item;
+  }
+
+  async function showSearch() {
+    status.textContent = 'Buscando…';
+    let results;
+    try {
+      const pagefind = await import('/pagefind/pagefind.js');
+      const response = await pagefind.search(term);
+      results = response.results;
+    } catch {
+      status.textContent = 'O índice de busca está indisponível. Na execução local, gere o build e abra a prévia.';
+      return;
+    }
+
+    if (!results.length) {
+      status.textContent = 'Nenhum capítulo encontrado. Experimente outro termo.';
+      return;
+    }
+
+    let shown = 0;
+    async function appendResults(moveFocus) {
+      more.disabled = true;
+      const batch = results.slice(shown, shown + batchSize);
+      try {
+        const items = (await Promise.all(batch.map(result => result.data()))).map(renderResult);
+        list.append(...items);
+        list.hidden = false;
+        shown += items.length;
+        const total = results.length;
+        const label = total === 1 ? 'capítulo encontrado' : 'capítulos encontrados';
+        const progress = shown < total ? ` Mostrando ${shown}.` : '';
+        status.textContent = `${total} ${label} para “${term}”.${progress}`;
+        more.hidden = shown >= total;
+        if (moveFocus) items[0]?.querySelector('a')?.focus();
+      } catch {
+        status.textContent = 'Parte dos resultados está indisponível. Tente recarregar a página.';
+      } finally {
+        more.disabled = false;
+      }
+    }
+
+    more.addEventListener('click', () => appendResults(true));
+    await appendResults(false);
+  }
+
+  if (term) showSearch();
+</script>
+
+<style>
+  .search-form, .search-status, .results {
+    max-width: 48rem;
+  }
+
+  .search-form label {
+    display: block;
+    font-size: .9rem;
+    font-weight: 750;
+    margin-bottom: .35rem;
+  }
+
+  .search-controls {
+    display: flex;
+    gap: .55rem;
+  }
+
+  .search-controls input {
+    flex: 1;
+    min-width: 0;
+    min-height: 3rem;
+    border: 1px solid #998d79;
+    border-radius: .4rem;
+    padding: .55rem .75rem;
+    background: #fffcf4;
+    color: var(--ink);
+  }
+
+  .search-controls input::placeholder {
+    color: var(--text-muted);
+    opacity: 1;
+  }
+
+  .search-status {
+    color: var(--text-muted);
+    margin: 1.65rem 0 .8rem;
+  }
+
+  .search-status:empty {
+    margin: 0;
+  }
+
+  #mais-resultados {
+    margin-top: 1.2rem;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  .results :global(.result-link) {
+    display: block;
+    border-bottom: 1px solid var(--line);
+    padding: 1rem .25rem;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+  }
+
+  .results :global(.result-link:hover) {
+    background: #eee7d8;
+  }
+
+  .results :global(.result-link strong) {
+    display: block;
+    font-size: 1.15rem;
+  }
+
+  .results :global(.result-link:is(:hover, :focus-visible) strong) {
+    text-decoration: underline;
+  }
+
+  .results :global(.result-link p) {
+    margin: .28rem 0 0;
+    color: var(--text-muted);
+  }
+
+  .results :global(mark) {
+    background: #eed9a1;
+    color: var(--ink);
+  }
+</style>

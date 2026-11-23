@@ -1,0 +1,36 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { loadAcervo } from '../lib/acervo.mjs';
+
+const { pdfs } = await loadAcervo();
+---
+<Base title="Biblioteca de PDFs" current="pdfs">
+  <div class="container page-wrap">
+    <Breadcrumbs items={[{ title: 'PDFs' }]} />
+    <div class="page-intro">
+      <h1>Biblioteca de PDFs</h1>
+      <p>Documentos originais do acervo. A biblioteca reúne os PDFs em uma coleção própria, com os nomes de arquivo do repositório.</p>
+    </div>
+    <ul class="catalog-list">
+      {pdfs.map(pdf => (
+        <li class="catalog-row pdf-row">
+          <a href={pdf.route} class="row-title">{pdf.sourcePath.split('/').at(-1)}</a>
+          <a href={pdf.sourceUrl} class="row-meta pdf-source" aria-label={`Ver ${pdf.sourcePath} no GitHub`}>GitHub <span aria-hidden="true">↗</span></a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Base>
+<style>
+  .pdf-row a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+  }
+
+  .pdf-source {
+    flex: none;
+    gap: .4rem;
+  }
+</style>

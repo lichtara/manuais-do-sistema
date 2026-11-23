@@ -1,0 +1,207 @@
+---
+import Breadcrumbs from './Breadcrumbs.astro';
+import '../styles/reader.css';
+
+interface ChapterLink {
+  title: string;
+  route: string;
+}
+
+interface Relation {
+  label: string;
+  targetRoute: string;
+  citationUrl: string;
+}
+
+interface Props {
+  chapter: ChapterLink & {
+    sourcePath: string;
+    sourceUrl: string;
+    html: string;
+    titleHeading?: { id: string } | null;
+    headings: { id: string; text: string; depth: number }[];
+    relations: Relation[];
+    previous: ChapterLink | null;
+    next: ChapterLink | null;
+  };
+  field: ChapterLink;
+  manual: ChapterLink;
+  previous?: ChapterLink | null;
+  next?: ChapterLink | null;
+}
+
+const { chapter, field, manual, previous = chapter.previous, next = chapter.next } = Astro.props;
+const hasContent = Boolean(chapter.html.trim());
+---
+
+<div class="container reader-page page-wrap" data-reader>
+  <Breadcrumbs items={[field, manual, { title: chapter.title }]} />
+
+  <div class="reader-layout">
+    <aside class="reader-sidebar" aria-label="Ferramentas de leitura" data-pagefind-ignore>
+      {chapter.headings.length > 0 && (
+        <details class="reader-toc" data-reader-toc>
+          <summary>Neste capítulo</summary>
+          <nav aria-label="Sumário do capítulo">
+            <ol>
+              {chapter.headings.map(({ id, text, depth }) => (
+                <li class:list={[depth > 2 && 'reader-toc-subsection']}>
+                  <a href={`#${encodeURIComponent(id)}`}>{text}</a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        </details>
+      )}
+
+      <div class="reader-tools">
+        <p class="reader-origin eyebrow">Documento original</p>
+        <a class="reader-source" href={chapter.sourceUrl}>Markdown no GitHub</a>
+        <div class="reader-copy-area">
+          <button class="reader-copy" type="button" data-reader-copy aria-describedby="reader-copy-help" hidden>
+            Copiar contexto para o ChatGPT
+          </button>
+          <p class="reader-copy-status" data-reader-copy-status role="status"></p>
+        </div>
+        <p class="reader-copy-help" id="reader-copy-help" data-reader-copy-help hidden>
+          {hasContent ? 'Selecione um trecho do capítulo para incluí-lo na cópia.' : 'A cópia inclui o título, o caminho e a fonte.'}
+        </p>
+        <div class="reader-copy-fallback" data-reader-copy-fallback hidden>
+          <label for="reader-copy-text">Contexto para copiar manualmente</label>
+          <textarea id="reader-copy-text" data-reader-copy-text readonly rows="6"></textarea>
+        </div>
+      </div>
+    </aside>
+
+    <article
+      class="reader-document"
+      data-reader-document
+      data-pagefind-body
+      data-pagefind-meta="title[data-document-title], campo[data-document-field], manual[data-document-manual]"
+      data-document-title={chapter.title}
+      data-document-field={field.title}
+      data-document-manual={manual.title}
+      data-document-path={chapter.sourcePath}
+      data-document-source={chapter.sourceUrl}
+    >
+      {!chapter.titleHeading && <h1>{chapter.title}</h1>}
+      {hasContent ? (
+        <Fragment set:html={chapter.html} />
+      ) : (
+        <p class="reader-notice" data-pagefind-ignore>O arquivo original está vazio.</p>
+      )}
+    </article>
+  </div>
+
+  {chapter.relations.length > 0 && (
+    <section class="reader-relations" aria-labelledby="reader-relations-title" data-pagefind-ignore>
+      <h2 id="reader-relations-title">Relações documentadas</h2>
+      <ul>
+        {chapter.relations.map(({ label, targetRoute, citationUrl }) => (
+          <li>
+            <a href={targetRoute}>{label}</a>
+            <a class="reader-citation" href={citationUrl} aria-label={`Ver referência a ${label} no GitHub`}>
+              Ver referência no GitHub
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {(previous || next) && (
+    <nav class="reader-pagination" aria-label="Capítulos do manual" data-pagefind-ignore>
+      {previous && (
+        <a class="reader-previous" href={previous.route} rel="prev">
+          <span><span aria-hidden="true">←</span> Capítulo anterior</span>
+          <strong>{previous.title}</strong>
+        </a>
+      )}
+      {next && (
+        <a class="reader-next" href={next.route} rel="next">
+          <span>Próximo capítulo <span aria-hidden="true">→</span></span>
+          <strong>{next.title}</strong>
+        </a>
+      )}
+    </nav>
+  )}
+  <a class="reader-back" href={manual.route} data-pagefind-ignore>Voltar ao manual</a>
+</div>
+
+<script>
+  const reader = document.querySelector<HTMLElement>('[data-reader]');
+  const article = reader?.querySelector<HTMLElement>('[data-reader-document]');
+  const copy = reader?.querySelector<HTMLButtonElement>('[data-reader-copy]');
+  const help = reader?.querySelector<HTMLElement>('[data-reader-copy-help]');
+  const status = reader?.querySelector<HTMLElement>('[data-reader-copy-status]');
+  const fallback = reader?.querySelector<HTMLElement>('[data-reader-copy-fallback]');
+  const copyText = reader?.querySelector<HTMLTextAreaElement>('[data-reader-copy-text]');
+  const toc = reader?.querySelector<HTMLDetailsElement>('[data-reader-toc]');
+
+  if (toc && window.matchMedia('(min-width: 56rem)').matches) toc.open = true;
+
+  if (reader && article && copy && help && status && fallback && copyText) {
+    let excerpt = '';
+    let pointerExcerpt = '';
+    const documentContent = article;
+
+    function readSelection() {
+      const selection = window.getSelection();
+      if (!selection || selection.isCollapsed || !selection.anchorNode || !selection.focusNode) return '';
+      if (!documentContent.contains(selection.anchorNode) || !documentContent.contains(selection.focusNode)) return '';
+      if (selection.anchorNode.parentElement?.closest('[data-pagefind-ignore]')) return '';
+      return selection.toString().trim();
+    }
+
+    function trackSelection() {
+      const selectedText = readSelection();
+      if (selectedText || (document.activeElement !== copy && !pointerExcerpt)) excerpt = selectedText;
+      reader?.toggleAttribute('data-reader-selection', Boolean(excerpt));
+    }
+
+    document.addEventListener('selectionchange', trackSelection);
+    document.addEventListener('pointerdown', (event) => {
+      if (event.target instanceof Node && copy.contains(event.target)) {
+        pointerExcerpt = readSelection() || excerpt;
+      } else {
+        pointerExcerpt = '';
+      }
+    });
+    copy.addEventListener('pointercancel', () => {
+      pointerExcerpt = '';
+      trackSelection();
+    });
+    copy.addEventListener('blur', trackSelection);
+
+    copy.addEventListener('click', async (event) => {
+      const selectedText = readSelection() || (event.detail ? pointerExcerpt : excerpt);
+      pointerExcerpt = '';
+      const { documentTitle, documentPath, documentSource } = article.dataset;
+      const context = [
+        documentTitle,
+        `Caminho original\n${documentPath}`,
+        `Fonte no GitHub\n${documentSource}`,
+        selectedText ? `Trecho selecionado\n${selectedText}` : '',
+      ].filter(Boolean).join('\n\n');
+
+      status.textContent = '';
+      fallback.hidden = true;
+
+      try {
+        await navigator.clipboard.writeText(context);
+        status.textContent = selectedText ? 'Trecho e referência copiados.' : 'Referência do capítulo copiada.';
+      } catch {
+        copyText.value = context;
+        fallback.hidden = false;
+        copyText.focus();
+        copyText.select();
+        status.textContent = 'Use o comando de copiar para salvar o contexto selecionado abaixo.';
+      }
+
+      trackSelection();
+    });
+
+    copy.hidden = false;
+    help.hidden = false;
+  }
+</script>

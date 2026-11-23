@@ -1,0 +1,68 @@
+---
+import '@fontsource-variable/manrope/wght.css';
+import '@fontsource/cinzel/latin-400.css';
+import '@fontsource/cormorant-garamond/latin-500.css';
+import '@fontsource/cormorant-garamond/latin-600.css';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  current?: 'campos' | 'busca' | 'elementos' | 'pdfs';
+  tone?: 'dark' | 'light';
+}
+
+const { title, description, current, tone = 'light' } = Astro.props;
+const pageTitle = title === 'Acervo LICHTARA' ? title : `${title} · Acervo LICHTARA`;
+const navigation = [
+  { key: 'campos', label: 'Campos', href: '/campos/' },
+  { key: 'busca', label: 'Busca', href: '/busca/' },
+  { key: 'elementos', label: 'Elementos', href: '/elementos/' },
+  { key: 'pdfs', label: 'PDFs', href: '/pdfs/' },
+];
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    {description && <meta name="description" content={description} />}
+    <meta name="theme-color" content="#050a15" />
+    <link rel="icon" type="image/svg+xml" href="/identidade/matriz.svg" />
+    <title>{pageTitle}</title>
+  </head>
+  <body class:list={[tone === 'dark' && 'site-dark']}>
+    <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo</a>
+    <header class="site-header" data-pagefind-ignore>
+      <div class="container header-inner">
+        <a class="site-brand" href="/" aria-label="Página inicial do Acervo LICHTARA">
+          <img src="/identidade/matriz.svg" width="40" height="40" alt="" />
+          <span class="site-wordmark">LICHTARA</span>
+          <span class="site-brand-label" aria-hidden="true">Acervo</span>
+        </a>
+        <nav aria-label="Navegação principal">
+          <ul class="site-nav" role="list">
+            {navigation.map(({ key, label, href }) => (
+              <li>
+                <a aria-current={Astro.url.pathname === href ? 'page' : current === key ? 'location' : undefined} href={href}>
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="conteudo-principal" tabindex="-1">
+      <slot />
+    </main>
+    <footer class="site-footer" data-pagefind-ignore>
+      <div class="container footer-inner">
+        <a class="footer-brand" href="/">Acervo LICHTARA</a>
+        <a href="https://github.com/lichtara/sistema-lichtara">Repositório no GitHub</a>
+      </div>
+    </footer>
+  </body>
+</html>

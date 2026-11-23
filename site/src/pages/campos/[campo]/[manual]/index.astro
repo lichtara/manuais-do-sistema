@@ -1,0 +1,34 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import Breadcrumbs from '../../../../components/Breadcrumbs.astro';
+import { loadAcervo } from '../../../../lib/acervo.mjs';
+
+export async function getStaticPaths() {
+  const { fields } = await loadAcervo();
+  return fields.flatMap(field => field.manuals.map(manual => ({
+    params: { campo: field.slug, manual: manual.slug },
+    props: { field, manual },
+  })));
+}
+
+const { field, manual } = Astro.props;
+---
+<Base title={manual.title} current="campos">
+  <div class="container page-wrap">
+    <Breadcrumbs items={[{ title: 'Campos', route: '/campos/' }, field, { title: manual.title }]} />
+    <div class="page-intro">
+      <h1>{manual.title}</h1>
+      <p>{manual.chapters.length} {manual.chapters.length === 1 ? 'documento' : 'documentos'} em Markdown</p>
+    </div>
+    <ol class="catalog-list">
+      {manual.chapters.map(chapter => (
+        <li>
+          <a class="catalog-row" href={chapter.route}>
+            <span class="row-title">{chapter.title}</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </div>
+</Base>

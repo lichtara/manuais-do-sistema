@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import FieldList from '../../components/FieldList.astro';
+import { loadAcervo } from '../../lib/acervo.mjs';
+
+const { fields } = await loadAcervo();
+---
+<Base title="Campos do acervo" current="campos">
+  <div class="container page-wrap">
+    <Breadcrumbs items={[{ title: 'Campos' }]} />
+    <div class="page-intro">
+      <h1>Campos do acervo</h1>
+      <p>Escolha um campo para descobrir seus manuais e capítulos.</p>
+    </div>
+    <FieldList fields={fields} />
+  </div>
+</Base>

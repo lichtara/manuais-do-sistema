@@ -1,0 +1,44 @@
+---
+const { fields } = Astro.props;
+---
+<ul class="catalog-list field-list">
+  {fields.map(field => (
+    <li>
+      <a class="catalog-row field-row" href={field.route}>
+        <span class="field-number" aria-hidden="true">{field.sourcePath.slice(0, 2)}</span>
+        <span class="row-title">{field.title}</span>
+        <span class="row-meta">{field.manuals.length} {field.manuals.length === 1 ? 'coleção' : 'coleções'}</span>
+        <span class="row-arrow" aria-hidden="true">↗</span>
+      </a>
+    </li>
+  ))}
+</ul>
+<style>
+  .field-row {
+    display: grid;
+    grid-template-columns: 2.7rem minmax(0, 1fr) auto 1.25rem;
+    align-items: center;
+    gap: clamp(.45rem, 2vw, 1.65rem);
+  }
+
+  .field-number {
+    color: var(--ink-muted, #565d67);
+    font-size: .73rem;
+    font-weight: 700;
+    letter-spacing: .07em;
+  }
+
+  .field-row .row-arrow {
+    justify-self: end;
+  }
+
+  @media (max-width: 34rem) {
+    .field-row {
+      grid-template-columns: 1.65rem minmax(0, 1fr) 1rem;
+    }
+
+    .field-row .row-meta {
+      display: none;
+    }
+  }
+</style>

@@ -1,0 +1,18 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import Reader from '../../../../components/Reader.astro';
+import { loadAcervo } from '../../../../lib/acervo.mjs';
+
+export async function getStaticPaths() {
+  const { fields } = await loadAcervo();
+  return fields.flatMap(field => field.manuals.flatMap(manual => manual.chapters.map(chapter => ({
+    params: { campo: field.slug, manual: manual.slug, capitulo: chapter.slug },
+    props: { field, manual, chapter },
+  }))));
+}
+
+const { field, manual, chapter } = Astro.props;
+---
+<Base title={chapter.title} current="campos">
+  <Reader {field} {manual} {chapter} previous={chapter.previous} next={chapter.next} />
+</Base>

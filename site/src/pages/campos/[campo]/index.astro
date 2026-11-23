@@ -1,0 +1,31 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import { loadAcervo } from '../../../lib/acervo.mjs';
+
+export async function getStaticPaths() {
+  const { fields } = await loadAcervo();
+  return fields.map(field => ({ params: { campo: field.slug }, props: { field } }));
+}
+
+const { field } = Astro.props;
+---
+<Base title={field.title} current="campos">
+  <div class="container page-wrap">
+    <Breadcrumbs items={[{ title: 'Campos', route: '/campos/' }, { title: field.title }]} />
+    <div class="page-intro">
+      <h1>{field.title}</h1>
+      <p>Escolha um manual ou uma coleção para ver seus capítulos.</p>
+    </div>
+    <ul class="catalog-list">
+      {field.manuals.map(manual => (
+        <li>
+          <a class="catalog-row" href={manual.route}>
+            <span class="row-title">{manual.title}</span>
+            <span class="row-meta">{manual.chapters.length} {manual.chapters.length === 1 ? 'capítulo' : 'capítulos'} <span aria-hidden="true">↗</span></span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Base>
