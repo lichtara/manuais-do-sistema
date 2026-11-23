@@ -1,453 +1,755 @@
-# PORTAL LICHTARA
-## Storyboard de Interface — Ferramentas e Ativações
+# STORYBOARD_ATIVACOES.md
+
+# Portal LICHTARA — Ferramentas e Ativações
 
 **Projeto:** Sistema LICHTARA / Ecossistema Oktave  
-**Camada:** Ferramentas e Ativações (Interface do Usuário)  
-**Versão:** 0.1  
-**Status:** Estrutura inicial para design, prototipagem e validação
+**Produto:** Portal LICHTARA  
+**Camada:** 02 — Ferramentas e Ativações  
+**Versão:** 0.2.0  
+**Status:** Especificação de interface proposta para prototipagem  
+**Experiência prioritária:** Expansão e Clareza  
+**Dependências conceituais:** Código de Navegação, Lumora, NAVROS e Flux
 
 ---
 
-## 1. Visão geral
+## 1. Propósito
 
-A interface de **Ferramentas e Ativações** é o ambiente vivo e sensorial do Portal LICHTARA.
+A interface de **Ferramentas e Ativações** é a camada experiencial do Portal LICHTARA.
 
-Sua função é permitir que o usuário:
+Sua finalidade é oferecer uma jornada digital de primeiro contato, na qual o usuário escolhe uma direção de exploração, participa de uma experiência sensorial opcional, registra suas próprias percepções e decide como deseja prosseguir.
 
-- entre em estado de presença;
-- escolha uma chave de navegação;
-- vivencie uma ativação guiada;
-- registre sua percepção;
-- receba respostas da interface;
-- avance para exploração ou aplicação prática.
+A interface não substitui o Acervo LICHTARA nem o ambiente operacional Flux.
 
-Ela não é um repositório documental.
-Ela não é ainda o espaço operacional de execução.
-Ela é a **camada de experiência e sintonização** entre o conhecimento e a ação.
+Ela estabelece uma passagem entre conhecimento, experiência e aplicação prática.
 
----
+### 1.1. Resultado esperado
 
-## 2. Papel no ecossistema
+Ao concluir uma jornada, o usuário deverá conseguir identificar:
 
-### Relação com as três camadas
+- A chave que escolheu explorar.
+- A pergunta ou intenção que orientou a experiência.
+- O que observou ou compreendeu.
+- O caminho que deseja seguir: aprofundar, agir, revisitar ou encerrar.
 
-**Base Conceitual**  
-Oferece fundamentos, documentação, princípios e contexto.
+Não é necessário que o usuário relate uma mudança emocional, energética ou perceptiva para concluir a experiência.
 
-**Ferramentas e Ativações**  
-Oferece entrada experiencial, interação com chaves, percepção guiada e respostas da interface.
+### 1.2. Princípio de experiência
 
-**Aplicação e Expansão**  
-Transforma insights, decisões e registros em ação concreta por meio do Flux.
+> Uma luz de cada vez. Uma descoberta de cada vez. Um caminho que se revela enquanto caminhamos.
 
-### Tradução funcional
-
-A camada de Ferramentas e Ativações atua como:
-
-- portal de entrada sensorial;
-- interface de primeiro contato;
-- sistema de ativação simbólica;
-- organizadora de jornadas breves;
-- ponte entre experiência subjetiva e próximo passo objetivo.
+Esse princípio orienta a quantidade de informações apresentada, os movimentos de navegação e a relação entre as camadas.
 
 ---
 
-## 3. Princípios da experiência
+## 2. Posição na arquitetura
+
+### 2.1. Base Conceitual — Acervo LICHTARA
+
+**Responsabilidade:** organizar e disponibilizar manuais, capítulos, conceitos e referências documentais.
+
+**Estado:** primeira implementação funcional existente.
+
+**Referência pública:** `https://acervo.lichtara.com/`
+
+### 2.2. Ferramentas e Ativações — esta interface
+
+**Responsabilidade:** conduzir escolhas, experiências, reflexões e transições.
+
+**Estado:** planejamento e prototipagem.
+
+### 2.3. Aplicação e Expansão — Flux
+
+**Responsabilidade:** transformar intenções em ações, projetos, registros e revisitas.
+
+**Estado:** storyboard funcional complementar, definido em `STORYBOARD_APLICACAO_EXPANSAO.md`.
+
+### 2.4. Responsabilidades dos elementos
+
+| Elemento | Responsabilidade conceitual na experiência |
+|---|---|
+| LICHTARA | Identidade e integração do Portal |
+| NAVROS | Regras de navegação, escolhas e transições |
+| Lumora | Conteúdos, perguntas, experiências e compreensão |
+| Flux | Continuidade prática e acompanhamento |
+| Aurora | Referência conceitual para abertura e linguagem visual |
+| KAORAN e SOLARA | Referências simbólicas para ativação e movimento |
+
+As funções simbólicas descritas nos manuais não devem ser apresentadas como serviços técnicos já implementados.
+
+---
+
+## 3. Princípios de UX
 
 ### 3.1. Revelação progressiva
 
-A interface apresenta apenas o necessário para o próximo movimento.
+Apresentar apenas as informações necessárias para a decisão atual.
 
-### 3.2. Presença antes de complexidade
+### 3.2. Arquitetura matrioska
 
-O usuário não deve ser recebido por excesso de explicações ou controles.
+Cada interação significativa pode revelar uma nova camada, mantendo a possibilidade de retorno, revisão ou mudança de percurso.
 
-### 3.3. Autonomia
+### 3.3. Vivência antes da explicação
 
-A interface convida, mas não força interpretações, nem exige experiências específicas.
+A experiência inicial deve ser compreensível sem leitura prévia dos manuais.
 
-### 3.4. Continuidade
+O aprofundamento conceitual fica disponível por escolha do usuário.
 
-Cada ativação deve poder seguir para:
-- aprofundamento,
-- registro,
-- nova exploração,
-- ou ação prática.
+### 3.4. Autonomia
 
-### 3.5. Transparência
+O usuário controla seu percurso, sua participação, seus registros e o uso de recursos sensoriais.
 
-Respostas visuais, sonoras e interativas são respostas da interface e da navegação escolhida pelo usuário.
-Nesta fase, não se deve afirmar detecção automática de frequência interna, leitura espiritual ou biofeedback fisiológico real sem tecnologia específica implementada.
+### 3.5. Resposta coerente
 
----
+A interface responde às escolhas realizadas por meio de alterações visuais, conteúdo contextual e transições previsíveis.
 
-## 4. Estrutura da jornada
+### 3.6. Transparência e discernimento
 
-A experiência será organizada em camadas curtas:
+As experiências podem utilizar linguagem poética, simbólica e contemplativa.
 
-1. Entrada
-2. Escolha da chave
-3. Resposta sensorial
-4. Pausa de presença
-5. Pergunta de ativação
-6. Exploração guiada
-7. Registro da percepção
-8. Próximo caminho
+Entretanto, respostas visuais ou sonoras não serão apresentadas como evidência de leitura energética, comunicação espiritual ou detecção fisiológica.
 
 ---
 
-## 5. Storyboard de telas
+## 4. Modelo de navegação
+
+A jornada utiliza três conceitos do Código de Navegação.
+
+**Princípios:** regras que preservam coerência, autonomia e continuidade.
+
+**Gatilhos de ativação:** eventos observáveis que iniciam uma resposta da interface.
+
+**Pontos de transição:** mudanças entre estados, perguntas, experiências ou caminhos.
+
+Na implementação digital inicial, gatilhos correspondem a ações verificáveis, como selecionar, confirmar, escrever, pausar ou avançar.
+
+### 4.1. Fluxo principal
+
+`AT-00 Entrada`
+
+→ `AT-01 Três Chaves`
+
+→ `AT-02 Experiência da Chave`
+
+→ `AT-03 Presença`
+
+→ `AT-04 Pergunta Inicial`
+
+→ `AT-05 Exploração Guiada`
+
+→ `AT-06 Registro da Percepção`
+
+→ `AT-07 Próximo Caminho`
+
+→ `AT-08 Síntese e Continuidade`
+
+O fluxo representa a sequência de referência do protótipo, não uma obrigação para todos os usuários.
+
+### 4.2. Regras transversais
+
+- Permitir voltar à etapa anterior.
+- Permitir trocar de chave.
+- Permitir pular áudio, vídeo e pausa contemplativa.
+- Permitir continuar sem fornecer respostas pessoais.
+- Não exigir cadastro para a experiência piloto.
+- Não bloquear caminhos com base em suposta prontidão energética.
+- Manter as escolhas durante a navegação da sessão.
+- Oferecer conclusão ou saída em qualquer etapa apropriada.
 
 ---
 
-## AT-00 — Entrada do Portal de Ativações
+# 5. Storyboard de telas
 
-**Objetivo:** iniciar a experiência sensorial.
+## AT-00 — Entrada nas Experiências
 
-### Mensagem principal
-**“Por onde deseja começar?”**
+**Objetivo:** apresentar uma única ação de entrada.
 
-### Texto de apoio
-“Escolha o que desperta sua atenção agora.”
+**Pergunta central:**
 
-### Elementos
-- fundo escuro com geometria sutil;
-- símbolo central de LICHTARA;
-- três opções principais;
-- acesso discreto ao Acervo;
-- acesso discreto a “Sobre esta experiência”.
+> Por onde deseja começar?
 
-### Ações
-- escolher uma chave;
-- acessar informações introdutórias;
-- ir para o acervo.
+**Composição:**
 
-### Destino
-`AT-01 — Escolha da Chave`
+- Identidade do Portal LICHTARA.
+- Fundo preto cósmico e azul profundo.
+- Geometria central delicada.
+- Mensagem curta.
+- Ação principal: **Iniciar experiência**.
+- Acesso secundário: **Visitar o Acervo**.
+- Acesso discreto: **Sobre esta experiência**.
 
----
+**Mídia:**
 
-## AT-01 — As Três Chaves
+Filme de primeiro contato de aproximadamente 60 segundos, com opção de reprodução voluntária e de pular.
 
-**Objetivo:** permitir a seleção do modo de entrada.
+O filme não é pré-requisito para a navegação.
 
-### Chaves
-**01 — Expansão e Clareza**  
-Visão ampliada e percepção de relações.
+**Gatilho:** seleção de Iniciar experiência.
 
-**02 — Alinhamento e Equilíbrio**  
-Organização, sincronização e estabilidade.
+**Transição:** `AT-01`.
 
-**03 — Manifestação e Ação**  
-Direcionamento, decisão e materialização.
-
-### Comportamento
-Ao focar uma chave:
-- o símbolo correspondente se ilumina;
-- uma frase curta aparece;
-- a interface oferece a ação de continuar.
-
-### Ação principal
-**“Entrar por esta chave”**
-
-### Destino
-- Expansão e Clareza → `AT-02A`
-- Alinhamento e Equilíbrio → `AT-02B`
-- Manifestação e Ação → `AT-02C`
+**Critério de aceite:** o usuário consegue prosseguir sem assistir ao filme nem ativar áudio.
 
 ---
 
-## AT-02A — Resposta sensorial: Expansão e Clareza
+## AT-01 — Seleção das Três Chaves
 
-**Objetivo:** responder à escolha com uma identidade experiencial.
+**Objetivo:** permitir a escolha de uma direção de exploração.
 
-### Mensagem
-**“Você escolheu Expansão e Clareza.”**
+**Pergunta central:**
 
-### Texto de apoio
-“Observe conexões, padrões e possibilidades que merecem sua atenção.”
+> O que desperta sua atenção neste momento?
 
-### Elementos
-- geometria rosácea em animação suave;
-- áudio opcional;
-- brilho dourado sutil;
-- botão para continuar.
+**Opções:**
 
-### Ações
-- continuar;
-- mudar de chave;
-- silenciar som.
+### Chave 01 — Expansão e Clareza
 
-### Destino
-`AT-03 — Pausa de Presença`
+Explorar perspectivas, relações e possibilidades de compreensão.
+
+**Símbolo:** rosácea circular de seis direções, conforme a identidade geométrica em desenvolvimento.
+
+### Chave 02 — Alinhamento e Equilíbrio
+
+Examinar prioridades, ritmos e necessidades de reorganização.
+
+**Símbolo:** geometria simétrica triangular ou axial. Forma final pendente de validação.
+
+### Chave 03 — Manifestação e Ação
+
+Explorar a passagem entre intenção, decisão e movimento concreto.
+
+**Símbolo:** geometria estruturada, inicialmente cúbica ou hexagonal. Forma final pendente de validação.
+
+**Nota editorial:** a nomenclatura alternativa “Manifestação e Precisão” permanece registrada como decisão em aberto.
+
+**Interações:**
+
+- Focar ou tocar uma chave.
+- Ler uma descrição breve.
+- Selecionar e confirmar.
+- Alterar a escolha antes de prosseguir.
+
+**Resposta visual:**
+
+O símbolo selecionado recebe destaque. Os demais permanecem acessíveis.
+
+**Gatilho:** confirmação de chave.
+
+**Transição:** `AT-02`, com a chave selecionada.
 
 ---
 
-## AT-02B — Resposta sensorial: Alinhamento e Equilíbrio
+## AT-02 — Resposta da Chave
 
-**Objetivo:** introduzir estabilidade e organização.
+**Objetivo:** confirmar a seleção por meio de uma resposta sensorial e contextual.
 
-### Mensagem
-**“Você escolheu Alinhamento e Equilíbrio.”**
+### Variante A — Expansão e Clareza
 
-### Texto de apoio
-“Observe prioridades, ritmos e pontos de ajuste.”
+**Mensagem:**
 
-### Elementos
-- símbolo triangular/axial;
-- movimentos estáveis;
-- trilha opcional;
-- botão para continuar.
+> Você escolheu Expansão e Clareza.
 
-### Destino
-`AT-03 — Pausa de Presença`
+**Complemento:**
 
----
+“Um espaço para observar relações, explorar outras perspectivas e reconhecer o que merece sua atenção.”
 
-## AT-02C — Resposta sensorial: Manifestação e Ação
+**Visual:**
 
-**Objetivo:** introduzir direção e concretização.
+A rosácea é construída progressivamente, do núcleo para os círculos externos.
 
-### Mensagem
-**“Você escolheu Manifestação e Ação.”**
+### Variante B — Alinhamento e Equilíbrio
 
-### Texto de apoio
-“Observe o próximo gesto concreto que deseja emergir.”
+**Mensagem:**
 
-### Elementos
-- símbolo geométrico de estrutura e impulso;
-- animação de convergência;
-- som opcional;
-- botão para continuar.
+> Você escolheu Alinhamento e Equilíbrio.
 
-### Destino
-`AT-03 — Pausa de Presença`
+**Complemento:**
+
+“Um espaço para observar prioridades, ritmos e possibilidades de ajuste.”
+
+**Visual:**
+
+Os elementos geométricos se organizam em uma composição estável.
+
+### Variante C — Manifestação e Ação
+
+**Mensagem:**
+
+> Você escolheu Manifestação e Ação.
+
+**Complemento:**
+
+“Um espaço para reconhecer uma intenção e explorar o próximo movimento concreto.”
+
+**Visual:**
+
+Linhas convergem suavemente para uma estrutura definida.
+
+**Recursos comuns:**
+
+- Animação opcional.
+- Áudio desativado por padrão.
+- Controles de som.
+- Alternativa estática.
+- Ações: Continuar e Escolher outra chave.
+
+**Gatilho:** decisão de continuar.
+
+**Transição:** `AT-03`.
 
 ---
 
 ## AT-03 — Pausa de Presença
 
-**Objetivo:** criar um pequeno intervalo de observação.
+**Objetivo:** criar uma oportunidade voluntária de atenção.
 
-### Mensagem principal
-**“Antes de seguir, observe.”**
+**Mensagem:**
 
-### Texto de apoio
-“Se desejar, faça uma pausa breve. Respire e perceba o que chama sua atenção agora.”
+> Antes de seguir, observe.
 
-### Recursos
-- temporizador opcional de 5 a 15 segundos;
-- animação lenta;
-- áudio guiado opcional;
-- opção de pular.
+**Complemento:**
 
-### Ações
-- iniciar pausa;
-- pular;
-- continuar.
+“Se desejar, faça uma breve pausa e perceba o que chama sua atenção agora.”
 
-### Destino
-`AT-04 — Pergunta de Ativação`
+**Recursos:**
+
+- Pausa de 5 a 15 segundos.
+- Geometria com movimento discreto.
+- Áudio ou instrução textual opcional.
+- Possibilidade de permanecer em silêncio.
+- Alternativa sem contagem regressiva.
+
+**Ações:**
+
+- Iniciar pausa.
+- Continuar sem pausa.
+- Voltar.
+
+**Gatilho:** escolha de avançar.
+
+**Transição:** `AT-04`.
+
+**Regra:** a interface não pergunta se uma ativação energética foi bem-sucedida. Pode perguntar, de forma opcional, o que a pessoa percebeu.
 
 ---
 
-## AT-04 — Pergunta de Ativação
+## AT-04 — Pergunta Inicial
 
-**Objetivo:** transformar a experiência em foco.
+**Objetivo:** identificar a intenção que orientará a experiência.
 
-### Pergunta principal
-A pergunta muda conforme a chave escolhida.
+**Pergunta dinâmica conforme a chave:**
 
-**Expansão e Clareza**  
-“O que deseja enxergar com mais clareza neste momento?”
+**Expansão e Clareza**
 
-**Alinhamento e Equilíbrio**  
-“O que deseja reorganizar ou estabilizar neste momento?”
+> O que deseja enxergar com mais clareza neste momento?
 
-**Manifestação e Ação**  
-“O que deseja colocar em movimento agora?”
+**Alinhamento e Equilíbrio**
 
-### Interação
-- campo de escrita opcional;
-- temas sugeridos;
-- opção “ainda não sei”.
+> O que deseja reorganizar ou equilibrar?
 
-### Ações
-- registrar resposta;
-- continuar sem escrever;
-- voltar.
+**Manifestação e Ação**
 
-### Destino
-`AT-05 — Exploração Guiada`
+> O que deseja colocar em movimento?
+
+**Entradas:**
+
+- Campo de texto livre.
+- Temas sugeridos.
+- Opção “Ainda não sei”.
+- Opção de continuar sem registrar.
+
+**Temas sugeridos:**
+
+- Uma situação pessoal.
+- Uma decisão.
+- Um projeto.
+- Um aprendizado.
+- Uma possibilidade que desejo explorar.
+
+**Gatilho:** confirmação de texto ou tema, ou escolha de continuar sem resposta.
+
+**Transição:** `AT-05`.
 
 ---
 
 ## AT-05 — Exploração Guiada
 
-**Objetivo:** oferecer uma microexperiência coerente com a chave escolhida.
+**Objetivo:** oferecer uma microexperiência vinculada à chave e à intenção.
 
-### Possíveis formatos
-- áudio breve;
-- sequência de perguntas;
-- comparação entre possibilidades;
-- exercício visual;
-- pequeno vídeo;
-- microatividade escrita.
+### Roteiro A — Expansão e Clareza
 
-### Exemplo — Expansão e Clareza
-- “O que aconteceu?”
-- “O que você percebeu?”
-- “Que outras interpretações são possíveis?”
+1. O que aconteceu ou está acontecendo?
+2. O que você percebeu?
+3. Que interpretações está considerando?
+4. Que outra perspectiva poderia explorar?
 
-### Exemplo — Alinhamento e Equilíbrio
-- “O que está em excesso?”
-- “O que está faltando?”
-- “O que precisa ser simplificado?”
+### Roteiro B — Alinhamento e Equilíbrio
 
-### Exemplo — Manifestação e Ação
-- “Qual é o menor próximo passo?”
-- “O que pode ser feito hoje?”
-- “O que está pronto para sair da intenção?”
+1. O que exige sua atenção?
+2. O que parece excessivo ou insuficiente?
+3. Que prioridade poderia ser reorganizada?
+4. Qual ajuste simples deseja experimentar?
 
-### Ações
-- explorar;
-- ouvir;
-- responder;
-- seguir adiante.
+### Roteiro C — Manifestação e Ação
 
-### Destino
-`AT-06 — Registro da Percepção`
+1. O que deseja realizar?
+2. Que condições já existem?
+3. Qual seria um primeiro passo pequeno?
+4. Como poderá observar o resultado?
+
+**Formatos disponíveis:**
+
+- Perguntas interativas.
+- Áudio narrado.
+- Vídeo breve.
+- Visualização geométrica.
+- Registro textual.
+
+No MVP, cada chave precisa de uma microexperiência funcional. A produção audiovisual completa pode ser incremental.
+
+**Gatilho:** conclusão ou interrupção voluntária da microexperiência.
+
+**Transição:** `AT-06`.
 
 ---
 
 ## AT-06 — Registro da Percepção
 
-**Objetivo:** consolidar o que surgiu na experiência.
+**Objetivo:** permitir que a pessoa organize sua experiência.
 
-### Mensagem principal
-**“O que esta experiência te ajudou a perceber?”**
+**Pergunta:**
 
-### Campos possíveis
-- insight principal;
-- pergunta que permaneceu;
-- ação sugerida;
-- nível de clareza percebida;
-- desejo de aprofundamento.
+> O que esta experiência te ajudou a perceber?
 
-### Formas de resposta
-- texto livre;
-- seleção de etiquetas;
-- escala simples;
-- salvar sem responder tudo.
+**Campos opcionais:**
 
-### Ações
-- salvar registro;
-- seguir para aprofundamento;
-- seguir para ação;
-- reiniciar experiência.
+- O que observei.
+- O que interpretei.
+- O que compreendi.
+- O que ainda desejo investigar.
 
-### Destino
-`AT-07 — Próximo Caminho`
+**Recurso opcional:**
+
+Autoavaliação de clareza percebida, apresentada como relato subjetivo.
+
+Uma eventual escala não deve ser descrita como medição de ressonância ou coerência energética.
+
+**Ações:**
+
+- Guardar registro.
+- Continuar sem salvar.
+- Revisar respostas.
+- Prosseguir.
+
+**Transição:** `AT-07`.
 
 ---
 
 ## AT-07 — Próximo Caminho
 
-**Objetivo:** apresentar a continuidade da jornada.
+**Objetivo:** abrir possibilidades sem impor um destino.
 
-### Opções
-**Aprofundar no Acervo**  
-Consultar fundamentos e materiais relacionados.
+**Pergunta:**
 
-**Continuar em Lumora**  
-Explorar conteúdos e experiências de aprendizagem.
+> Para onde deseja seguir agora?
 
-**Levar para o Flux**  
-Transformar a percepção em decisão ou ação concreta.
+**Opções:**
 
-**Encerrar por agora**  
-Guardar a experiência e revisitar depois.
+**Aprofundar no Acervo**
 
-### Mensagem principal
-**“Para onde deseja seguir agora?”**
+Consultar documentos e conceitos relacionados à experiência.
 
-### Destinos
-- Acervo → Base Conceitual
-- Lumora → trilha de aprofundamento
-- Flux → Aplicação e Expansão
-- Encerrar → síntese da jornada
+**Explorar mais em Lumora**
 
----
+Acessar outra experiência ou conteúdo de compreensão.
 
-## 6. Componentes principais
+**Levar para Flux**
 
-- `ActivationPortalShell`
-- `KeyOptionCard`
-- `KeyGeometryStage`
-- `PresencePause`
-- `ActivationPrompt`
-- `GuidedExperienceBlock`
-- `PerceptionInput`
-- `JourneyContinuationCard`
+Converter uma intenção ou aprendizado em ação prática.
+
+**Encerrar por agora**
+
+Visualizar a síntese e concluir a sessão.
+
+**Gatilho:** seleção de caminho.
+
+**Transições:**
+
+- Acervo → interface de documentação.
+- Lumora → outra experiência contextual.
+- Flux → `AE-00`, definido no storyboard complementar.
+- Encerrar → `AT-08`.
 
 ---
 
-## 7. Recursos multimídia
+## AT-08 — Síntese e Continuidade
 
-### Obrigatórios no protótipo
-- geometrias animadas leves;
-- transições suaves;
-- tipografia consistente;
-- microinterações de foco e seleção.
+**Objetivo:** apresentar uma conclusão aberta da jornada.
 
-### Opcionais no protótipo
-- áudio guiado;
-- música ambiente;
-- vídeos curtos;
-- paisagens sonoras.
+**Conteúdo:**
 
-### Futuras possibilidades
-- sensores ou integrações reais de biofeedback;
-- adaptação de experiências conforme histórico;
-- trilhas personalizadas;
-- recomendações contextuais.
+- Chave selecionada.
+- Pergunta inicial, quando fornecida.
+- Registros voluntários.
+- Caminho escolhido.
+- Possibilidade de exportar ou revisitar.
 
----
+**Mensagem:**
 
-## 8. MVP da camada Ferramentas e Ativações
+> Uma descoberta pode ser o começo de outra.
 
-A primeira versão será considerada suficiente quando permitir:
+**Ações:**
 
-1. entrar no portal de ativações;
-2. selecionar uma das três chaves;
-3. receber uma resposta visual coerente;
-4. fazer uma pausa opcional;
-5. responder a uma pergunta de ativação;
-6. passar por uma microexperiência guiada;
-7. registrar uma percepção;
-8. escolher um próximo caminho.
+- Iniciar outra experiência.
+- Explorar o Acervo.
+- Criar uma ação no Flux.
+- Exportar meu registro.
+- Encerrar.
+
+**Critério de aceite:** concluir a jornada não exige declarar transformação, alinhamento, ativação ou mudança interna.
 
 ---
 
-## 9. Fora do escopo inicial
+# 6. Sistema de gatilhos e transições
 
-- diagnóstico energético automático;
-- biofeedback fisiológico real;
-- leitura de estados internos;
-- personalização profunda por IA;
-- sensores externos;
-- gamificação complexa;
-- comunidade ao vivo.
+| Gatilho | Origem | Resposta esperada |
+|---|---|---|
+| `activation.started` | AT-00 | Abre a seleção das chaves |
+| `key.selected` | AT-01 | Atualiza contexto e tema visual |
+| `key.confirmed` | AT-01 | Abre a experiência correspondente |
+| `presence.completed` | AT-03 | Avança para a pergunta |
+| `presence.skipped` | AT-03 | Avança sem registrar conclusão |
+| `intention.submitted` | AT-04 | Atualiza o contexto da exploração |
+| `exploration.completed` | AT-05 | Abre o registro |
+| `reflection.saved` | AT-06 | Registra informações autorizadas |
+| `continuation.selected` | AT-07 | Encaminha para o destino escolhido |
+
+Os identificadores são convenções propostas para implementação, não nomes estabelecidos nos manuais.
 
 ---
 
-## 10. Resultado esperado
+# 7. Estado compartilhado da jornada
 
-A interface de Ferramentas e Ativações deve funcionar como um espaço limpo, sensível e progressivo, onde o usuário possa iniciar uma experiência significativa sem precisar compreender o ecossistema inteiro de uma vez.
+Modelo conceitual inicial:
 
-Ela é a travessia entre:
-- o conhecimento estruturado do Acervo,
-- e a materialização prática da experiência no Flux.
+```ts
+type ActivationKey =
+  | "clarity"
+  | "balance"
+  | "action";
 
-**Princípio orientador:**
-_Uma luz de cada vez. Uma descoberta de cada vez. Um caminho que se revela enquanto caminhamos._
+type JourneyContext = {
+  journeyId: string;
+  selectedKey: ActivationKey | null;
+  intention?: string;
+  observations?: string;
+  interpretation?: string;
+  understanding?: string;
+  sourceReferences?: string[];
+  nextDestination?: "acervo" | "lumora" | "flux" | "finish";
+  createdAt: string;
+  updatedAt: string;
+};
+```
+
+### Regras de dados
+
+- Não exigir identificação pessoal no MVP.
+- Não enviar reflexões privadas a serviços externos sem consentimento.
+- Manter dados em memória durante a sessão.
+- Oferecer armazenamento local ou exportação por escolha explícita.
+- Permitir apagar registros.
+- Não colocar textos pessoais em parâmetros de URL.
+- Não inferir estados emocionais ou espirituais a partir de cliques.
+
+O armazenamento local no navegador não substitui controles de segurança para dados sensíveis.
+
+---
+
+# 8. Contrato com o Acervo e Flux
+
+### 8.1. Ativações → Acervo
+
+Enviar somente referências documentais e identificadores de temas, quando disponíveis.
+
+O Acervo abre a fonte original e preserva sua referência.
+
+### 8.2. Acervo → Ativações
+
+Um capítulo poderá oferecer uma ação contextual:
+
+**Explorar este tema em uma experiência**
+
+Essa ligação será opcional e deverá estar associada a uma experiência realmente existente.
+
+### 8.3. Ativações → Flux
+
+O usuário escolhe quais informações deseja levar para a próxima camada.
+
+Dados possíveis:
+
+- Chave escolhida.
+- Intenção.
+- Síntese pessoal.
+- Referências de conteúdo.
+
+O Flux não deve interpretar automaticamente esses dados como uma ordem de execução.
+
+### 8.4. Flux → Ativações
+
+Permitir revisitar a experiência original, quando existir referência válida.
+
+---
+
+# 9. Componentes de interface
+
+| Componente | Responsabilidade |
+|---|---|
+| `ActivationShell` | Estrutura comum das experiências |
+| `PortalIdentity` | Identidade visual LICHTARA |
+| `KeySelector` | Seleção das três chaves |
+| `GeometricKey` | Símbolo vetorial e variantes |
+| `SensoryStage` | Área de animação e multimídia |
+| `PresencePause` | Pausa contemplativa opcional |
+| `FocusQuestion` | Pergunta principal da camada |
+| `GuidedExperience` | Microexperiência contextual |
+| `ReflectionEditor` | Registro voluntário |
+| `PathSelector` | Escolha do próximo destino |
+| `JourneySummary` | Síntese e exportação |
+
+### Estados de componente
+
+Padrão, foco, hover, selecionado, carregando, erro, indisponível e concluído, conforme aplicável.
+
+---
+
+# 10. Identidade e multimídia
+
+### Paleta de referência
+
+- Preto cósmico: `#050A15`
+- Azul profundo: `#0B1E38`
+- Dourado: `#D8B97A`
+- Champagne: `#F3E5C9`
+
+A identidade existente do Acervo LICHTARA deve ser consultada antes de estabelecer tokens definitivos.
+
+### Símbolos
+
+A chave Expansão e Clareza utiliza uma rosácea geométrica em desenvolvimento.
+
+As identidades das outras chaves precisam ser refinadas antes de consideradas definitivas.
+
+### Mídia
+
+- Filme de primeiro contato: aproximadamente 60 segundos.
+- Áudios de presença e observação: opcionais.
+- Vídeos das chaves: produção incremental.
+- Animações: versões reduzida e estática.
+- Locução: português brasileiro e legendas quando aplicável.
+
+O áudio não deverá começar automaticamente.
+
+---
+
+# 11. Acessibilidade
+
+A experiência deve oferecer:
+
+- Navegação por teclado.
+- Controles claramente rotulados.
+- Foco visível.
+- Contraste adequado.
+- Legendas e transcrições.
+- Redução de movimento.
+- Alternativa para gestos de arrastar ou toque longo.
+- Pausa e interrupção dos conteúdos.
+- Ausência de flashes intensos.
+- Caminho funcional sem som.
+
+Nenhuma escolha fundamental poderá depender exclusivamente de uma animação ou cor.
+
+---
+
+# 12. MVP e prioridades
+
+## P0 — Essencial
+
+- Entrada funcional.
+- Três chaves selecionáveis.
+- Resposta visual por chave.
+- Pausa opcional.
+- Pergunta contextual.
+- Microexperiência por chave.
+- Registro voluntário.
+- Escolha de destino.
+- Navegação de retorno.
+- Integração mínima com Acervo e Flux.
+
+## P1 — Aprimoramento
+
+- Áudio narrado por experiência.
+- Animações vetoriais refinadas.
+- Exportação estruturada.
+- Histórico local de jornadas.
+- Conteúdos Lumora associados a temas do Acervo.
+
+## P2 — Pesquisa futura
+
+- Personalização com base em histórico autorizado.
+- Integrações com sensores reais.
+- Novos gatilhos e experiências.
+- Funcionalidades avançadas de Agents.
+
+---
+
+# 13. Critérios de aceite
+
+A primeira versão será considerada funcional quando:
+
+1. O usuário conseguir entrar sem cadastro.
+2. As três chaves forem distinguíveis e selecionáveis.
+3. Cada chave apresentar conteúdo apropriado.
+4. Áudio e animação forem opcionais.
+5. A pausa puder ser ignorada.
+6. A navegação funcionar em desktop e mobile.
+7. O usuário puder registrar uma percepção sem ser obrigado a fazê-lo.
+8. A escolha de aprofundar abrir o Acervo.
+9. A escolha de agir encaminhar ao Flux.
+10. A jornada puder ser encerrada ou reiniciada.
+11. Não houver alegações automáticas de leitura de frequência, campo ou estado fisiológico.
+
+---
+
+# 14. Decisões em aberto
+
+- Nome final da terceira chave.
+- Geometrias definitivas das chaves 02 e 03.
+- Endereço e estratégia de publicação da interface.
+- Estratégia de persistência entre aplicações.
+- Roteiros completos dos áudios.
+- Conteúdos iniciais de cada microexperiência.
+- Possível incorporação das Ativações no mesmo domínio do Portal LICHTARA.
+
+Essas questões não impedem a prototipagem do MVP.
+
+---
+
+# 15. Referências de projeto
+
+- `STORYBOARD_INTERFACE.md` — arquitetura geral de interface.
+- Storyboard cinematográfico — primeiro contato, oito cenas.
+- Roteiro técnico audiovisual — piloto Expansão e Clareza.
+- `STORYBOARD_APLICACAO_EXPANSAO.md` — continuidade operacional.
+- Acervo LICHTARA — documentos e fontes originais.
+
+Os caminhos exatos desses documentos deverão ser confirmados na árvore atual do repositório.
+
+---
+
+## Princípio final
+
+A interface não precisa mostrar toda a profundidade de LICHTARA para iniciar uma experiência.
+
+Ela oferece uma escolha, abre um espaço de observação e permite que a pessoa descubra novas possibilidades.
+
+**Uma luz de cada vez. Uma descoberta de cada vez. Um caminho que se revela enquanto caminhamos.**
