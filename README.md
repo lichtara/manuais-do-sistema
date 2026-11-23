@@ -1,3 +1,5 @@
+
+
 ```
 manuais-do-sistema/
 ├── 01_nucleo/
@@ -395,3 +397,5 @@ manuais-do-sistema/
 ├── .gitignore
 └── README.md
 ```
+
+> Uma luz de cada vez. Uma descoberta de cada vez. Um caminho que se revela enquanto caminhamos.
