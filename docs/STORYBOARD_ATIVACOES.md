@@ -1,5 +1,3 @@
-# STORYBOARD_ATIVACOES.md
-
 # Portal LICHTARA — Ferramentas e Ativações
 
 **Projeto:** Sistema LICHTARA / Ecossistema Oktave  
