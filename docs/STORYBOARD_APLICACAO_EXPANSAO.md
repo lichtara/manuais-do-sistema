@@ -65,7 +65,7 @@ Abrange planejamento, realização, acompanhamento e aprendizagem a partir dos r
 
 Nome do componente operacional e da interface responsável por apoiar a execução prática.
 
-### Ação e Manifestação
+### Manifestação e Ação
 
 Nome da terceira Chave de Ativação, pertencente à camada **Ferramentas e Ativações**.
 
@@ -600,7 +600,7 @@ Elas podem influenciar a forma de introduzir uma experiência, mas não alteram 
 |---|---|
 | Expansão e Clareza | Transformar uma compreensão em experimento |
 | Alinhamento e Equilíbrio | Organizar prioridades ou ajustar uma rotina |
-| Ação e Manifestação | Definir e iniciar um movimento concreto |
+| Manifestação e Ação | Definir e iniciar um movimento concreto |
 
 Esses são exemplos, não restrições.
 
@@ -892,7 +892,7 @@ As respostas serão dados de avaliação de experiência, não evidências autom
 
 1. A terceira camada chama-se **Aplicação e Expansão**.
 2. Sua interface operacional é **Flux**.
-3. A terceira Chave de Ativação chama-se **Ação e Manifestação**.
+3. A terceira Chave de Ativação chama-se **Manifestação e Ação**.
 4. Todas as chaves podem conduzir ao Flux.
 5. Flux pode ser acessado diretamente.
 6. A experiência utiliza revelação progressiva.
