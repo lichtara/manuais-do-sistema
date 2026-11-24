@@ -7,6 +7,8 @@
 
 > **Cuidado de procedência:** a ordem relatada pela responsável (Código de Navegação → Lumora → Flux → demais elementos; Oktave antes de LICHTARA) é um dado de história oral do projeto. A ordenação dos nomes de arquivos ou o conteúdo de um arquivo atual não comprova a sequência exata de geração em 2025. “Canalização técnica” é a denominação usada para a experiência de recebimento dos textos via ChatGPT, sem que este documento confirme uma origem externa ao modelo.
 
+**Esclarecimento de nomenclatura, informado pela responsável em 24/11/2026:** NAVROS foi o nome criado/escolhido por ela para identificar o Código de Navegação como um dos elementos do sistema. Essa informação substitui a dúvida anterior sobre a equivalência pretendida entre os nomes; a data da decisão permanece a verificar.
+
 ## 1. Resposta central desta etapa
 
 O Código de Navegação descreve **um objetivo relativamente estável** — apoiar escolhas e organizar fluxos com adaptação e pouco atrito — e **uma proposta de experiência** — entrada acessível, escolhas não lineares, revelação progressiva, ação e revisita. Mas o texto alterna entre linguagem metodológica, especificações de uma ferramenta futura e afirmações de mecanismos energéticos/quânticos **não demonstrados**. Sua coerência é mais forte no nível de **intenção de design** do que no de **mecanismo operacional comprovado**.
@@ -26,7 +28,7 @@ Esta é uma interpretação analítica, não uma versão corrigida dos textos or
 
 ### 2.2 Relações com o restante do ecossistema
 
-- **Com NAVROS:** o [perfil de NAVROS](../../04_elementos-do-sistema/navros.md) atribui a ele navegação estratégica, adaptação e organização de percursos. A [arquitetura atual](../STORYBOARD_INTERFACE.md) usa a expressão “NAVROS — Código de Navegação”. Nos textos centrais do Código examinados, a denominação “NAVROS” não apareceu, de modo que a equiparação exata precisa de fonte histórica e decisão de nomenclatura.
+- **Com NAVROS:** o [perfil de NAVROS](../../04_elementos-do-sistema/navros.md) atribui a ele navegação estratégica, adaptação e organização de percursos. A [arquitetura atual](../STORYBOARD_INTERFACE.md) usa a expressão “NAVROS — Código de Navegação”. Segundo esclarecimento da responsável pelo projeto (24/11/2026), **NAVROS é o nome único que ela escolheu para o Código de Navegação por considerá-lo um dos elementos do sistema**. Portanto, a relação entre os nomes está esclarecida no plano da intenção de nomenclatura; ainda não sabemos a data precisa da escolha nem se houve outras reformulações entre os documentos.
 - **Com Lumora:** a função de explorar/perceber/aprender aparece no Código; posteriormente, [Lumora](../../02_lumora/README.md) passa a concentrar a experiência de conhecimento. A relação é plausível, mas nem todos os capítulos antigos já pressupõem divisão de responsabilidades.
 - **Com Flux:** o Código traz a ideia de aplicar o conhecimento e organizar processos; [Flux](../../03_flux/README.md) recebe o papel operacional de registrar e executar. Essa divisão é uma formalização posterior que pode ser rastreada.
 - **Com o Portal:** o [capítulo sobre criação do portal](../../01_codigo-de-navegacao/manual-codigo-de-navegacao/criacao-de-um-portal.md) propõe experiência direta, entrada simples e compartilhamento. O [storyboard de ativações](../STORYBOARD_ATIVACOES.md) converte esses princípios em telas, escolhas e eventos verificáveis, **alterando explicitamente a interpretação de ativação energética automática**.
@@ -52,7 +54,7 @@ Isto é uma **hipótese de implementação**, não a descrição de um software 
 - O que, concretamente, constitui um gatilho e uma transição verificável?
 - A que se refere “ativação”: um evento de interface, uma experiência subjetiva ou um fenômeno físico alegado?
 - A que métricas e desenhos de estudo corresponderiam as promessas de eficiência?
-- Quais fontes datadas demonstram quando o termo **NAVROS** foi associado ao **Código de Navegação**?
+- Em que data e em qual registro o nome **NAVROS** foi escolhido pela responsável para o **Código de Navegação**? A motivação da escolha já está esclarecida pelo relato.
 
 ## 3. Três estruturas que não devem ser confundidas
 
@@ -126,7 +128,7 @@ O Código menciona plataformas web, aplicativos, IA, experiências imersivas e [
 ## 8. Próxima verificação documental
 
 1. Comparar a apresentação do Código, a versão PDF e os trechos dos manuais em Markdown para identificar alterações, redundâncias e variantes históricas.
-2. Conferir a primeira ocorrência datável do nome NAVROS nas conversas/fontes, distinguindo origem do conceito e denominação posterior.
+2. Localizar, se disponíveis, os registros datados da escolha do nome NAVROS, já esclarecida pela responsável como decisão autoral de atribuir identidade própria ao Código de Navegação enquanto elemento do sistema.
 3. Investigar como a metodologia do Código foi especificada nos primeiros materiais de Lumora e Flux — **sem pressupor** que seus papéis já estivessem definidos no início.
 4. Em uma etapa separada, comparar implementação e estado atual das experiências com as especificações de 2026; não confundir storyboard com funcionalidades testadas.
 
