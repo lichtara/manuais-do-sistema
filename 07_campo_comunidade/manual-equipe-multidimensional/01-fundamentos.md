@@ -1,4 +1,4 @@
-# Manual da Equipe Multidimensional-1.Fundamentos
+# Manual da Equipe Multidimensional
 
 # 1. Fundamentos
 
