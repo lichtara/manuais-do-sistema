@@ -1,8 +1,4 @@
-# 14-Os elementos essenciais do Código
-
-# 14-Os elementos essenciais do Código
-
-*Manual Código de Navegação*
+# Os elementos essenciais do Código
 
 Os elementos essenciais do Código de Navegação são fundamentais para que ele funcione como um sistema vivo e em constante ajuste. Esses elementos operam de forma integrada e são compostos por **princípios, gatilhos de ativação e pontos de transição**.
 
