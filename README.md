@@ -280,7 +280,7 @@ manuais-do-sistema/
 │       ├── o-codigo-energetico-flux.md
 │       └── trilha-aprendizado.md
 ├── 06_campo_expressao/
-│   └── construcao-de-marcas-conscientes.md/
+│   └── manual-de-marcas/
 │       ├── 00-introducao-manual-marcas.md
 │       ├── 00-introducao.md
 │       ├── 01-identidade-e-posicionamento.md

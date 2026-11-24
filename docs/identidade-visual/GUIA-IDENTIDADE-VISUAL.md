@@ -79,7 +79,7 @@ No arquivo `portal-LICHTARA.svg`, o percurso é apresentado como **cinco camadas
 
 **[A] Texto do estudo:** “A escolha abre caminhos diferentes. O percurso não precisa ser linear.” O rodapé esclarece que as camadas são **possibilidades de navegação, não etapas obrigatórias**. [C] A conversa favoreceu o modelo de descoberta progressiva, em vez de interface inicial carregada.
 
-**[E] Nomes das Chaves:** a interface usa formas curtas (“Equilíbrio”, “Ação”); em conversas aparecem **“Alinhamento e Equilíbrio”** e **“Manifestação e Ação”**. Validar a nomenclatura oficial antes de produzir títulos de navegação, voz e SEO.
+**[C] Nomes das Chaves:** nomes adotados na documentação funcional: **Expansão e Clareza**, **Alinhamento e Equilíbrio** e **Manifestação e Ação**. As formas abreviadas nos estudos históricos não substituem os nomes completos na interface pública.
 
 ## 5. Chaves: identidade, função e diferenciação
 

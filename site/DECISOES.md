@@ -17,7 +17,7 @@ O checkout aponta para `lichtara/sistema-lichtara`. A inspeção usou a árvore 
 
 Há 24 diretórios de manuais ou coleções, nove documentos diretamente na raiz de quatro campos, 16 fichas de elementos e 29 originais em `PDF/`. Os Markdown usam títulos de diferentes níveis, ênfase, listas, citações e tabelas. O arquivo `02_campo_estrutural/introducao-e-propostito-projeto.md` inclui sete links para seções do próprio texto. A auditoria inicial não encontrou metadados YAML frontais nem correspondências documentadas de PDF para capítulo ou página.
 
-A árvore contém uma pasta com espaço final (`guias-sistema-flux `), um diretório terminado em `.md` (`construcao-de-marcas-conscientes.md`), caminhos acentuados e nomes com grafia e espaçamento próprios. Há prefixos repetidos, como `06` no manual geral do sistema. Os dois manifestos de origem Lumora nos campos 01 e 03 são idênticos byte a byte. `08_campo_sintese/sintese-final-do-sistema.md` é vazio.
+A árvore contém uma pasta com espaço final (`guias-sistema-flux `), caminhos acentuados e nomes com grafia e espaçamento próprios. Há prefixos repetidos, como `06` no manual geral do sistema. Os dois manifestos de origem Lumora nos campos 01 e 03 são idênticos byte a byte. `08_campo_sintese/sintese-final-do-sistema.md` é vazio.
 
 ## Arquitetura e identidade
 
@@ -42,3 +42,7 @@ O MVP está disponível para consulta local e online. A revisão editorial inclu
 Antes da publicação, houve uma triagem de marcas de circulação e dados sensíveis evidentes nos 328 Markdown e nas camadas de texto dos 29 PDFs. O pacote de publicação contém apenas os arquivos do build, com HTML, fontes, imagens, índice de busca e PDFs. A prévia local escuta em loopback. As páginas trazem `noindex`, uma indicação aos mecanismos de busca. Controle de acesso, quando necessário, depende da hospedagem.
 
 A produção usa o projeto `acervo-lichtara` do Cloudflare Pages, com envio direto e manual de `dist/`. O DNS permanece na Hostinger. Um CNAME liga `acervo.lichtara.com` ao endereço `acervo-lichtara.pages.dev`, e a zona foi conferida antes e depois da alteração. Para atualizar o Acervo, gere um novo build e envie o conteúdo de `dist/` ao mesmo projeto. Um pipeline de publicação e as integrações com Portal LICHTARA, Lumora, NAVROS e Flux ficam para uma etapa posterior. [Endereço Cloudflare Pages](https://acervo-lichtara.pages.dev/) · [Domínio próprio no Cloudflare Pages](https://developers.cloudflare.com/pages/configuration/custom-domains/) · [Envio direto](https://developers.cloudflare.com/pages/get-started/direct-upload/)
+
+## Ajuste do Manual de marcas (23/11/2026)
+
+Os 12 arquivos foram movidos, preservando seu conteúdo, de `docs/marcas-de-marca/` para `06_campo_expressao/manual-de-marcas/`. O catálogo gerado, o relatório de testes e a publicação continuam representando o build anterior até que se execute `npm run build` em `site/` e se valide a nova versão. A implementação publicada das Ativações não foi localizada no código-fonte desta árvore; apenas seu storyboard está disponível aqui.
