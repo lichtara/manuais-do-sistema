@@ -10,6 +10,8 @@
 
 **O que os arquivos permitem verificar por enquanto:** o repositório agrupa os três conjuntos nessa ordem ([índice](../../README.md)), possui [perfis dos elementos](../../04_elementos-do-sistema/README.md) e separa [documentação atual de produto](../camadas-do-sistema.md) das fontes históricas. O fato de um arquivo estar em determinada pasta ou incluir o nome LICHTARA **não prova** que sua redação íntegra foi produzida naquela etapa em 2025. Datas de commits, compilações e PDFs também não são automaticamente datas de concepção. É necessário confrontar os registros de conversas, se disponíveis.
 
+**Esclarecimento autoral de 24/11/2026:** a responsável escolheu o nome **NAVROS** por querer uma denominação única para o **Código de Navegação**, que considerava um dos elementos do conjunto. A data original da nomeação ainda não foi confirmada documentalmente.
+
 **Proveniência:** “canalização técnica” é o nome atribuído à experiência de recebimento do material. O relato de geração por ChatGPT deve ser mantido distinto de alegações não comprovadas sobre uma fonte externa, energética ou autônoma dos textos.
 
 ## 2. Como ler o mapa
@@ -30,7 +32,7 @@ A categoria “correspondência técnica” designa uma tradução funcional pos
 
 | Conceito | Formulação documentada | Relações | Correspondência técnica possível | Questões abertas |
 |---|---|---|---|---|
-| **Código de Navegação / NAVROS** | Percursos modulares, progressivos, não lineares; orientação e adaptação das escolhas. | Acompanha explorações de Lumora e aplicações em Flux. | Motor de estados e regras de navegação; registro de escolhas; recomendação explicável sujeita à confirmação. | **Código** e **NAVROS** são sinônimos históricos ou possuem responsabilidades distintas? O que determina um percurso sugerido? |
+| **Código de Navegação / NAVROS** | Percursos modulares, progressivos, não lineares; orientação e adaptação das escolhas. **NAVROS é o nome atribuído pela responsável ao Código enquanto elemento do sistema.** | Acompanha explorações de Lumora e aplicações em Flux. | Motor de estados e regras de navegação; registro de escolhas; recomendação explicável sujeita à confirmação. | Quando ocorreu a escolha do nome? O que determina um percurso sugerido? |
 | **Lumora** | Laboratório/plataforma de conhecimento, tradução, experimentação e aprendizagem adaptativa. | Recebe orientação de NAVROS; aproxima conhecimento da aplicação em Flux; possui possíveis sobreposições com ORIA e SYNTARIS. | Acervo com fontes rastreáveis, busca semântica, atividades interativas, mediação de IA com identificação de fontes. | O que pertence a Lumora e o que pertence ao Acervo LICHTARA? Quem aprova ou valida conteúdo? |
 | **Flux** | Estrutura operacional de processamento, circulação de informação, execução e materialização prática. | Opera com Lumora e NAVROS; interage com OSLO e outros elementos. | Registro de intenções, ações, recursos, estados, histórico, revisitas, exportação; integrações por API. | É um ambiente de tarefas pessoais, um motor de automação ou ambos? Onde termina a decisão do usuário e começa a automação? |
 | **Oktave** | Nome histórico proposto para o sistema integrado. | Agrupa os elementos inicialmente descritos. | Nome de referência histórica/arquitetural, sem serviço de software obrigatório. | Existem versões originais que fixam a composição e a cronologia completa do conjunto? |
