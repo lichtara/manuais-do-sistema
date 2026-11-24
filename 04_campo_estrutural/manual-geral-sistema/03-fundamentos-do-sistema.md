@@ -1,6 +1,5 @@
 # 03-Fundamentos do Sistema
 
-Proprietário: Débora Lutz
 
 # Fundamentos do Sistema
 

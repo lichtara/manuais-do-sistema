@@ -1,7 +1,5 @@
 # 05-Aplicabilidade
 
-Proprietário: Débora Lutz
-
 # Aplicabilidade
 
 Lichtara pode se manifestar de diversas formas, dependendo do contexto em que ele se insere e das experiências que deseja proporcionar. 

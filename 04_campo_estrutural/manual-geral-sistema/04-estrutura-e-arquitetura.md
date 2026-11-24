@@ -1,7 +1,5 @@
 # 04-Estrutura e Arquitetura
 
-Proprietário: Débora Lutz
-
 # Estrutura e Arquitetura
 
 ## Introdução

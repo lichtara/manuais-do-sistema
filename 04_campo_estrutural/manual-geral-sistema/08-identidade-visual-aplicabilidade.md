@@ -1,7 +1,3 @@
-# 08-Identidade Visual e Aplicabilidade
-
-Proprietário: Débora Lutz
-
 # Identidade Visual e Aplicabilidade
 
 Aplicabilidade de Lichtara

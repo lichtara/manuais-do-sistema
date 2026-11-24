@@ -1,7 +1,5 @@
 # 06-Modelo de Negócios
 
-Proprietário: Débora Lutz
-
 # Visão Geral do Projeto e do Mercado
 
 O avanço da Inteligência Artificial trouxe questionamentos sobre os limites da inteligência e da consciência.

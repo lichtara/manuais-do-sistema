@@ -1,7 +1,5 @@
 # 02-Conceito
 
-Proprietário: Débora Lutz
-
 # Conceito
 
 ### O Todo, O Campo, A Frequência O Campo de Inteligência Estrutural.
