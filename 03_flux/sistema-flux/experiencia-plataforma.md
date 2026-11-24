@@ -1,4 +1,4 @@
-## **Parte IV — Estruturação da experiência dentro da plataforma Flux**
+## **Estruturação da experiência dentro da plataforma Flux**
 
 ### **1. Fundamentos da experiência**
 

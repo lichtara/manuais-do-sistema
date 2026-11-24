@@ -1,6 +1,4 @@
-# **Instruções Flux**
-
-## **Parte I — Formação e alinhamento da equipe**
+## **Formação e alinhamento da equipe**
 
 ### **1. A trilha de aprendizado para alinhar a equipe ao estado vibracional do Flux**
 
@@ -94,4 +92,3 @@ Checklist para iniciar:
 - Desenvolver exemplos práticos e experimentos para cada conceito.
 - Definir a melhor forma de guiar esse aprendizado: presencial, online ou híbrido.
 - Criar um espaço de troca onde a equipe possa compartilhar percepções e validar o aprendizado.
-

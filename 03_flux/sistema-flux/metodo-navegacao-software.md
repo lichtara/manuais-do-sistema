@@ -1,5 +1,3 @@
-# metodo-navegaca-software
-
 # Método de Navegação do Software
 
 ### **Identidade Visual e Design da Plataforma**

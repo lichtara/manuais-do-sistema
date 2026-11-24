@@ -1,4 +1,4 @@
-## **Parte III — Apresentação do projeto Flux**
+## **Apresentação do projeto Flux**
 
 ### **1. Introdução: o que é o Flux?**
 

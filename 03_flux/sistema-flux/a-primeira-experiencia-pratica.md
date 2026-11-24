@@ -1,5 +1,3 @@
-# a-primeira-experiencia-pratica
-
 # A Primeira Experiência Prática
 
 ### **A Percepção do Ajuste Energético**

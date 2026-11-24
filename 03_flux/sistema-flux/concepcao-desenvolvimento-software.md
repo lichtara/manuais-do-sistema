@@ -1,4 +1,4 @@
-## **Parte II — Concepção e desenvolvimento do software**
+## **Poncepção e desenvolvimento do software**
 
 ### **1. Identidade visual e design da plataforma**
 
