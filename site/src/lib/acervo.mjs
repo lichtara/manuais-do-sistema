@@ -28,7 +28,7 @@ const fieldLabels = {
   '08_campo_sintese': 'Campo Síntese',
 };
 const manualLabels = {
-  'construcao-de-marcas-conscientes.md': 'Construção de marcas conscientes',
+  'manual-de-marcas': 'Manual de marcas',
   'elementos-do-sistema': 'Elementos do sistema',
   'fundamentos-da-arquitetura-vibracional': 'Fundamentos da arquitetura vibracional',
   'guias-sistema-flux ': 'Guias do sistema Flux',

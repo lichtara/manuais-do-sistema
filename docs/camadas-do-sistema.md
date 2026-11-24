@@ -114,7 +114,7 @@ Explorar perspectivas, reconhecer relações e ampliar a compreensão.
 
 Observar prioridades, ritmos e possibilidades de reorganização.
 
-**03 — Ação e Manifestação**
+**03 — Manifestação e Ação**
 
 *Dar forma ao movimento.*
 
@@ -491,7 +491,7 @@ As informações de status deverão ser atualizadas conforme o desenvolvimento.
 9. As três chaves são:
    - Expansão e Clareza.
    - Alinhamento e Equilíbrio.
-   - Ação e Manifestação.
+   - Manifestação e Ação.
 10. A experiência deve permitir liberdade de escolha, aprofundamento e continuidade.
 
 ---
