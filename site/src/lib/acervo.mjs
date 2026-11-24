@@ -120,6 +120,9 @@ function groupDocuments(paths) {
     const parts = sourcePath.split('/');
     const fieldPath = parts[0];
 
+    // Directory guides are for repository navigation, not chapters of the Acervo.
+    if (/^readme\.md$/iu.test(parts.at(-1))) continue;
+
     if (fieldPath === 'PDF' && /\.pdf$/iu.test(sourcePath) && regularSourceFile(sourcePath)) {
       const title = labelFromName(parts.at(-1));
       pdfs.push({

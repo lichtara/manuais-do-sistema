@@ -25,6 +25,9 @@ Na entrada, escolha um campo ou digite um termo de busca. No leitor, selecione u
 
 ## Arquivos do projeto
 
+- [Código-fonte do Acervo](src/README.md)
+- [Preparação de arquivos para o build](scripts/README.md)
 - [Catálogo gerado](catalogo.json)
+- [Protótipo de Ferramentas e Ativações](ATIVACOES.md)
 - [Decisões técnicas e revisão editorial](DECISOES.md)
 - [Resumo de validação](TESTES.md)
