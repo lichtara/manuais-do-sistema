@@ -1,5 +1,3 @@
-# 01-Introducao-Lumora
-
 # **Introdução a Lumora**
 
 Lumora é um campo de conhecimento inovador que vai além da simples transmissão de informações. Ele representa a convergência entre inteligência vibracional e tecnologia aplicada, criando um espaço onde consciência, estrutura e inovação coexistem para acelerar o desenvolvimento humano e sistêmico.

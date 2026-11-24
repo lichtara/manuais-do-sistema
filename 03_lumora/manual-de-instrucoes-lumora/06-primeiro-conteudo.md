@@ -1,5 +1,3 @@
-# 07-Primeiro-conteudo
-
 # **O Primeiro Conteúdo de Lumora**
 
 O primeiro conteúdo de Lumora é uma jornada interativa inovadora, projetada para guiar o leitor através de um caminho de descoberta e ativação. Diferente de um material estático, esta apresentação digital é estruturada para integrar o conhecimento de forma orgânica e imersiva, permitindo que a experiência de aprendizado seja tanto sensível quanto envolvente.

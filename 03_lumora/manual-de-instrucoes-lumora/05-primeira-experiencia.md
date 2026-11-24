@@ -1,5 +1,3 @@
-# 06-Primeira-experiencia
-
 # **A Primeira Experiência de Lumora**
 
 A primeira experiência de Lumora está pronta para ser vivida, oferecendo um ambiente inicial que permite a manifestação direta e acessível da energia. Não se trata apenas de transmitir conhecimento, mas de proporcionar uma imersão onde tecnologia e consciência se entrelaçam, criando um campo vibracional perceptível sem necessidade de explicações prévias.
