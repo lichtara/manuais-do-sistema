@@ -1,7 +1,3 @@
-# 01-introducao-proposito-projeto
-
-Proprietário: Débora Lutz
-
 # Introdução e Propósito do Projeto
 
 ## Introdução
