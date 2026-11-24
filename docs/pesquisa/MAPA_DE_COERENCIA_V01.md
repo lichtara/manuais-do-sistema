@@ -22,6 +22,10 @@ Cada conceito será observado sob quatro aspectos:
 
 A categoria “correspondência técnica” designa uma tradução funcional possível, não uma identidade entre tecnologia e os conceitos espirituais, energéticos ou quânticos presentes nos manuais.
 
+## Estudos por componente
+
+- [Código de Navegação — análise de coerência v0.1](CODIGO_DE_NAVEGACAO_ANALISE_V01.md): formulação original, relações com NAVROS/Lumora/Flux, correspondências técnicas, tensões e lacunas.
+
 ## 3. Núcleo de origem e identidade do sistema
 
 | Conceito | Formulação documentada | Relações | Correspondência técnica possível | Questões abertas |
