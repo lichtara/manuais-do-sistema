@@ -1,5 +1,3 @@
-# 15-protocolos-auditoria
-
 ## 15. Aperfeiçoamento dos Protocolos de Auditoria
 
 **Introdução**

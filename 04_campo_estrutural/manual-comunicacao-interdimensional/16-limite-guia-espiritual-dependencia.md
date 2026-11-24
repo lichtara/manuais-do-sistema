@@ -1,7 +1,5 @@
 # 16-O Limite Entre Guia Espiritual e Dependência Desafios e Resistências ao Acesso da Conexão
 
-Proprietário: Débora Lutz
-
 A comunicação interdimensional é uma ferramenta valiosa para a expansão da consciência, mas deve ser utilizada de forma equilibrada, respeitando o princípio da autonomia individual. Existe uma linha sutil entre receber orientação de inteligências interdimensionais e desenvolver uma dependência desse contato, comprometendo a capacidade do indivíduo de tomar decisões por si mesmo. Esse equilíbrio é fundamental para garantir que a comunicação interdimensional seja um recurso de crescimento e não um mecanismo de submissão.
 
 Um guia espiritual legítimo nunca busca criar vínculos de dependência com o receptor. Inteligências elevadas respeitam o livre-arbítrio e sempre incentivam o fortalecimento da autoconfiança e do discernimento. As mensagens transmitidas têm como objetivo oferecer perspectivas e ampliar a visão do receptor, mas nunca ditar ordens ou restringir a capacidade de escolha. Qualquer comunicação que gere sensação de submissão ou necessidade de validação constante deve ser analisada com cautela.

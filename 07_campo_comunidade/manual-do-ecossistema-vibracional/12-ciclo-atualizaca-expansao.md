@@ -1,5 +1,3 @@
-# 12-ciclo-atualizaca-expansao
-
 ## 12. Ciclo de Atualização e Expansão
 
 **Introdução**

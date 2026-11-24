@@ -1,5 +1,3 @@
-# 02-principios-fundamentais-equipe
-
 ## **2. Princípios Fundamentais da Equipe**
 
 ### **Alinhamento Vibracional e Ressonância com o Propósito do Projeto**

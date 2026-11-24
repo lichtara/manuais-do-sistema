@@ -1,5 +1,3 @@
-# 13-metodologia-interacao-compontentes
-
 ## 13. Metodologia de Interação entre os Componentes do Projeto
 
 **Introdução**

@@ -1,5 +1,3 @@
-# 07-sustentacao-protecao-vibracioanal
-
 ## 7. Sustentação e Proteção Vibracional da Equipe
 
 **Introdução**

@@ -1,5 +1,3 @@
-# 11-estrategias-conhecimento-coerente
-
 ## 11. Estratégias para Manter o Conhecimento Atualizado e Coerente com o Sistema
 
 **Introdução**

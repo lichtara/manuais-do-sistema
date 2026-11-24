@@ -1,5 +1,3 @@
-# 03-estrutura-funcoes-equipe
-
 ## 3. Estrutura e Funções da Equipe
 
 ### **Papéis Centrais e Atribuições**

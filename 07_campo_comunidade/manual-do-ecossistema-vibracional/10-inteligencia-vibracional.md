@@ -1,5 +1,3 @@
-# 10-inteligencia-vibracional
-
 ## 10. Inteligência Vibracional
 
 **Introdução**

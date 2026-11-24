@@ -1,5 +1,3 @@
-# 04-interacao-funcoes-elementos
-
 ## 4. Interação das Funções com os Elementos do Projeto
 
 Cada membro da equipe interage diretamente com os componentes centrais do sistema, garantindo uma integração harmônica entre tecnologia e inteligência vibracional.

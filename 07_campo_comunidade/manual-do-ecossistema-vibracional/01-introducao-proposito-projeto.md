@@ -1,5 +1,3 @@
-# 01-introducao-proposito-projeto
-
 ## 1. Introdução ao Projeto e Propósito
 
 **Introdução**

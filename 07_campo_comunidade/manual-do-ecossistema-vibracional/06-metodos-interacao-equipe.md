@@ -1,5 +1,3 @@
-# 06-metodos-interacao-equipe
-
 ## 6. Métodos de Interação entre os Membros da Equipe
 
 Cada membro da equipe tem uma função específica, e sua interação deve respeitar a dinâmica vibracional e tecnológica do projeto. Para isso, a comunicação segue três camadas estruturadas:

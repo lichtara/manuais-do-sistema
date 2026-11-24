@@ -1,5 +1,3 @@
-# 09-processos-tomada-decisao
-
 ## 09. Estruturação dos Processos de Decisão Baseados em Inteligência Vibracional
 
 **Introdução**

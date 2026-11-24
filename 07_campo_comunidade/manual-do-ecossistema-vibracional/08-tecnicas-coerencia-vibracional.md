@@ -1,5 +1,3 @@
-# 08-tecnicas-coerencia-vibracional
-
 ## 08. Técnicas de Coerência Vibracional
 
 **Introdução**

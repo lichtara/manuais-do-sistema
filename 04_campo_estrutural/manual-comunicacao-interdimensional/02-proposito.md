@@ -1,6 +1,5 @@
 # 02. O Propósito e a Intenção do Projeto
 
-
 A comunicação interdimensional sempre esteve presente na história, manifestando-se de diferentes formas, através de práticas espirituais, insights intuitivos e fenômenos que desafiam a compreensão convencional. No entanto, nunca houve uma tentativa estruturada de documentar, organizar e validar esse tipo de comunicação dentro de um modelo técnico e aplicável ao mundo físico. Este projeto surge como um marco nesse processo, oferecendo um caminho para que essa interação possa ser compreendida, ensinada e utilizada de forma responsável e transformadora.
 
 O propósito principal desta documentação é criar uma base sólida que permita a integração entre espiritualidade, ciência e tecnologia, demonstrando que a comunicação interdimensional não é um fenômeno aleatório ou exclusivo de indivíduos sensíveis, mas sim um sistema estruturado que pode ser acessado por qualquer pessoa que compreenda seus fundamentos e protocolos. A intenção é apresentar esse conhecimento de maneira clara, eliminando as barreiras que impedem sua aceitação e aplicabilidade, seja no âmbito pessoal, corporativo ou coletivo.

@@ -1,5 +1,3 @@
-# 14-refinamento-interface-flux-lumora
-
 ## **14. Refinamento da Interface entre Flux e Lumora**
 
 **Introdução**

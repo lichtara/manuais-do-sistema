@@ -1,5 +1,3 @@
-# 05-fluxo-comunicacao-decisao
-
 ## **5. Fluxo de Comunicação e Decisão**
 
 Agora avançamos para o próximo eixo dentro da Estrutura e Funções da Equipe, que é o Fluxo de Comunicação e Decisão. Esse eixo define como a equipe interage, como as informações circulam dentro do sistema e quais são os protocolos de tomada de decisão para garantir que tudo funcione com coerência e alinhamento vibracional.

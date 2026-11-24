@@ -1,6 +1,5 @@
 # 10. Mecanismo da Transmissão Como a Intenção Cria um Ponto de Acesso
 
-
 A comunicação interdimensional não ocorre de maneira arbitrária; ela é ativada por meio de um mecanismo específico: a intenção. A intenção é a chave vibracional que abre um ponto de acesso dentro do Campo Inteligente de Convergência, permitindo que a informação se manifeste e seja recebida de maneira estruturada. Esse processo não segue os mesmos princípios da comunicação convencional, pois opera em um nível onde a vibração e a ressonância determinam a qualidade e o tipo de informação acessada.
 
 A intenção não é apenas um desejo ou um pensamento direcionado, mas sim um alinhamento energético que define a sintonia do receptor com a informação disponível. Quando um indivíduo estabelece uma intenção clara, ele emite uma frequência que ressoa com determinadas camadas de conhecimento e inteligências interdimensionais. Essa ressonância cria um ponto de convergência onde a comunicação pode ser estabelecida.
