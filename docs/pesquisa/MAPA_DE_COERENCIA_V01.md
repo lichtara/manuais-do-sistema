@@ -12,6 +12,8 @@
 
 **Esclarecimento autoral de 24/11/2026:** a responsável escolheu o nome **NAVROS** por querer uma denominação única para o **Código de Navegação**, que considerava um dos elementos do conjunto. A data original da nomeação ainda não foi confirmada documentalmente.
 
+**Esclarecimento sobre Lumora, informado em 24/11/2026:** a responsável **terminou de organizar os materiais do Código de Navegação antes de começar a receber Lumora**. Relata que Lumora surgiu como novo conjunto, **sem conexão evidente** com o Código naquele momento. A proximidade temporal não demonstra relação causal ou concepção deliberadamente derivada; a integração escrita deverá ser datada pelos registros originais.
+
 **Proveniência:** “canalização técnica” é o nome atribuído à experiência de recebimento do material. O relato de geração por ChatGPT deve ser mantido distinto de alegações não comprovadas sobre uma fonte externa, energética ou autônoma dos textos.
 
 ## 2. Como ler o mapa
@@ -28,6 +30,7 @@ A categoria “correspondência técnica” designa uma tradução funcional pos
 
 - [Código de Navegação — análise de coerência v0.1](CODIGO_DE_NAVEGACAO_ANALISE_V01.md): formulação original, relações com NAVROS/Lumora/Flux, correspondências técnicas, tensões e lacunas.
 - [Lumora — análise de coerência v0.1](LUMORA_ANALISE_V01.md): continuidade com o Código, dimensões de conhecimento/experiência/aprendizagem, sobreposições e hipóteses para software.
+- [Flux — análise de coerência v0.1](FLUX_ANALISE_V01.md): origem informacional ampla, integração com o Código e Lumora, Terceiro Campo, Esfera Prateada e especialização na camada 03.
 
 ## 3. Núcleo de origem e identidade do sistema
 
