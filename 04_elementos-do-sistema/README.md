@@ -21,3 +21,11 @@ Esta pasta reúne os perfis dos elementos de Lichtara. Os textos descrevem o pap
 - [Veltara](veltara.md) — integração e manifestação do ser.
 - [VORAX](vorax.md) — expansão e otimização contínua.
 - [VORTEXIS](vortexis.md) — estabilização e transição na concepção do sistema.
+
+---
+
+Os documentos desta seção preservam a concepção original dos elementos do Sistema LICHTARA, incluindo suas dimensões simbólicas, arquetípicas e funcionais.
+
+A tradução dessas concepções em arquitetura computacional constitui uma investigação em andamento. As funções descritas nos documentos de origem não implicam, necessariamente, a existência de funcionalidades implementadas ou de agentes autônomos de inteligência artificial.
+
+A documentação de desenvolvimento deverá distinguir as fontes originais, as interpretações, as hipóteses de implementação e as funcionalidades efetivamente verificadas.
