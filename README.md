@@ -17,3 +17,5 @@ Este repositório reúne os manuais, os documentos de projeto, os materiais visu
 - [Acervo LICHTARA](site/README.md) — código do site e instruções para executar localmente.
 
 > Uma luz de cada vez. Uma descoberta de cada vez. Um caminho que se revela enquanto caminhamos.
+
+Estado atual do sistema: docs/estado-atual-do-sistema.md
