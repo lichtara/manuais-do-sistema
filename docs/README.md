@@ -4,7 +4,9 @@ Esta pasta reúne os documentos de projeto do Portal LICHTARA. As [Camadas do Si
 
 ## Conteúdo
 
-- [Storyboard do Portal](STORYBOARD_INTERFACE.md) — entrada, Três Chaves e exploração progressiva da interface.
-- [Storyboard de Ferramentas e Ativações](STORYBOARD_ATIVACOES.md) — telas, escolhas e transições da experiência guiada.
-- [Storyboard de Aplicação e Expansão](STORYBOARD_APLICACAO_EXPANSAO.md) — percurso proposto em Flux, da intenção à ação e à revisita.
+- [Estado atual do sistema](estado-atual-do-sistema.md) — referência de implementação, evidências e questões em aberto.
+
+- [Storyboard do Portal](storyboard/STORYBOARD_INTERFACE.md) — entrada, Três Chaves e exploração progressiva da interface.
+- [Storyboard de Ferramentas e Ativações](storyboard/STORYBOARD_ATIVACOES.md) — telas, escolhas e transições da experiência guiada.
+- [Storyboard de Aplicação e Expansão](storyboard/STORYBOARD_APLICACAO_EXPANSAO.md) — percurso proposto em Flux, da intenção à ação e à revisita.
 - [Identidade visual](identidade-visual/README.md) — guia, estudos simbólicos e arquivos gráficos em quatro formatos.

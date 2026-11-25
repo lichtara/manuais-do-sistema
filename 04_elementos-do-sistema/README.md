@@ -2,6 +2,12 @@
 
 Esta pasta reúne os perfis dos elementos de Lichtara. Os textos descrevem o papel simbólico e funcional de cada elemento e suas relações dentro do ecossistema. Syntria tem também um texto dedicado ao Portal de Transmissões.
 
+## Nota editorial
+
+Os documentos desta seção preservam a concepção original dos elementos do Sistema LICHTARA, incluindo suas dimensões simbólicas, arquetípicas e funcionais.
+
+A tradução dessas concepções em arquitetura computacional constitui uma investigação em andamento. As funções descritas nas fontes não implicam, necessariamente, a existência de funcionalidades implementadas ou de agentes autônomos de inteligência artificial. A documentação de desenvolvimento distingue fontes originais, interpretações, hipóteses de implementação e funcionalidades verificadas. Consulte o [Estado atual do sistema](../docs/estado-atual-do-sistema.md).
+
 ## Perfis dos elementos
 
 - [Astrael](astrael.md) — tradução vibracional e biofeedback na concepção do projeto.

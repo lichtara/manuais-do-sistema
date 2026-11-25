@@ -3,8 +3,9 @@
 **Projeto:** Sistema LICHTARA / Ecossistema Oktave  
 **Produto público:** LICHTARA  
 **Documento:** `camadas-do-sistema.md`  
-**Versão:** 1.0 — Proposta de arquitetura funcional  
+**Versão:** 1.1 — Proposta de arquitetura funcional (revisão documental)  
 **Data:** 23 de novembro de 2026  
+**Revisão documental:** 25 de novembro de 2026  
 **Status:** Referência para identidade, design e desenvolvimento
 
 ---
@@ -114,7 +115,7 @@ Explorar perspectivas, reconhecer relações e ampliar a compreensão.
 
 Observar prioridades, ritmos e possibilidades de reorganização.
 
-**03 — Manifestação e Ação**
+**03 — Ação e Manifestação**
 
 *Dar forma ao movimento.*
 
@@ -457,12 +458,12 @@ A integração deverá preservar a autonomia, a privacidade e a possibilidade de
 
 **Documentos relacionados:**
 
-- `STORYBOARD_INTERFACE.md` — arquitetura de experiência do Portal.
-- `STORYBOARD_ATIVACOES.md` — Ferramentas e Ativações.
-- `STORYBOARD_APLICACAO_EXPANSAO.md` — aplicação operacional.
+- [STORYBOARD_INTERFACE.md](storyboard/STORYBOARD_INTERFACE.md) — arquitetura de experiência do Portal.
+- [STORYBOARD_ATIVACOES.md](storyboard/STORYBOARD_ATIVACOES.md) — Ferramentas e Ativações.
+- [STORYBOARD_APLICACAO_EXPANSAO.md](storyboard/STORYBOARD_APLICACAO_EXPANSAO.md) — aplicação operacional.
 - Manuais de Lumora, Flux e Código de Navegação — fundamentos conceituais.
 
-Os caminhos reais dos documentos devem ser verificados no repositório antes de criar links internos definitivos.
+Consulte o [Estado atual do sistema](estado-atual-do-sistema.md) para evidências de implementação e decisões pendentes.
 
 ---
 
@@ -471,10 +472,10 @@ Os caminhos reais dos documentos devem ser verificados no repositório antes de 
 | Camada | Situação |
 |---|---|
 | Base Conceitual — Acervo LICHTARA | Primeira implementação publicada |
-| Ferramentas e Ativações — Experiências LICHTARA | Storyboard definido; protótipo inicial em validação |
+| Ferramentas e Ativações — Experiências LICHTARA | Protótipo AT-05 publicado em 23/11/2026, conforme registro de publicação; em validação |
 | Aplicação e Expansão — Flux | Storyboard inicial definido; implementação posterior |
 
-As informações de status deverão ser atualizadas conforme o desenvolvimento.
+A referência corrente de status, evidências e limitações é o [Estado atual do sistema](estado-atual-do-sistema.md). A nomenclatura Ação e Manifestação acompanha o protótipo AT-05; os nomes anteriores permanecem nas fontes e estudos históricos.
 
 ---
 
@@ -491,7 +492,7 @@ As informações de status deverão ser atualizadas conforme o desenvolvimento.
 9. As três chaves são:
    - Expansão e Clareza.
    - Alinhamento e Equilíbrio.
-   - Manifestação e Ação.
+   - Ação e Manifestação.
 10. A experiência deve permitir liberdade de escolha, aprofundamento e continuidade.
 
 ---

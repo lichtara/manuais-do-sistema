@@ -5,6 +5,8 @@
 **Camada:** 02 — Ferramentas e Ativações  
 **Versão:** 0.2.0  
 **Status:** Especificação de interface proposta para prototipagem  
+
+> **Nota editorial — 25/11/2026:** este storyboard preserva a proposta de design de sua versão original. O nome atualmente utilizado na interface AT-05 é **Ação e Manifestação** (identificador `action`); as variantes anteriores abaixo são registros da concepção. Para o estado de implementação, consulte o [Estado atual do sistema](../estado-atual-do-sistema.md) e [Ativações](../../site/ATIVACOES.md).
 **Experiência prioritária:** Expansão e Clareza  
 **Dependências conceituais:** Código de Navegação, Lumora, NAVROS e Flux
 

@@ -81,6 +81,8 @@ No arquivo `portal-LICHTARA.svg`, o percurso é apresentado como **cinco camadas
 
 **[C] Nomes das Chaves:** nomes adotados na documentação funcional: **Expansão e Clareza**, **Alinhamento e Equilíbrio** e **Manifestação e Ação**. As formas abreviadas nos estudos históricos não substituem os nomes completos na interface pública.
 
+**Atualização documental — 25/11/2026:** a interface AT-05 usa **Ação e Manifestação** como nome da terceira Chave (ver [Ativações](../../site/ATIVACOES.md)). A nomenclatura citada acima preserva a recuperação da conversa e os estudos anteriores; para a interface atual, adotar Ação e Manifestação, sem alterar os artefatos históricos.
+
 ## 5. Chaves: identidade, função e diferenciação
 
 **[C] Diretriz expressa:** cada Chave deverá ter **um símbolo próprio**. A distinção entre símbolos serve à compreensão da escolha, não apenas à ornamentação.

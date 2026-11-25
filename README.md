@@ -1,6 +1,6 @@
 # Sistema Lichtara
 
-Este repositório reúne os manuais, os documentos de projeto, os materiais visuais e o código do Acervo LICHTARA. Para uma visão de conjunto, comece pelas [Camadas do Sistema](docs/camadas-do-sistema.md).
+Este repositório reúne os manuais, os documentos de projeto, os materiais visuais e o código do Acervo LICHTARA. Para uma visão de conjunto, comece pelas [Camadas do Sistema](docs/camadas-do-sistema.md). Para distinguir funcionalidades publicadas, protótipos, propostas e investigações em aberto, consulte o [Estado atual do sistema](docs/estado-atual-do-sistema.md).
 
 ## Navegação pelo repositório
 

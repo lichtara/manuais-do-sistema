@@ -1,6 +1,8 @@
 # Decisões técnicas do Acervo LICHTARA
 
-## Inspeção do repositório
+Este arquivo preserva registros técnicos de inspeções e validações realizadas em diferentes etapas do projeto. Os números, caminhos e resultados abaixo descrevem os respectivos checkouts e builds, não necessariamente a árvore atual. Consulte o [Estado atual do sistema](../docs/estado-atual-do-sistema.md) para a referência corrente e [Ativações](ATIVACOES.md) para a publicação do protótipo.
+
+## Inspeção inicial do repositório (anterior à implementação web)
 
 O checkout aponta para `lichtara/sistema-lichtara`. A inspeção usou a árvore Git, os arquivos Markdown, os documentos visuais e o histórico dos índices. O repositório continha a documentação e seus originais, sem aplicação web, scripts de build ou workflows de publicação.
 
@@ -23,7 +25,7 @@ A árvore contém uma pasta com espaço final (`guias-sistema-flux `), caminhos 
 
 Astro gera HTML estático em `site/dist/`. A descoberta começa pelas pastas numeradas e o conteúdo é lido no caminho original durante a geração. Arquivos diretamente sob um campo aparecem na coleção de navegação **Documentos avulsos**. Alguns rótulos de pastas recebem acentos e espaços para a interface. Quando o primeiro cabeçalho repete o nome do arquivo, o título de navegação vem do cabeçalho textual seguinte. Dois capítulos da introdução à bio-ressonância também trazem o nome do manual no prefácio. Esses trechos e suas âncoras são preservados na leitura. Se faltar cabeçalho, a interface usa o nome de arquivo. O catálogo registra a origem de cada título.
 
-A entrada usa o registro experiencial escuro e o leitor usa o registro editorial claro. As cores, as famílias Cinzel, Cormorant Garamond e Manrope e os SVGs vêm das referências do repositório. A geometria da entrada foi reaproveitada como ambientação da interface. O guia visual trata a função dessa forma como marca geral como uma decisão em aberto. [Storyboard](../docs/STORYBOARD_INTERFACE.md) · [Guia visual](../docs/identidade-visual/GUIA-IDENTIDADE-VISUAL.md)
+A entrada usa o registro experiencial escuro e o leitor usa o registro editorial claro. As cores, as famílias Cinzel, Cormorant Garamond e Manrope e os SVGs vêm das referências do repositório. A geometria da entrada foi reaproveitada como ambientação da interface. O guia visual trata a função dessa forma como marca geral como uma decisão em aberto. [Storyboard](../docs/storyboard/STORYBOARD_INTERFACE.md) · [Guia visual](../docs/identidade-visual/GUIA-IDENTIDADE-VISUAL.md)
 
 Pagefind indexa o título e o corpo renderizado dos 328 capítulos em português. O índice é servido no mesmo endereço da aplicação e consultado pelo navegador. As fontes tipográficas acompanham o build. O leitor e a navegação por links funcionam sem JavaScript. A busca e o botão de cópia usam JavaScript. A cópia acontece na área de transferência do dispositivo e oferece um campo de cópia manual quando necessário.
 
@@ -45,4 +47,6 @@ A produção usa o projeto `acervo-lichtara` do Cloudflare Pages, com envio dire
 
 ## Ajuste do Manual de marcas (23/11/2026)
 
-Os 12 arquivos foram movidos, preservando seu conteúdo, de `docs/marcas-de-marca/` para `06_campo_expressao/manual-de-marcas/`. O catálogo gerado, o relatório de testes e a publicação continuam representando o build anterior até que se execute `npm run build` em `site/` e se valide a nova versão. A implementação publicada das Ativações não foi localizada no código-fonte desta árvore; apenas seu storyboard está disponível aqui.
+Os 12 arquivos foram movidos, preservando seu conteúdo, de `docs/marcas-de-marca/` para `06_campo_expressao/manual-de-marcas/`. O catálogo gerado, o relatório de testes e a publicação continuam representando o build anterior até que se execute `npm run build` em `site/` e se valide a nova versão. Naquele checkout, a implementação publicada das Ativações não foi localizada; apenas seu storyboard estava disponível.
+
+**Atualização documental — 25/11/2026:** a árvore `main` consultada nesta revisão contém a [implementação das Ativações](src/pages/ativacoes/index.astro) e os arquivos de configuração e interação descritos em [ATIVACOES.md](ATIVACOES.md). A publicação AT-05 de 23/11/2026 está registrada nesse documento. A organização atual das pastas também difere da inspeção inicial. Não se executou um novo build nesta revisão; os resultados anteriores permanecem históricos.

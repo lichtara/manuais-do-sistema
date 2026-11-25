@@ -9,6 +9,8 @@
 **Interface:** LICHTARA · Flux  
 **Versão:** 0.2.0  
 **Status:** Especificação para prototipagem  
+
+> **Nota editorial — 25/11/2026:** este storyboard preserva a proposta de design de sua versão original. O nome atualmente utilizado na interface AT-05 é **Ação e Manifestação** (identificador `action`); as variantes anteriores abaixo são registros da concepção. Para o estado de implementação, consulte o [Estado atual do sistema](../estado-atual-do-sistema.md) e [Ativações](../../site/ATIVACOES.md).
 **Princípio de experiência:** Presença · Compreensão · Ação
 
 ---
