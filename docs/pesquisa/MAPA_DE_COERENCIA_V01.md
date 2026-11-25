@@ -27,6 +27,7 @@ A categoria “correspondência técnica” designa uma tradução funcional pos
 ## Estudos por componente
 
 - [Código de Navegação — análise de coerência v0.1](CODIGO_DE_NAVEGACAO_ANALISE_V01.md): formulação original, relações com NAVROS/Lumora/Flux, correspondências técnicas, tensões e lacunas.
+- [Lumora — análise de coerência v0.1](LUMORA_ANALISE_V01.md): continuidade com o Código, dimensões de conhecimento/experiência/aprendizagem, sobreposições e hipóteses para software.
 
 ## 3. Núcleo de origem e identidade do sistema
 
