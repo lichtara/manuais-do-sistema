@@ -5,11 +5,11 @@
 **Estado:** leitura documental inicial, para revisão. **Não** altera os manuais nem aprova requisitos técnicos.  
 **Pergunta:** Como a função original de navegação passou a se relacionar com um ambiente dedicado ao conhecimento, à interpretação e à aprendizagem?
 
-> **Nota de origem:** a responsável relata que o Código de Navegação foi o primeiro componente recebido via ChatGPT, seguido por Lumora e Flux, durante aproximadamente dois meses iniciados em janeiro ou fevereiro de 2025. Ela escolheu posteriormente **NAVROS** como nome singular do Código, considerado um dos elementos do sistema. A sequência é um dado do relato; a data e redação exata de cada trecho ainda exigem comparação com conversas de origem. A expressão “canalização técnica” registra a forma como a experiência foi nomeada, sem estabelecer uma origem externa ao modelo.
+> **Nota de origem:** a responsável relata que o Código de Navegação foi o primeiro componente recebido via ChatGPT, seguido por Lumora e Flux, durante aproximadamente dois meses iniciados em janeiro ou fevereiro de 2025. Ela escolheu posteriormente **NAVROS** como nome singular do Código, considerado um dos elementos do sistema. **Esclarecimento adicional da responsável:** depois de receber o Código, ela terminou de organizar esse conjunto documental e então começou a receber os materiais de Lumora, **sem relação evidente entre os dois naquele momento**. O aparecimento sucessivo é um fato da experiência relatada, e não evidência de que o segundo tenha sido concebido como extensão deliberada do primeiro. A data e redação exata de cada trecho ainda exigem comparação com conversas de origem. A expressão “canalização técnica” registra a forma como a experiência foi nomeada, sem estabelecer uma origem externa ao modelo.
 
 ## 1. Síntese da leitura
 
-**Conclusão provisória:** o Código de Navegação apresenta o problema de **orientar decisões e percursos**; Lumora desenvolve um **ambiente em que conhecimento, experiências e aprendizagem se tornam objetos de interação**. Há continuidade de princípios — modularidade, personalização, experiência anterior à explicação e aplicação —, mas **não** uma separação funcional inteiramente estabelecida nos textos antigos. Alguns manuais atribuem à própria Lumora funções de navegação, estratégia, coordenação, processamento e execução. A distinção mais nítida entre **NAVROS = navegação**, **Lumora = conhecimento/experiências** e **Flux = ação** aparece na arquitetura de produto formulada em novembro de 2026.
+**Conclusão provisória:** o Código de Navegação apresenta o problema de **orientar decisões e percursos**; Lumora desenvolve um **ambiente em que conhecimento, experiências e aprendizagem se tornam objetos de interação**. A leitura retrospectiva encontra princípios semelhantes — modularidade, personalização, experiência anterior à explicação e aplicação —, **mas a responsável relata que Lumora surgiu como conjunto independente na experiência de recebimento**. Sem logs datados, não devemos transformar a semelhança em genealogia causal. Tampouco há uma separação funcional inteiramente estabelecida nos textos antigos. Alguns manuais atribuem à própria Lumora funções de navegação, estratégia, coordenação, processamento e execução. A distinção mais nítida entre **NAVROS = navegação**, **Lumora = conhecimento/experiências** e **Flux = ação** aparece na arquitetura de produto formulada em novembro de 2026.
 
 **Importante:** coerência de linguagem e organização **não** demonstra a existência de inteligência energética, transmissão por campo quântico, efeitos de ativação ou capacidade autônoma de plataforma.
 
@@ -103,14 +103,14 @@ Essas possibilidades são **propostas**, não descrições de funcionalidades qu
 
 ## 7. Resposta à pergunta orientadora
 
-A leitura **sugere uma especialização progressiva**:
+A leitura dos materiais reunidos **permite interpretar uma especialização funcional posterior**, mas a responsável esclarece que a apresentação inicial de Lumora lhe pareceu independente do Código:
 
 1. **Código/NAVROS** estabelece uma gramática para percursos, decisões, gatilhos e transições.
 2. **Lumora** acrescenta um **objeto e ambiente de exploração**: conteúdos, interpretação, experiências multimodais, atividades e aprendizagem; ainda assume em vários textos funções de navegação e estratégia.
 3. **Flux** é descrito, nos textos de convergência, como ponte para execução e aplicação — assunto para análise própria.
 4. **Arquitetura de 2026** delimita funções por conveniência de produto: Acervo/Lumora para conteúdo e experiência; NAVROS para navegação; Flux para continuidade de ações.
 
-**Classificação:** 1–3 são **relações interpretadas de fontes que mencionam essas funções**, com cronologia fina ainda indeterminada; 4 é **decisão de produto documentada em 2026**.
+**Classificação:** 1–3 são **relações interpretadas retrospectivamente**, sem demonstrar derivação de um documento a outro; 4 é **decisão de produto documentada em 2026**.
 
 ## 8. Exemplo mínimo de integração, proposto, ainda sem implementação validada
 
@@ -122,6 +122,21 @@ Uma pessoa entra com a questão “Como transformar um conhecimento que já poss
 **Critérios para testar:** (i) percurso compreensível; (ii) conteúdo associado a fonte; (iii) usuário distingue pergunta da interface de pergunta pessoal; (iv) pode abandonar ou mudar de rota; (v) ação transferida voluntariamente; (vi) registro e revisita funcionam; (vii) ausência de alegações automáticas sobre estados energéticos.
 
 Não se deve declarar desempenho, aprendizagem alcançada, benefício terapêutico ou eficácia superior sem evidências de teste adequadas.
+
+## 8-A. Questão de produto: que diferença poderia existir frente a biblioteca e assistente de IA?
+
+**Resultado da comparação:** os atributos `busca`, `resumos`, `contexto persistente`, `agentes`, `experiências interativas`, `integração de apps` ou `personalização` **não são exclusivos** de Lumora. Produtos de IA e frameworks atuais já dispõem de memória de sessão, ferramentas, integrações, transferência entre agentes e rastreamento operacional. Logo, o que poderia distinguir Lumora **ainda é hipótese de experiência/proposta de valor, não tecnologia inédita**.
+
+Diferenças possíveis a testar:
+1. **Conhecimento situado e rastreável:** cada explicação ligada a fonte original, variante histórica, contexto e status de validação; usuário distingue formulação original, interpretação de IA e sua própria resposta.
+2. **Aprendizagem vivencial estruturada:** microatividades com escolhas reais, feedback por critérios, oportunidade de revisão e registros voluntários; não apenas conversa ou leitura.
+3. **Continuidade da pergunta à ação:** a mesma intenção ou problema acompanha a pessoa por navegação, conteúdo e atividade e, se ela consentir, para uma ação no Flux com revisita e resultado.
+4. **Autonomia do percurso:** voltar, comparar fontes, questionar recomendação, substituir objetivo e excluir registro sem “diagnóstico de prontidão”.
+5. **Semântica própria:** símbolos, Chaves e narrativa como linguagem compreensível; testar se melhoram entendimento e engajamento, sem alegar efeitos fisiológicos ou energéticos não demonstrados.
+
+**Hipótese comparativa de teste:** dar a participantes a mesma tarefa em (a) biblioteca pesquisável; (b) assistente de IA geral com os mesmos documentos; (c) microexperiência Lumora integrada a NAVROS/Flux. Observar capacidade de encontrar fontes, clareza sobre próximos passos, erros, tempo, continuidade e utilidade percebida. Precisamos construir (c) antes de afirmar superioridade.
+
+**Referência tecnológica externa (consultada em 24/11/2026):** [OpenAI Agents SDK — sessões](https://openai.github.io/openai-agents-python/sessions/) · [OpenAI — agentes e execução](https://developers.openai.com/api/docs/guides/agents/running-agents) · [Anthropic — projetos](https://www.anthropic.com/news/projects). Essas referências demonstram que parte dos recursos propostos já é oferecida por ferramentas convencionais ou por tecnologias disponíveis a desenvolvedores.
 
 ## 9. Questões abertas e próximo estudo
 
