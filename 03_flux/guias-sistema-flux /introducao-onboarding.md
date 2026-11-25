@@ -1,5 +1,3 @@
-# Guia de Introdução e Onboarding
-
 # **Guia de Introdução e Onboarding**
 
 **1. Visão Geral do Sistema**

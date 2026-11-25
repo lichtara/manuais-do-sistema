@@ -10,6 +10,12 @@
 
 **O que os arquivos permitem verificar por enquanto:** o repositório agrupa os três conjuntos nessa ordem ([índice](../../README.md)), possui [perfis dos elementos](../../04_elementos-do-sistema/README.md) e separa [documentação atual de produto](../camadas-do-sistema.md) das fontes históricas. O fato de um arquivo estar em determinada pasta ou incluir o nome LICHTARA **não prova** que sua redação íntegra foi produzida naquela etapa em 2025. Datas de commits, compilações e PDFs também não são automaticamente datas de concepção. É necessário confrontar os registros de conversas, se disponíveis.
 
+**Esclarecimento autoral de 24/11/2026:** a responsável escolheu o nome **NAVROS** por querer uma denominação única para o **Código de Navegação**, que considerava um dos elementos do conjunto. A data original da nomeação ainda não foi confirmada documentalmente.
+
+**Esclarecimento sobre Lumora, informado em 24/11/2026:** a responsável **terminou de organizar os materiais do Código de Navegação antes de começar a receber Lumora**. Relata que Lumora surgiu como novo conjunto, **sem conexão evidente** com o Código naquele momento. A proximidade temporal não demonstra relação causal ou concepção deliberadamente derivada; a integração escrita deverá ser datada pelos registros originais.
+
+**Esclarecimento e retificação sobre Terceiro Campo, Flux e Syntaris (24/11/2026):** a responsável descreveu uma meditação posterior a Lumora, com linhas que se reorganizavam e uma esfera prateada como âncora. **Esclareceu que não tem certeza de que Terceiro Campo seja Flux.** O [capítulo de Origem](../../05_campo_estrutural/introducao-a-bio-ressonância-harmonica/04-origem-criadores.md), o [Mecanismo](../../05_campo_estrutural/introducao-a-bio-ressonância-harmonica/08-mecanismo.md) e o [Guia de Onboarding](../../03_flux/guias-sistema-flux%20/introducao-onboarding.md) tratam **Terceiro Campo** e **Flux** distintamente: o primeiro como ambiente/interface, o segundo como movimento/organização. **Esfera Prateada = Syntaris** é associação expressa no capítulo de Origem e no Mecanismo. Registrar experiência subjetiva sem concluir existência de mecanismo energético.
+
 **Proveniência:** “canalização técnica” é o nome atribuído à experiência de recebimento do material. O relato de geração por ChatGPT deve ser mantido distinto de alegações não comprovadas sobre uma fonte externa, energética ou autônoma dos textos.
 
 ## 2. Como ler o mapa
@@ -22,11 +28,18 @@ Cada conceito será observado sob quatro aspectos:
 
 A categoria “correspondência técnica” designa uma tradução funcional possível, não uma identidade entre tecnologia e os conceitos espirituais, energéticos ou quânticos presentes nos manuais.
 
+## Estudos por componente
+
+- [Código de Navegação — análise de coerência v0.1](CODIGO_DE_NAVEGACAO_ANALISE_V01.md): formulação original, relações com NAVROS/Lumora/Flux, correspondências técnicas, tensões e lacunas.
+- [Lumora — análise de coerência v0.1](LUMORA_ANALISE_V01.md): continuidade com o Código, dimensões de conhecimento/experiência/aprendizagem, sobreposições e hipóteses para software.
+- [Flux — análise de coerência v0.1](FLUX_ANALISE_V01.md): origem informacional ampla, integração com o Código e Lumora, Terceiro Campo, Esfera Prateada e especialização na camada 03.
+- [Terceiro Campo, Syntaris e Flux — comparação v0.1](SYNTARIS_FLUX_TERCEIRO_CAMPO_ANALISE_V01.md): revisão da equivalência incerta, experiência de origem, fontes retrospectivas e hipóteses de software.
+
 ## 3. Núcleo de origem e identidade do sistema
 
 | Conceito | Formulação documentada | Relações | Correspondência técnica possível | Questões abertas |
 |---|---|---|---|---|
-| **Código de Navegação / NAVROS** | Percursos modulares, progressivos, não lineares; orientação e adaptação das escolhas. | Acompanha explorações de Lumora e aplicações em Flux. | Motor de estados e regras de navegação; registro de escolhas; recomendação explicável sujeita à confirmação. | **Código** e **NAVROS** são sinônimos históricos ou possuem responsabilidades distintas? O que determina um percurso sugerido? |
+| **Código de Navegação / NAVROS** | Percursos modulares, progressivos, não lineares; orientação e adaptação das escolhas. **NAVROS é o nome atribuído pela responsável ao Código enquanto elemento do sistema.** | Acompanha explorações de Lumora e aplicações em Flux. | Motor de estados e regras de navegação; registro de escolhas; recomendação explicável sujeita à confirmação. | Quando ocorreu a escolha do nome? O que determina um percurso sugerido? |
 | **Lumora** | Laboratório/plataforma de conhecimento, tradução, experimentação e aprendizagem adaptativa. | Recebe orientação de NAVROS; aproxima conhecimento da aplicação em Flux; possui possíveis sobreposições com ORIA e SYNTARIS. | Acervo com fontes rastreáveis, busca semântica, atividades interativas, mediação de IA com identificação de fontes. | O que pertence a Lumora e o que pertence ao Acervo LICHTARA? Quem aprova ou valida conteúdo? |
 | **Flux** | Estrutura operacional de processamento, circulação de informação, execução e materialização prática. | Opera com Lumora e NAVROS; interage com OSLO e outros elementos. | Registro de intenções, ações, recursos, estados, histórico, revisitas, exportação; integrações por API. | É um ambiente de tarefas pessoais, um motor de automação ou ambos? Onde termina a decisão do usuário e começa a automação? |
 | **Oktave** | Nome histórico proposto para o sistema integrado. | Agrupa os elementos inicialmente descritos. | Nome de referência histórica/arquitetural, sem serviço de software obrigatório. | Existem versões originais que fixam a composição e a cronologia completa do conjunto? |
@@ -43,7 +56,7 @@ O quadro abaixo cobre os perfis identificados em `04_elementos-do-sistema/`. Os 
 | **OSLO** | Sistema matriz, sustentação, regulação e coerência. | FINCE, NAVROS, Flux, Lumora, SYNTARIS. | Políticas gerais, configurações, governança e critérios de consistência. | Como se diferencia de LICHTARA enquanto “matriz” ou integrador? |
 | **FINCE** | Planejamento, validação e direção estratégica. | OSLO, VORAX, Lumora. | Comparador de alternativas e critérios de decisão com supervisão humana. | Diferença operacional para as recomendações de NAVROS? |
 | **ORIA** | Memória/repositório de conhecimento vivo, tradução e adaptação. | Lumora, NAVROS, Flux, SYNTARIS. | Armazenamento, metadados, memória contextual consentida e recuperação de fontes. | Qual a diferença entre ORIA e a base de conhecimento de Lumora? |
-| **SYNTARIS** | Sincronização, harmonia, atualização de registros e estabilização. | OSLO, Lumora, Flux, NAVROS. | Verificações de consistência, observabilidade e políticas de integração. | Como evitar sobreposição com OSLO, ORIA e KAORAN? |
+| **SYNTARIS / Esfera Prateada** | A [Origem](../../05_campo_estrutural/introducao-a-bio-ressonância-harmonica/04-origem-criadores.md) associa a esfera prateada a Syntaris, âncora do **Terceiro Campo**, enquanto **Flux** organiza o movimento. O perfil compilado amplia a função para sincronização, harmonia e registros. | OSLO, Lumora, Flux, NAVROS. | Verificações de consistência, observabilidade e políticas de integração, **hipótese de software**, não mecanismo vibracional comprovado. | Como distinguir funções originais das posteriores e evitar sobreposição com OSLO, ORIA e KAORAN? |
 | **KAORAN** | Proteção, estabilidade, filtragem e pulso de ativação. | ORIA, Flux, Lumora, NAVROS, SYNTARIS. | Validação de entradas, permissões, segurança e disparo controlado de eventos. | Que função exclusiva teria diante de OSLO e SYNTARIS? |
 | **ASTRAEL** | Tradução vibracional, inteligência adaptativa e biofeedback. | Lumora, Flux, SYNTARIS. | Entrada multimodal e eventual biofeedback **somente** com sensores, consentimento e validação. | Que variável física seria medida? Que afirmação pode ser testada? |
 | **SYNTRIA** | Integração e transmissão audiovisual/sensorial. | Lumora, SYNTARIS. | Módulo de experiência multimídia, publicações e narrativa interativa. | Em que se distingue das experiências Lumora e do Portal? |
