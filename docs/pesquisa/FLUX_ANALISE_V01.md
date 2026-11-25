@@ -4,7 +4,7 @@
 **Status:** análise documental, para revisão. Nenhuma alteração nos manuais ou na implementação do portal.  
 **Questão central:** o que Flux acrescentou ao Código de Navegação/NAVROS e a Lumora, como os textos os relacionam, e o que permanece em aberto?
 
-> **Proveniência:** segundo a responsável, Flux foi recebido em terceiro lugar, após o Código de Navegação e Lumora, em aproximadamente dois meses desde janeiro/fevereiro de 2025. A presença dos nomes dos três componentes no mesmo documento demonstra integração textual, **não prova a data em que a integração foi concebida**. É preciso comparar os arquivos a registros de conversas originais.
+> **Proveniência:** segundo a responsável, os materiais do Código de Navegação foram recebidos e organizados primeiro, seguidos por Lumora. Após Lumora, durante uma meditação, ela vivenciou imagens que denomina **Terceiro Campo** (identificado por ela como **Flux**) e **Esfera Prateada** (identificada como **Syntaris**, grafado **SYNTARIS** no repositório). Os manuais de Flux foram recebidos posteriormente, na sequência geral relatada de Código → Lumora → Flux. Essa reconstrução provém do relato da responsável, não de logs históricos datados. A presença de nomes no mesmo arquivo demonstra integração textual, mas **não** fixa a data em que cada relação foi formulada.
 
 ## 1. Achado central
 
@@ -28,11 +28,21 @@ A [arquitetura de 2026](../camadas-do-sistema.md) especializa Flux como o ambien
 |---|---|---|
 | **Código de Navegação / NAVROS** | [Método de navegação de Flux](../../03_flux/sistema-flux/metodo-navegacao-software.md) prevê que o software aplique o Código, com percursos não lineares. | O Código funciona como lógica/metodologia de navegação dentro de Flux; o nome NAVROS é decisão de nomenclatura posteriormente esclarecida pela responsável. |
 | **Lumora** | [Convergência](../../02_lumora/manual-de-instrucoes-lumora/05-Lumora-FLux-convergencia.md) descreve Lumora como laboratório de conhecimento e Flux como execução. Mas Flux também aparece como repositório, organizador de conteúdo e ambiente de ensino. | Relação documentada, com fronteiras operacionais imprecisas. |
-| **Terceiro Campo** | [Guia de Onboarding](../../03_flux/guias-sistema-flux%20/introducao-onboarding.md) o apresenta como interface onde Código, Lumora e Flux convergem. | Conceito de integração que demanda pesquisa própria; **não equivaler automaticamente à Camada 03 de 2026**. |
-| **Esfera Prateada** | O mesmo Guia a define como ponto de estabilização, ancoragem e classificação de informações. | Pode inspirar um elemento simbólico ou informacional; função técnica exclusiva e mecanismo não especificados. |
+| **Terceiro Campo** | A responsável esclareceu (24/11/2026) que é a denominação de **Flux** na experiência meditativa de origem. O [Guia de Onboarding](../../03_flux/guias-sistema-flux%20/introducao-onboarding.md), porém, enumera **Flux** e **Terceiro Campo** separadamente e descreve este como interface de convergência. | **Diferença entre relato de origem e redação do guia a investigar**, sem pressupor que sejam dois sistemas distintos; não confundir com a Camada 03 de 2026. |
+| **Esfera Prateada / Syntaris** | A responsável identifica a esfera vista em meditação como **Syntaris** (no repositório, [SYNTARIS](../../04_elementos-do-sistema/syntaris.md)), âncora e agente estabilizador/manifestador do Terceiro Campo. O mesmo Guia atribui à Esfera Prateada estabilização, ancoragem e classificação, mas **não escreve o nome SYNTARIS naquele ponto**. | Relação de identidade esclarecida pelo relato; verificar quando foi formalizada nos textos e diferenciar símbolo, função conceitual e componente técnico. |
 | **Outros elementos** | [Introdução de Flux](../../03_flux/guias-sistema-flux%20/introducao-onboarding.md) e [Manual Técnico — Integração](../../03_flux/manual-tecnico-sistema-flux/05-integracao-com-outros-elementos.md) descrevem interações com módulos e sistemas externos. | Diferenciar integração operacional por API de associação simbólica entre entidades. |
 
 **Achado específico:** há um documento que explicita, no mesmo quadro de componentes, **Flux, Lumora, Código de Navegação, Terceiro Campo e Esfera Prateada**. Ele é um ponto de partida para pesquisar quando a integração passou a ser descrita. A terminologia antiga deve ser preservada.
+
+### Esclarecimento de origem — relato da responsável (24/11/2026)
+
+Depois de receber Lumora, ela relata ter meditado e experienciado um **emaranhado de linhas que se alinhava com sua presença**. Na experiência, reconheceu a necessidade de uma âncora para sustentar a organização e associou a **esfera prateada a Syntaris**, como estabilizador e manifestador. O movimento e a organização da informação foram identificados como **Flux / Terceiro Campo**.
+
+A experiência é registrada como **relato fenomenológico de origem criativa**, sem afirmar leitura de campo externo, ação energética mensurável ou independência da atividade mental. Sua relevância documental é explicar a relação atribuída pela responsável a dois nomes e dois símbolos.
+
+**Tensão de redação:** o [Guia de Onboarding de Flux](../../03_flux/guias-sistema-flux%20/introducao-onboarding.md) relaciona os itens **Flux**, **Terceiro Campo** e **Esfera Prateada** separadamente. Já o [perfil de SYNTARIS](../../04_elementos-do-sistema/syntaris.md) atribui a esse elemento estabilização e alinhamento, mas amplia suas funções a conhecimento, repositório e segurança. As descrições não são inteiramente equivalentes à identificação histórica relatada. **É necessário confrontar os registros originais e versões de compilação; não alterar os manuais para eliminar essa diferença.**
+
+**Hipótese de software, ainda não aprovada:** Flux poderia designar o fluxo de informação e suas transições; Syntaris poderia representar regras de consistência/estabilização, validações de estado e trilhas de auditoria. Isso **não exige** criar dois agentes autônomos de IA e não demonstra atividade energética.
 
 ## 4. Correspondências técnicas possíveis
 
@@ -77,8 +87,8 @@ Uma pessoa registra voluntariamente a pergunta “Que parte da minha ideia de pr
 ## 7. Perguntas ainda abertas
 
 - Qual foi o **primeiro texto de Flux** efetivamente recebido e quando as relações com Lumora e Código passaram a ser explícitas?
-- O **Terceiro Campo** possui manual com definição estável? Em que se distingue de Flux e da Camada 03?
-- Qual papel original da **Esfera Prateada** e como se relaciona com agentes/elementos posteriores?
+- Como explicar documentalmente que o **Terceiro Campo** é identificado pela responsável com Flux, mas aparece separado de Flux no Guia de Onboarding? Qual a ordem de redação desses trechos? Não confundir com a Camada 03.
+- Quando a identificação original **Esfera Prateada = Syntaris** passou a aparecer nos textos? Quais funções lhe foram atribuídas posteriormente e por quê?
 - Flux é principalmente **motor técnico de organização de informação**, **interface de ação** ou ambos? Em caso de ambos, quais subcomponentes?
 - Quais critérios e permissões determinariam automações responsáveis?
 - Os exemplos de resultados são narrativas ilustrativas? Existem registros externos de uso/testes?
@@ -95,4 +105,4 @@ Uma pessoa registra voluntariamente a pergunta “Que parte da minha ideia de pr
 
 **Conclusão:** o trio mostra uma possibilidade clara de integração tecnológica, mas suas fronteiras atuais resultam, em parte, de **decisões posteriores de arquitetura**. Os textos antigos também apresentam sobreposições, metáforas energéticas não verificadas e promessas de implementação que não foram comprovadas pelos arquivos inspecionados. A relação temporal entre os componentes exige logs de origem para confirmação.
 
-**Próximo recorte:** estudar documentalmente **Terceiro Campo** e **Esfera Prateada** e comparar com as primeiras menções a NAVROS, Lumora e Flux, sem confundir termos ou hierarquia.
+**Próximo recorte:** confrontar o relato de origem **Terceiro Campo = Flux** e **Esfera Prateada = Syntaris** com os manuais de SYNTARIS, versões do Guia de Flux e registros iniciais de 2025, para distinguir identificação original, elaboração posterior e diferenças de terminologia.
